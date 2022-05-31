@@ -5,13 +5,50 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: lightgrey;
+    background-color: rgb(207, 201, 193);
+    font-family: Verdana;
 }
 
-h1, h2 {
-    background: #7bba4e;
+h1 {
+    margin: 10px;
+    padding: 10px;
+    background-color: #205e7e;
+    border-style: solid;
+    border-color: #205e7e;
+    border-width: 3px;
+    border-radius: 25px;
+    font-family: Verdana;
+    text-align: center;
+    color: rgb(249, 241, 230);
+}
+
+h2 {
+    background: #4f9fc8;
     padding: 20px 30px;
     margin: 0;
+    border-radius: 20px;
+    font-family: Verdana;
+    font-size: medium;
+}
+h6 {
+    background-color: rgb(249, 241, 230);
+    padding: 20px 10px;
+    margin: auto;
+    text-align: justify;
+    width: 80%;
+}
+h4 {
+    text-align: center;
+    font-weight: 400;
+}
+h5 {
+    background: rgb(207, 201, 193);
+    padding: 20px 30px;
+    margin: 5px;
+    border-radius: 20px;
+    font-family: Verdana;
+    font-size: large;
+    text-align: center;
 }
 
 .container {
@@ -23,10 +60,11 @@ section {
 }
 
 section > p {
-    background-color: white;
+    background-color: rgb(249, 241, 230);
     padding: 20px 10px;
-    margin: 0;
+    margin: auto;
     text-align: justify;
+    width: 80%;
 }
 
 .reference {
