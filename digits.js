@@ -47,23 +47,7 @@ document.querySelector('#btn-clear').addEventListener('click', () => {
 });
 
 document.querySelector('#btn-guess').addEventListener('click', async () => {
-      
-  const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
-  const data = imageData.data;
-  const greyData = new Array(data.length / 4).fill(0);
-  for (let i = 0; i < data.length; i += 4) {
-    const avg = (data[i] + data[i + 1] + data[i + 2]) / 3;
-    greyData[i / 4] = avg;
-  }
-  console.log(greyData)
-  //alert("The number is: " + Math.round(Math.random() * 10));
-  const imgNew = new Image();
-  imgNew.src = canvas.toDataURL();
-  console.log(imgNew)
 
-  //  the actual classification using the trained classfier
-  const classification = await classifier.classify(imgNew);
-  console.log(classification);
 })
 
 document.querySelector('#btn-save').addEventListener('click', async (e) => {
@@ -77,62 +61,57 @@ document.querySelector('#btn-save').addEventListener('click', async (e) => {
 })
 
 
-let featureExtractor;
-let classifier;
+// Create a neural network object with custom options
+const nn = ml5.neuralNetwork({
+  // inputs: 784,
+  // outputs: 10,
+  task: 'classification',
+  debug: true,
+  layers: [
+    {
+      type: 'dense',
+      units: 128,
+      activation: 'relu'
+    }
+  ]
+});
 
-const trainingImages = [];
-const NUM_TRAIN = 8;
+let data = []
 
-function preloadImages() {
-  console.log('Preloading images');
-  const trainingFolderUrl = 'images/training';
-  
-  const trainingFolders = new Array(NUM_TRAIN).fill(0).map((_, i) => i + 1);
-  const imagesNames = new Array(10).fill(0).map((_, i) => `${i}.png`);
-  
-  trainingFolders.forEach((folderName) => {
-    imagesNames.forEach((imageName, i) => {
-      const imageUrl = `${trainingFolderUrl}/${folderName}/${imageName}`;
-      trainingImages.push({ image: createImg(imageUrl), label: i });
-    })
-  })
-}
-
-function createImg(url) {
-  const img = new Image();
-  img.src = url;
-  return img;
-}
-
-function trainModel() {
-  const promises = [];
-  trainingImages.forEach((dp) => {
-    promises.push(classifier.addImage(dp.image, dp.label));  
-  });
-
-  return Promise.all(promises);
-}
-
-async function modelLoaded() {
-  classifier = featureExtractor.classification();
-
-  //  add new train image for every image/label pair stored in `trainingImages`
-  await trainModel();
-  
-  // Retrain the network 
-  console.log('training model')
-  await classifier.train(function(lossValue) {
-    console.log("Loss is", lossValue);
-  });
-  console.log("Training done")
-
-}
-
-function setup() {
-  console.log("setup");
-  preloadImages()
-  featureExtractor = ml5.featureExtractor("MobileNet", { numLabels: 10 }, modelLoaded);
+async function setup() {
   console.log("setup done");
+  data = await fetch('./mnist-medium.json')
+    .then((response) => response.json())
+  data.forEach((entry) => {
+    nn.addData(entry.image.map(x => x / 255.), [`${entry.label}`]);
+  })
+  // nn.normalizeData();
+  nn.train({epochs: 200}, finishedTraining);
+}
+
+async function finishedTraining() {
+  console.log("finished training");
+  for (let i = 0; i < 100; i++) {
+    const index = Math.floor(Math.random() * data.length);
+    const res = await nn.classify(data[index].image.map(x => x / 255.));
+    let label = 0
+    let conf = 0
+    res.forEach((entry) => {
+      if (entry.confidence > conf) {
+        label = entry.label
+        conf = entry.confidence
+      }
+    })
+    console.log(`Predict label ${label} with confidence ${conf}, true label: ${data[index].label}`);
+  }
+}
+
+function labelToArray(label) {
+  return [`${label}`];
+}
+
+function randomLabel() {
+  return [`${Math.floor(Math.random() * 2)}`];
 }
 
 document.addEventListener('DOMContentLoaded', setup);
