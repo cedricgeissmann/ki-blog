@@ -1,6 +1,6 @@
 const canvas = document.querySelector('#canvas');
-canvas.width = 16
-canvas.height = 16
+canvas.width = 28
+canvas.height = 28
 const ctx = canvas.getContext('2d');
 
 let coords = {
@@ -47,7 +47,12 @@ document.querySelector('#btn-clear').addEventListener('click', () => {
 });
 
 document.querySelector('#btn-guess').addEventListener('click', async () => {
-
+  const greyData = new Array(784).fill(0.0);
+  const colorData = ctx.getImageData(0, 0, canvas.width, canvas.height).data
+  for (let i = 0; i < colorData.length; i += 4) {
+    greyData[i / 4] = colorData[i + 3] / 255.0
+  }
+  nn.classify(greyData, classifyResult);
 })
 
 document.querySelector('#btn-save').addEventListener('click', async (e) => {
@@ -60,18 +65,30 @@ document.querySelector('#btn-save').addEventListener('click', async (e) => {
     });
 })
 
+document.querySelector('#btn-display').addEventListener('click', () => {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  let imgData = ctx.getImageData(0, 0, canvas.width, canvas.height)
+  let index = Math.floor(Math.random() * data.length)
+  let selectedData = data[index].image
+  document.querySelector('#label-display').textContent = data[index].label
+  for (let i = 0; i < selectedData.length; i++){
+    imgData.data[i * 4 + 3] = selectedData[i]
+  }
+  ctx.putImageData(imgData, 0, 0);
+})
+
 
 // Create a neural network object with custom options
 const nn = ml5.neuralNetwork({
-  // inputs: 784,
-  // outputs: 10,
+  inputs: 784,
+  outputs: 10,
   task: 'classification',
   debug: true,
   layers: [
     {
       type: 'dense',
-      units: 128,
-      activation: 'relu'
+      units: 10,
+      activation: 'softmax'
     }
   ]
 });
@@ -86,14 +103,26 @@ async function setup() {
     nn.addData(entry.image.map(x => x / 255.), [`${entry.label}`]);
   })
   // nn.normalizeData();
-  nn.train({epochs: 200}, finishedTraining);
+  nn.train({epochs: 50}, whileTraining, finishedTraining);
+}
+
+function whileTraining(epoch, loss) {
+  console.log(`Epoch ${epoch}: `, loss);
 }
 
 async function finishedTraining() {
   console.log("finished training");
   for (let i = 0; i < 100; i++) {
     const index = Math.floor(Math.random() * data.length);
-    const res = await nn.classify(data[index].image.map(x => x / 255.));
+    nn.classify(data[index].image.map(x => x / 255.), classifyResult);
+    console.log(data[index].label);
+  }
+}
+
+function classifyResult(error, res) {
+  if (error) {
+    console.log(error);
+  }
     let label = 0
     let conf = 0
     res.forEach((entry) => {
@@ -102,8 +131,7 @@ async function finishedTraining() {
         conf = entry.confidence
       }
     })
-    console.log(`Predict label ${label} with confidence ${conf}, true label: ${data[index].label}`);
-  }
+    console.log(`Predict label ${label} with confidence ${conf}`);
 }
 
 function labelToArray(label) {
