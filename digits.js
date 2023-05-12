@@ -8,9 +8,7 @@ let coords = {
   y: 0
 }
 
-
 document.addEventListener('mousedown', start);
-
 document.addEventListener('mouseup', stop);
 
 function start(e) {
@@ -42,6 +40,8 @@ function reposition(e) {
   coords.y = y
 }
 
+document.querySelector('#btn-train').addEventListener('click', trainModel);
+
 document.querySelector('#btn-clear').addEventListener('click', () => {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   document.querySelector('#label-display').textContent = "#"
@@ -58,13 +58,19 @@ document.querySelector('#btn-guess').addEventListener('click', async () => {
 })
 
 document.querySelector('#btn-save').addEventListener('click', async (e) => {
-    let downloadLink = document.createElement('a');
-    downloadLink.setAttribute('download', 'CanvasAsImage.png');
-    canvas.toBlob(function(blob) {
-      let url = URL.createObjectURL(blob);
-      downloadLink.setAttribute('href', url);
-      downloadLink.click();
-    });
+  nn.save()
+})
+
+document.querySelector('#btn-load').addEventListener('click', async (e) => {
+  alert("Not working yet")
+  return
+  const modelInfo = {
+    model: "model/model.json",
+    weights: "model/model.weights.bin"
+  }
+  nn.load(modelInfo, () => {
+    alert("Model Loaded.")
+  })
 })
 
 document.querySelector('#btn-display').addEventListener('click', () => {
@@ -79,59 +85,68 @@ document.querySelector('#btn-display').addEventListener('click', () => {
   ctx.putImageData(imgData, 0, 0);
 })
 
-
-// Create a neural network object with custom options
+/*
+* Struktur des neuronalen Netzwerks.
+*/
 const nn = ml5.neuralNetwork({
   inputs: 784,
   outputs: 10,
+  layers: [
+    {
+      type: 'dense',
+      units: 128,
+      activation: 'relu'
+    }, {
+      type: 'dense',
+      units: 128,
+      activation: 'relu'
+    }, {
+      type: 'dense',
+      units: 10,
+      activation: 'softmax'
+    }
+  ],
   task: 'classification',
   debug: true,
 });
 
 let data = []
 
-async function setup() {
-  console.log("setup done");
+
+// Daten laden und Netzwerk trainieren
+async function trainModel() {
+  await loadData()
+  nn.train({epochs: 50}, finishedTraining);
+}
+
+// Daten laden
+async function loadData() {
   data = await fetch('./mnist-medium.json')
     .then((response) => response.json())
   data.forEach((entry) => {
     nn.addData(entry.image.map(x => x / 255.), [`${entry.label}`]);
   })
-  // nn.normalizeData();
-  nn.train({epochs: 50}, whileTraining, finishedTraining);
 }
 
-function whileTraining(epoch, loss) {
-  console.log(`Epoch ${epoch}: `, loss);
+// Bescheid geben wenn das Training abgeschlossen ist.
+function finishedTraining() {
+  alert("Fertig trainiert! Ziffern können jetzt erkannt werden.");
 }
 
-async function finishedTraining() {
-  console.log("finished training");
-}
 
+// Resultat vom Netzwerk anfragen
 function classifyResult(error, res) {
   if (error) {
-    console.log(error);
+    console.log(error)
   }
-    let label = 0
-    let conf = 0
-    res.forEach((entry) => {
-      if (entry.confidence > conf) {
-        label = entry.label
-        conf = entry.confidence
-      }
-    })
-    document.querySelector('#prediction-number').textContent = label
-    document.querySelector('#prediction-confidence').textContent = conf.toFixed(3)
-    console.log(`Predict label ${label} with confidence ${conf}`);
+  let label = 0
+  let conf = 0
+  res.forEach(entry => {
+    if (entry.confidence > conf) {
+      label = entry.label
+      conf = entry.confidence
+    }
+  })
+  document.querySelector("#prediction-number").textContent = label
+  document.querySelector("#prediction-confidence").textContent = conf.toFixed(3)
 }
-
-function labelToArray(label) {
-  return [`${label}`];
-}
-
-function randomLabel() {
-  return [`${Math.floor(Math.random() * 2)}`];
-}
-
-document.addEventListener('DOMContentLoaded', setup);
