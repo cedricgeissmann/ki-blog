@@ -16,9 +16,19 @@ body {
   flex-direction: column;
 }
 
-#coords {
+.display-container {
   color: white;
   font-size: 2rem;
   font-weight: bold;
   padding: 20px;
+}
+
+#prediction-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#prediction-container div {
+  margin: 0 20px;
 }

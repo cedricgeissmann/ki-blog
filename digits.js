@@ -44,9 +44,11 @@ function reposition(e) {
 
 document.querySelector('#btn-clear').addEventListener('click', () => {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
+  document.querySelector('#label-display').textContent = "#"
 });
 
 document.querySelector('#btn-guess').addEventListener('click', async () => {
+  document.querySelector('#label-display').textContent = "#"
   const greyData = new Array(784).fill(0.0);
   const colorData = ctx.getImageData(0, 0, canvas.width, canvas.height).data
   for (let i = 0; i < colorData.length; i += 4) {
@@ -84,13 +86,6 @@ const nn = ml5.neuralNetwork({
   outputs: 10,
   task: 'classification',
   debug: true,
-  layers: [
-    {
-      type: 'dense',
-      units: 10,
-      activation: 'softmax'
-    }
-  ]
 });
 
 let data = []
@@ -112,11 +107,6 @@ function whileTraining(epoch, loss) {
 
 async function finishedTraining() {
   console.log("finished training");
-  for (let i = 0; i < 100; i++) {
-    const index = Math.floor(Math.random() * data.length);
-    nn.classify(data[index].image.map(x => x / 255.), classifyResult);
-    console.log(data[index].label);
-  }
 }
 
 function classifyResult(error, res) {
@@ -131,6 +121,8 @@ function classifyResult(error, res) {
         conf = entry.confidence
       }
     })
+    document.querySelector('#prediction-number').textContent = label
+    document.querySelector('#prediction-confidence').textContent = conf.toFixed(3)
     console.log(`Predict label ${label} with confidence ${conf}`);
 }
 
