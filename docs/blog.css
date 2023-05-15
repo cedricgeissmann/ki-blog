@@ -7,15 +7,17 @@ body {
 
 nav > ul > li {
   list-style: none;
-  padding: 10px;
-  margin: 0;
+  padding: 0px;
+  margin: 10px;
 }
 
 nav > ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 nav > ul > li > a {
@@ -29,5 +31,35 @@ nav > ul > li > a:hover {
 }
 
 main {
-  padding: 20px 50px;;
+  padding: 20px 30px;;
+}
+
+.meineLinks {
+justify-content: space-between; 
+align-content: center;
+display: block;
+
+}
+
+.meineLinks > li > a {
+  text-decoration: none;
+  color: rgb(225, 250, 215);
+  font-size: large;
+}
+
+.meineLinks > li > a:hover {
+  text-decoration: underline;
+
+}
+
+.navigater {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.navigater > a{
+  font-size: large;
+  padding-top: 690px;
 }
