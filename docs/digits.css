@@ -1,0 +1,52 @@
+canvas {
+  border: 1px solid #d3d3d3;
+  height: 80vw;
+  background-color: white;
+  image-rendering: pixelated;
+}
+
+body {
+  background-color: #2d2b2b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+}
+
+.display-container {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 20px;
+  font-family: "Press Start 2P", "consolas", sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+#prediction-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#prediction-container div {
+  margin: 0 20px;
+}
+
+.font{
+  font-family: "Press Start 2P", "consolas", sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.buttonfont{
+  font-family: "Press Start 2P", "consolas", sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 9px;
+}
