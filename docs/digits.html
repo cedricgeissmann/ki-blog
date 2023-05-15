@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
   <title>Ziffernerkennung</title>
 
   <link rel="stylesheet" href="digits.css">
@@ -11,16 +12,16 @@
 </head>
 <body>
   <div id="prediction-container" class="display-container">
-    <div>Zahl: <span id="prediction-number">#</span></div>
-    <div>Sicherheit: <span id="prediction-confidence">0.0</span></div>
+    <div class="font">Zahl: <span id="prediction-number">#</span></div>
+    <div class="font">Sicherheit: <span id="prediction-confidence">0.0</span></div>
   </div>
   <div class="controlls">
-    <button id="btn-train">Train</button>
-    <button id="btn-load" disabled>Load</button>
-    <button id="btn-save">Save</button>
-    <button id="btn-clear">Clear</button>
-    <button id="btn-guess">Guess</button>
-    <button id="btn-display">Display</button>
+    <button id="btn-train" class="buttonfont">Train</button>
+    <button id="btn-load" disabled class="buttonfont">Load</button>
+    <button id="btn-save" class="buttonfont">Save</button>
+    <button id="btn-clear" class="buttonfont">Clear</button>
+    <button id="btn-guess" class="buttonfont">Guess</button>
+    <button id="btn-display" class="buttonfont">Display</button>
   </div>
   <canvas id="canvas"></canvas>
   <p class="display-container">Label: <span id="label-display">#</span></p>
