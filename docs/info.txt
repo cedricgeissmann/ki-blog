@@ -1,0 +1,52 @@
+Was ist KI? 
+Künstliche Intelligenz, auch artifizielle Intelligenz oder englisch artificial intelligence, ist ein Teilgebiet der Informatik, 
+welches alle Anstrengungen umfasst, deren Ziel es ist, Maschinen intelligent zu machen. Die KI imitiert menschliche kognitive Fähigkeiten.
+ 
+ Wie funktioniert KI?  
+ Die KI erkennt nformationen aus Eingabedaten und sortiert diese. So lernt sie auch immer dazu. Wenn man also z.B. Chat GPT etwas
+ fragt, gibt er eine Antwort, welche er sich von vorherigen Suchergebnissen gemerkt hat, oder auch durch Verbesserungen erlernt hat.
+ Wenn man also zum Beispiel etwas fragt, wovon man die Antwort schon weis, kann man ihm sagen, dass die Antwort, welche er geliefert hat,
+ falsch ist. Er fragt dann nach der richtigen Antwort und man kann ihn korrigieren. Er merkt sich dann diese Antwort,damit er diese auch 
+ geben kann, falls ihn jemand anderes die gleiche Frage nochmals stellt. So lernt er stetig dazu und kennt meist die aktuellen richtigen 
+ Antworten.
+ 
+Wie funktioniert ein neuronales Netz? 
+ In einem neuronalen Netz ahmen künstliche Neuronen durch Algorhithmen dei Nervenzellen im gehirn nach. Durch diese komplexen Verknüpfungen 
+ ist es möglich, Aufgaben aus den Bereichen Statistik, Informatik und Wrtschaft zu lösen. Das neuronale Netzwerk lernt durch diverse Eingaben 
+ ständig dazu und kann sich so selbst verbessern. Zum Beispiel haben wir hier den von Herr Geissmann vorgegebenen Zahlenerkenner. Man zeichnet 
+ auf ein weisses Feld mit der Hand oder mit dem Stift eine Zahl, und der Computer (das neuronale Netz) muss erkennen, um welche Zahl es sich 
+ dabei handelt. Den kann man auch trainieren lassen, damit er die Zahlen öfters richtig erkennt. Dazu gibt es auch die Formkurve, die einem zeigt,
+ wie sich das Netz verbessert hat. Beim erten mal hat er vielleicht die Zahl 5 nur bei jedem 14 mal richtig erkannt und bei letzten Training hat er 
+ sie jedes 2 Mal richtig erkannt. Man kann sich dabei dieses Netz wie eine verbindungsaufgabe in einem Test vorstellen. Man hat verschiedene Punkte, 
+ welche alle miteinander verbunden sind. Am Anfang stehen die Input-Punkte. Die werden verschieden stark angereitzt und geben diese Signle weiter.
+ So geht das immer weiter, und die Anzahl der Punkte werden in der Regel weniger, da es mit der Zeit weniger möglichkeiten gibt und die Antwot immer 
+ klarer wird, bis siie zum Output kommen, von welchem die Punkte die Informationen, welche sie erhalten haben als eine definitive Antwort herausgeben.
+ Wenn man als Beispiel einen Zahlenguesser hat wie der von Herr Geissmann, und er erkennt die Zahlen von 0-10, hat dieses neuronale Netz 11 Output Punkte,
+ weil es 11 verschiedene Antworten geben kann. Die Inputpunkte sind dabei deutlich mehr, denn man kann ja willkürlich eine Zahl auswählen, welche man hinein
+ gibt und das Netz muss dann alle verschiedenen Möglichkeiten durchgehen, um sicher zu sein, dass die Antwort stimmt, welches es dann heraus gibt.
+
+Was ist maschinelles Lernen? 
+Unter Maschinellem lernen werden IT-Systeme verstanden , dei auf Basis eines grossen Datensatzes eigensttändig künstliches Wissen erlangen. Anhand von 
+Beispielen analysieren IT-Systee Datensätze und versuchen über Algorithmen bestimmte Regeln und Gesetzmässigkeiten zu erkennen. Das heisst also, dass die Maschinen 
+die Beispiele, die sie bekommen, in ihren Algorithmen speichern und herausfinden, ob diese Beispiele einer Regelmässigkeit folgen, umm sich so wieter zu entwickeln 
+und Wissen zu erlangen. Sie beruhen dabei aber nicht unbedingt auf eine Richtigkeit, sondern darauf, wie oft die Antwort oder das Beispiel nach ihren ersten Berechnungen 
+richtig sein kann.
+
+Was für einen Einfluss haben Daten auf eine KI? 
+Daten haben einen riesigen einfluss auf die KI. Die KI lebt von Daten. Je grösser die Datenmenge ist, desto effektiver kann ein KI-System analysieren, lernen und 
+sich weiterentwickeln. Die Qualität und Tiefe der Daten bestimmen also das Niveau der KI-Anwendung, denn sie kann so eher präzise, sehr wahrscheinlich richtige Antworten 
+liefern oder halt eine oberflächlich, nur eventuell richtige Antwort. 
+
+Wie funktioniert ChatGPT? 
+ChatGPT funktioniert auf Grundlagen von maschinellem Lernen und Neuronale Netze (siehe oben) 
+
+Was sind die Grenzen von ChatGPT und worauf sollte man bei der Verwendung achten?
+Zu den Grenzen von ChatGPT gehören aktuell:
+ - Falsche Antworten
+ - Antworten mit Bias 
+ - Fehlendes menschliches Verständnis
+ - Unnötig lange Antworten
+Man muss darauf aufpassen, das man nicht alles glaubt, was ChatGPT herausgibt, denn er antwortet
+lange nicht immer richtig. Ausserdem speichert er die Daten, welche man ihm zur Verfügung stellt. 
+Chat fällt auch gerne auf Fangfragen hinein. Aktuelle Daten sind für Chat auch schwierig, da er 
+nur mit Daten bis Ende 2021 trainiert worden ist.
