@@ -32,3 +32,39 @@ main {
   padding: 20px 300px;
 }
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+h1, h2 {
+  background-color: magenta;
+}
+
+.container {
+  width: 100vw;
+  height: 50vh;
+  background-color: lightgrey;
+  position: relative;
+}
+
+.box {
+  border-color: black;
+  border: 15px;
+  border-style: solid;
+  height: 50px;
+  margin: 100px;
+  padding: 30px;
+  background-color: cyan;
+}
+
+.padding:hover {
+  padding: 200px;
+}
+
+.margin:hover {
+  margin: 10px;
+}
+
+.border:hover {
+  border-color: white;
+}
