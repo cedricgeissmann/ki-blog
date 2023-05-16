@@ -2,32 +2,61 @@ body {
   margin: 0;
   padding: 0;
   background-color: darkslategray;
-  color: antiquewhite
-}
-
-nav > ul > li {
-  list-style: none;
-  padding: 10px;
-  margin: 0;
-}
-
-nav > ul {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0;
-}
-
-nav > ul > li > a {
-  font-size: 2rem;
-  text-decoration: none;
   color: antiquewhite;
 }
 
-nav > ul > li > a:hover {
+.navbar-container {
+  overflow-x: scroll;
+  width: 100%;
+  white-space: nowrap;
+}
+
+nav {
+  display: inline-block;
+}
+
+.navbar-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.navbar-list li {
+  padding: 10px;
+}
+
+.navbar-list a {
+  text-decoration: none;
+  color: antiquewhite;
+  font-size: 1.8rem; /* Increase the font size as desired */
+}
+
+.navbar-list a:hover {
   text-decoration: underline;
 }
 
+@media (max-width: 600px) {
+  .navbar-list a {
+    font-size: 1.2rem; /* Adjust the font size for smaller screens */
+  }
+}
+
+
+
+
 main {
   padding: 20px 50px;;
+}
+
+h1 {
+  font-size: 75px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+h1:hover {
+  transform: translateX(10px); /* Adjust the desired amount of movement */
 }
