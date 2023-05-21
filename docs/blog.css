@@ -1,8 +1,8 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: darkslategray;
-  color: antiquewhite
+  background-color: goldenrod;
+  color: black
 }
 
 nav > ul > li {
@@ -32,3 +32,14 @@ nav > ul > li > a:hover {
 main {
   padding: 20px 50px;;
 }
+
+
+//darkslategray
+// schrift:  antiquewhite
+
+//lavender
+//black
+
+// salmon /
+//white or black
+ 
