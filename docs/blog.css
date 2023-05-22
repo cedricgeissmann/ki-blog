@@ -63,3 +63,13 @@ display: block;
   font-size: large;
   padding-top: 690px;
 }
+
+
+section{
+  font-size: 1.3rem;
+} 
+
+
+#neuronalesNetz{
+  scale: 0.5;
+}
