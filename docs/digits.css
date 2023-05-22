@@ -1,12 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+
 canvas {
   border: 1px solid #d3d3d3;
   height: 80vw;
-  background-color: white;
+  background-color: linear-gradient(#2b1055, #7597de);
   image-rendering: pixelated;
 }
 
 body {
-  background-color: #2d2b2b;
+  background-image: url("../docs/resources/mountains_front_background.png");
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,9 +25,7 @@ body {
   font-size: 2rem;
   font-weight: bold;
   padding: 20px;
-  font-family: "Press Start 2P", "consolas", sans-serif;
-  font-style: italic;
-  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
   font-size: 24px;
 }
 
@@ -38,15 +40,11 @@ body {
 }
 
 .font{
-  font-family: "Press Start 2P", "consolas", sans-serif;
-  font-style: italic;
-  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
   font-size: 24px;
 }
 
 .buttonfont{
-  font-family: "Press Start 2P", "consolas", sans-serif;
-  font-style: italic;
-  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
   font-size: 9px;
 }
