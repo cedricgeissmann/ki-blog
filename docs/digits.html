@@ -10,10 +10,18 @@
   <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
 </head>
 <body>
+  <header>
+    <a href="#sec" class="logo">Application</a>
+    <ul>
+        <!-- make class active -->
+        <li><a href="#" class="active" >Home</a></li> 
+        <li><a href="index.html">Website</a></li>
+    </ul>
+</header>
 
   <div id="prediction-container" class="display-container">
-    <div class="font">Zahl: <span id="prediction-number">#</span></div>
-    <div class="font">Sicherheit: <span id="prediction-confidence">0.0</span></div>
+    <div class="font">Number: <span id="prediction-number">#</span></div>
+    <div class="font">Accurancy: <span id="prediction-confidence">0.0</span></div>
   </div>
   <div class="controlls">
     <button id="btn-train" class="buttonfont">Train</button>
