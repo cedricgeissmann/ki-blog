@@ -2,7 +2,23 @@ body {
   margin: 0;
   padding: 0;
   background-color: darkslategray;
-  color: antiquewhite
+  color: antiquewhite;
+  font-size: 20px;
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: black;
+  transform: translateX(calc(-93%));
+  height: 100%;
+  padding-right: 20px;
+}
+
+nav:hover {
+  transform: translateX(0);
 }
 
 nav > ul > li {
@@ -16,6 +32,7 @@ nav > ul {
   justify-content: space-between;
   align-items: center;
   padding: 0;
+  flex-direction: column;
 }
 
 nav > ul > li > a {
