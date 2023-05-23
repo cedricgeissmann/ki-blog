@@ -91,21 +91,21 @@ document.querySelector('#btn-display').addEventListener('click', () => {
 const nn = ml5.neuralNetwork({
   inputs: 784,
   outputs: 10,
-  layers: [
-    {
-      type: 'dense',
-      units: 128,
-      activation: 'relu'
-    }, {
-      type: 'dense',
-      units: 128,
-      activation: 'relu'
-    }, {
-      type: 'dense',
-      units: 10,
-      activation: 'softmax'
-    }
-  ],
+  //layers: [
+   // {
+      //type: 'dense',
+      //units: 128,
+      //activation: 'relu'
+   // }, {
+      //type: 'dense',
+      //units: 128,
+     // activation: 'relu'
+    //}, {
+      //type: 'dense',
+      //units: 10,
+      //activation: 'softmax'
+    //}
+  //],
   task: 'classification',
   debug: true,
 });
