@@ -1,8 +1,8 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: darkslategray;
-  color: antiquewhite
+  background-color:darkblue;
+  color:darkblue
 }
 
 nav > ul > li {
@@ -22,6 +22,7 @@ nav > ul > li > a {
   font-size: 2rem;
   text-decoration: none;
   color: antiquewhite;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 nav > ul > li > a:hover {
@@ -30,4 +31,16 @@ nav > ul > li > a:hover {
 
 main {
   padding: 20px 50px;;
+}
+
+#ki-bild {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 60px;
+  left: 0;
+}
+
+h1 {
+  overflow-y: hidden;
 }
