@@ -60,3 +60,13 @@ h1 {
 h1:hover {
   transform: translateX(10px); /* Adjust the desired amount of movement */
 }
+
+
+.button1 {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  font-size: 1.8rem;
+  background-color: darkslategray;
+}
