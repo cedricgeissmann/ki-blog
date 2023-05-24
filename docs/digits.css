@@ -14,6 +14,7 @@ body {
   margin: 0;
   padding: 0;
   flex-direction: column;
+  font-size: 20px;
 }
 
 .display-container {
@@ -31,4 +32,48 @@ body {
 
 #prediction-container div {
   margin: 0 20px;
+}
+
+nav{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: grey;
+  transform: translateX(calc(-93%));
+  height: 100%;
+  padding-right: 20px;
+  transition-duration: 1s;
+}
+
+nav:hover {
+  transform: translateX(0);
+}
+
+nav > ul > li {
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  flex-direction: column;
+}
+
+nav > ul > li > a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: antiquewhite;
+}
+
+nav > ul > li > a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 20px 50px;;
 }
