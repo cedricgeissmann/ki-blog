@@ -1,8 +1,8 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: darkslategray;
-  color: antiquewhite;
+  background-color: antiquewhite;
+  color: black;
 }
 
 .navbar-container {
@@ -30,12 +30,16 @@ nav {
 
 .navbar-list a {
   text-decoration: none;
-  color: antiquewhite;
+  color: black;
   font-size: 1.8rem; /* Increase the font size as desired */
 }
 
 .navbar-list a:hover {
   text-decoration: underline;
+  cursor: pointer;
+  display: inline-block;
+  transition: ease-out 0.5s;
+  transform: translateX(10px);
 }
 
 @media (max-width: 600px) {
@@ -51,22 +55,55 @@ main {
   padding: 20px 50px;;
 }
 
+h2 {
+  transition: transform 0.3s;
+}
+
+h2:hover {
+  transform: translateX(10px); /* Adjust the desired amount of movement */
+}
+
 h1 {
   font-size: 75px;
   text-align: center;
   transition: transform 0.3s;
+  
 }
 
 h1:hover {
   transform: translateX(10px); /* Adjust the desired amount of movement */
 }
 
-
-.button1 {
+button {
+  top: 0;
+  left: 0;
   position: relative;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  font-size: 1.8rem;
-  background-color: darkslategray;
+  display: inline-block;
+  margin: 20px;
+  padding: 10px 30px 15px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+  text-decoration: none;
+  color: #725AC1;
+  background: transparent;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  border: 2px solid #725AC1;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 0 #725AC1;
+}
+
+button:hover {
+  color: white;
+  box-shadow: inset 0 -100px 0 0 #725AC1;
+}
+
+button:active {
+  transform: scale(0.9);
+}
+
+.link {
+  color: #725AC1;
+  cursor: pointer;
 }
