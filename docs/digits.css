@@ -6,7 +6,7 @@ canvas {
 }
 
 body {
-  background-color: #2d2b2b;
+  background-color: rgb(207, 195, 248);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,6 +15,32 @@ body {
   padding: 0;
   flex-direction: column;
 }
+
+nav > ul > li {
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+}
+
+nav > ul {
+  background-color: rgb(189, 175, 247);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+
+nav > ul > li > a {
+  font-size: 2rem;
+  font-family: 'Courier New', Courier, monospace;
+  text-decoration: none;
+  color: antiquewhite;
+}
+
+nav > ul > li > a:hover {
+  text-decoration: rgb(189, 175, 245);
+}
+
 
 .display-container {
   color: white;
