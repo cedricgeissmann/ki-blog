@@ -1,14 +1,14 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: darkslategray;
+  background-color:lightskyblue;
   color: antiquewhite;
   font-family: Bradley Hand, cursive; 
 }
 
 .background_img {
   background-color: darkslategray;
-  background-image: url(KI.jpg);
+  background-image: url(KI1.jpg);
   background-size: cover;
   height: 50px;
 
@@ -33,7 +33,7 @@ nav > ul {
 nav > ul > li > a {
   font-size: 2rem;
   text-decoration: none;
-  color: rgb(24, 21, 17);
+  color: lightcoral;
 }
 
 nav > ul > li > a:hover {
