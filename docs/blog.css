@@ -5,6 +5,11 @@ body {
   color: antiquewhite
 }
 
+.background_img{
+  background-image: url(new_background.png);
+  background-size: cover;
+}
+
 nav > ul > li {
   list-style: none;
   padding: 10px;
@@ -41,4 +46,3 @@ h1 {
 .block-indent {
   text-indent: 2em;
 }
-
