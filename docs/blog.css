@@ -79,12 +79,107 @@ main {
 }
 
 img {
-  width:auto;
-  height: 300px;
-  padding-left: 25vw;
-}
-.picture-john {
-  width:auto;
+  width: auto;
   height: 250px;
-  padding-left: 20vw;
+  padding: 10px;
 }
+
+img {
+  width: 400px;
+  height: 250px;
+  margin: auto; 
+  display: block; 
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px; 
+  height: 250px; 
+  border: 5px solid white;
+}
+
+
+.picture-john {
+  width: auto;
+  height: 250px;
+  padding: 10px;
+  border: 5px solid white;
+}
+
+a {
+  display: inline-block;
+  padding-left: .5em;
+  text-decoration: underline; 
+  color: white; 
+}
+
+.ki_blog {
+  padding-top: 20vh;
+  font-size: 40px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+}
+
+.ki_body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(100, 104, 104);
+  color: white;
+}
+
+.robot_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px; 
+  height: 250px; 
+  border: 5px solid white;
+}
+
+.deep_img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px; 
+  height: 250px; 
+  border: 5px solid rgb(0, 0, 0);
+}
+
+.schwache_img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px; 
+  height: 250px; 
+  border: 5px solid rgb(0, 0, 0);
+}
+
+.chat_img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px; 
+  height: 250px; 
+  border: 5px solid rgb(255, 255, 255);
+}
+
+.chatgpt_blog{
+  padding-top: 20vh;
+  font-size: 40px;
+  font-family: monospace;
+}
+
+.chatgpt_body{
+  margin: 0;
+  padding: 0;
+  background-color: rgb(85, 160, 129);
+  color: rgb(0, 0, 0);
+}
+
+.neue_schrift{
+  color: black;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
