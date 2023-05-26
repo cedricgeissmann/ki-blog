@@ -18,7 +18,7 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    padding:30px 100px;
+    padding:20px 40px;
     display:flex;
     justify-content: space-between;
     align-items:center;
@@ -37,6 +37,7 @@ header ul
 display:flex;
 justify-content: center;
 align-items: center;
+margin-right: 80px;
 }
 header ul li{
     list-style: none;
@@ -101,11 +102,16 @@ section img#mountains_front {
     padding: 100px;
     border-bottom:#1c0522 solid 5000px;
     background:#1c0522;
-    
+
 
 }
 .sec h2{
     font-size: 3.5em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.sec h5{
+    font-size: 1.5em;
     margin-bottom: 10px;
     color: #fff;
 }
