@@ -2,13 +2,25 @@ body {
   margin: 0;
   padding: 0;
   background-color: darkslategray;
-  color: antiquewhite
+  color: antiquewhite;
+  font-family: Bradley Hand, cursive; 
 }
+
+.background_img {
+  background-color: darkslategray;
+  background-image: url(KI.jpg);
+  background-size: cover;
+  height: 50px;
+
+}
+
+
 
 nav > ul > li {
   list-style: none;
   padding: 10px;
   margin: 0;
+  
 }
 
 nav > ul {
@@ -21,7 +33,7 @@ nav > ul {
 nav > ul > li > a {
   font-size: 2rem;
   text-decoration: none;
-  color: antiquewhite;
+  color: rgb(24, 21, 17);
 }
 
 nav > ul > li > a:hover {
@@ -30,4 +42,8 @@ nav > ul > li > a:hover {
 
 main {
   padding: 20px 50px;;
+}
+
+.neue_schrift{
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
