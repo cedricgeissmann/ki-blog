@@ -5,6 +5,14 @@ body {
   color: antiquewhite
 }
 
+.background_img {
+  background-image: url(KI.jpg);
+  background-size: cover;
+  height: 50px;
+}
+
+
+
 nav > ul > li {
   list-style: none;
   padding: 10px;
