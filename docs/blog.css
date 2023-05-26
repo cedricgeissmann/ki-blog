@@ -1,9 +1,38 @@
+
+
 body {
   margin: 0;
   padding: 0;
   background-color: darkslategray;
   color: antiquewhite
 }
+
+
+
+main ul p a {
+  color: antiquewhite;
+}
+
+
+main ul p a:hover {
+  color: blue;
+}
+
+main ul p a {
+display: flex;
+justify-content: center;
+}
+
+main ul p a
+ {font-size: 25px;
+ }
+
+ h1 {
+  text-align: center;
+  font-size: 60px;
+}
+
+
 
 nav > ul > li {
   list-style: none;
@@ -28,6 +57,12 @@ nav > ul > li > a:hover {
   text-decoration: underline;
 }
 
+
+
 main {
   padding: 20px 50px;;
+}
+
+p {
+  font-size: 24px;
 }
