@@ -46,3 +46,15 @@ body {
   main {
     padding: 20px 50px;;
   }
+
+  #neuronalesnetz{
+    width: 50%;
+  }
+
+  .image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+  }
