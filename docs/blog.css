@@ -6,7 +6,7 @@ body {
 #kopf {
   height: 150px;
   margin: 5px;
-  background-color: #ffff00;
+  background-color: #c3c319;
   width: auto;
 }
 #inhalt {
@@ -20,7 +20,7 @@ body {
   left: 10px;
   width: 160px;
   height: 400px;
-  background-color: #ffcc00;
+  background-color: #eacf65;
 }
 #rechts {
   position: absolute;
@@ -61,33 +61,14 @@ main {
 *, *::before, *::after {
   box-sizing: border-box;
 }
+
 h1{
   padding: 20px 300px;
-  font-size: 40px;
+  font-size: 60px;
 }
-
 
 h2 {
-  
   font-size: 30px;
-
-}
-
-.container {
-  width: 100vw;
-  height: 50vh;
-  background-color: lightgrey;
-  position: relative;
-}
-
-.box {
-  border-color: black;
-  border: 15px;
-  border-style: solid;
-  height: 50px;
-  margin: 100px;
-  padding: 30px;
-  background-color: cyan;
 }
 
 .padding:hover {
