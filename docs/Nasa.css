@@ -1,8 +1,15 @@
 body {
-    margin: 0;
-    padding: 60px 0;
-    background-color: darkslategray;
-    color: antiquewhite
+  margin: 20px;
+  text-align: center; 
+  background-color: #FF8040;
+  }
+
+  #box {
+    width: 400px;
+    margin: 0px auto;
+    padding: 15px;
+    text-align: left;
+    background-color: #FFFFCC;
   }
   nav > ul > li {
     list-style: none;
