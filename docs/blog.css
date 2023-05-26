@@ -21,7 +21,7 @@ nav > ul {
 nav > ul > li > a {
   font-size: 2rem;
   text-decoration: none;
-  color: aqua;
+  color: yellow;
 }
 
 nav > ul > li > a:hover {
@@ -36,7 +36,19 @@ h1{
   color:red;
 }
 
-.box2{
+h2,h3{
   color:aqua;
+}
 
+.box1{
+  color:yellow;
+}
+
+.box2{
+  color:yellow;
+
+}
+
+.img{
+  height:10px;
 }
