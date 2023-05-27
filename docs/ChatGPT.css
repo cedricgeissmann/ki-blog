@@ -13,6 +13,7 @@ body {
 #inhalt {
   margin-left: 150px;
   background-color: #FFFFCC;
+  text-align: center;
 }
 
   nav > ul > li {
@@ -39,4 +40,8 @@ body {
   }
   main {
     padding: 20px 300px;
+  }
+  h1{
+    padding: 20px 300px;
+    font-size: 60px;
   }
