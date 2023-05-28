@@ -189,3 +189,30 @@ a {
   background-color: rgb(31, 58, 36);
   color: rgb(255, 255, 255);
 }
+
+.neuronale_body{
+  margin: 0;
+  padding: 0;
+  background-color: rgb(102, 95, 145);
+  color: rgb(255, 255, 255);
+}
+
+.neuronale_text{
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.gehirn-img{
+  display:flex;
+}
+
+.beispiel-img{
+  display: flex;
+}
+
+.text-left{
+  text-align:left;
+}
+
+.text-right{
+  text-align:right;
+}

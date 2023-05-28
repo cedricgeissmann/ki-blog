@@ -8,23 +8,126 @@
 
   <link rel="stylesheet" href="../blog.css">
 </head>
-<body>
+<body class="neuronale_body">
   <nav>
     <ul>
       <li><a href="../index.html">Home</a></li></li>
       <li><a href="../KI/">KI</a></li></li>
-      <li><a href="../deep_learning/">Deeep Learning</a></li></li>
+      <li><a href="../deep_learning/">Maschinelles Lernen</a></li></li>
+      <li><a href="../neuronales-Netz/">neuronales Netzwerk</a></li>
       <li><a href="../chat-gpt/">ChatGPT</a></li></li>
       <li><a href="../ziffern">Ziffern</a></li></li>
       <li><a href="../zukunft/">Zukunft</a></li></li>
-      <li><a href="../neuronales-Netz/">neuronales Netzwerk</a></li>
     </ul>
   </nav>
   <main>
-    <h1>neuronales Netzwerk</h1>
-    <section>
-      Hier ist ein Abschnitt.
-    </section>
+    <h1 class="neuronale_text">Neuronales Netzwerk</h1>
+
+    <div>
+      <p class="text-overview">
+        Neuronale Netzwerke sind ein Konzept aus dem Bereich des maschinellen Lernens und der künstlichen Intelligenz, das von der Funktionsweise des menschlichen Gehirns inspiriert ist. Sie sind dafür bekannt, komplexe Probleme zu lösen, Muster in Daten zu erkennen und Vorhersagen zu treffen.
+      </p>
+    </div>
+
+    <div class="gehirn-img">
+      <img class="picture-john" src="gehirn.jpg">
+      <img class="picture-john" src="nerven.jpg">
+    </div>
+
+    <div>
+      <p class="text-overview">
+        Ein neuronales Netzwerk besteht aus einer Vielzahl von künstlichen Neuronen, die in Schichten angeordnet sind. Die erste Schicht wird als Eingabeschicht bezeichnet, die letzte Schicht als Ausgabeschicht, und dazwischen können weitere Schichten vorhanden sein, die als versteckte Schichten oder Zwischenschichten bezeichnet werden.
+      </p>
+    </div>
+
+    <div>
+      <p class="text-overview">
+        Jedes Neuron ist mit anderen Neuronen in den benachbarten Schichten verbunden. Diese Verbindungen werden als Gewichte bezeichnet und stellen die Stärke der Verbindung dar. Jedes Neuron erhält Eingaben von den vorherigen Neuronen, multipliziert sie mit den entsprechenden Gewichten und wendet eine Aktivierungsfunktion auf die gewichtete Summe an. Die Aktivierungsfunktion kann beispielsweise eine ReLU-Funktion, (gibt eine Null zurück, wenn sie eine Negative Eingabe empfängt), sein. Das Ergebnis dieser Berechnung wird dann an die nächsten Neuronen weitergegeben.
+      </p>
+    </div>
+
+
+    <div>
+      <p class="text-overview">
+        Der Prozess der Vorwärtspropagierung erfolgt, indem die Daten von der Eingabeschicht durch das Netzwerk geleitet werden. Jedes Neuron berechnet seine Aktivierung basierend auf den gewichteten Eingaben. Auf diese Weise erzeugt das Netzwerk eine Ausgabe anhand der gegebenen Eingabe.
+      </p>
+    </div>
+    
+
+    <div>
+      <p class="text-overview">
+        Während des Trainings passen neuronale Netzwerke ihre Gewichte an, um die gewünschten Ausgaben für gegebene Eingaben zu erzeugen. Dieser Prozess wird als Backpropagation bezeichnet. Dabei wird der Fehler zwischen den tatsächlichen Ausgaben des Netzwerks und den erwarteten Ausgaben berechnet und rückwärts durch das Netzwerk propagiert, um die Gewichte anzupassen. Dieser Vorgang wird iterativ wiederholt, bis das Netzwerk eine akzeptable Leistung erreicht.
+      </p>
+    </div>
+
+
+    <div>
+      <p class="text-overview">
+        Neuronale Netzwerke haben aufgrund ihrer Fähigkeit, komplexe Muster zu erlernen, in verschiedenen Anwendungsbereichen große Fortschritte gemacht. Sie werden beispielsweise für Bild- und Spracherkennung, maschinelles Übersetzen, Mustererkennung und Vorhersageanalysen eingesetzt.
+      </p>
+    </div>
+    
+
+    <div>
+      <p class="text-overview">
+       Schauen wir uns einen Beispiel an mit Äpfeln und Birnen:
+      </p>
+    </div>
+    
+    <div class="beispiel-img">
+      <img class="picture-john" src="img1.png">
+      <img class="picture-john" src="img2.png">
+      <img class="picture-john" src="img3.png">
+    </div>
+    <figcaption class="text-left">Bild 1</figcaption>
+    <figcaption class="text-center">Bild 2</figcaption>
+    <figcaption class="text-right">Bild 3</figcaption>
+    
+
+    <div>
+      <p class="text-overview">
+        Damit neuronale Netze funktionieren können, benötigen sie bekannte Daten, anhand derer sie lernen können. Das Netzwerk führt eine Berechnung durch und überprüft, ob das Ergebnis mit dem erwarteten Ergebnis übereinstimmt. In unserem Beispiel benötigt das Netzwerk also Bilder von Äpfeln und Birnen, die mit einer Beschriftung versehen sind, um zu wissen, um welches Obst es sich handelt. Das neuronale Netzwerk verfolgt folgende Vorgehensweise: Es nimmt ein Bild, zerlegt die einzelnen Pixel in Daten (wie beispielsweise Farbwerte) und berechnet dann mit Hilfe einer komplexen Formel ein Ergebnis, das mit der Beschriftung verglichen wird (Bild 1).
+      </p>
+    </div>
+
+
+    <div>
+      <p class="text-overview">
+        Wenn das Ergebnis der Formel mit der Beschriftung übereinstimmt, hat das Netzwerk das Bild korrekt erkannt.
+        Wenn das Ergebnis der Formel nicht mit der Beschriftung übereinstimmt, ist die Berechnung noch nicht richtig, und das Netzwerk muss weiter trainieren.
+      </p>
+    </div>
+
+    
+    <div>
+      <p class="text-overview">
+        Wie haben ein neuronales Netzwerk mit einer Eingangsschicht, einer Zwischenschicht und einer Ausgangsschicht aufgebaut. Das Neuron in der ersten Schicht nimmt den Eingang (den Farbwert des Pixels) auf, verarbeitet diese Information (führt eine Berechnung durch) und gibt dann das Ergebnis an die nächste Schicht von Neuronen weiter.
+      </p>
+    </div>
+
+    
+    <div>
+      <p class="text-overview">
+        Die letzte Schicht von Neuronen entspricht den beiden möglichen Ausgaben - Apfel oder Birne. Abhängig davon, bei welchem der beiden Ausgangsneuronen das Berechnungsergebnis höher ist (in diesem Fall näher am Wert 1 liegt), gibt das Netzwerk das Ergebnis als "Apfel" oder "Birne" aus. In unserem Beispiel ist das Ergebnis dieser Berechnung jedoch falsch - der Wert für "Birne" ist höher als für "Apfel", obwohl das Bild einen Apfel zeigt. Das ist jedoch in Ordnung, denn wenn ein neuronales Netzwerk zum ersten Mal mit Daten gefüttert wird, sind seine Ergebnisse immer zufällig und können daher auch zufällig falsch sein. Das liegt daran, dass die Parameter der mathematischen Formeln im ersten Durchgang zufällig gewählt werden müssen, da die Programmierer die genaue Formel, mit der Äpfel und Birnen voneinander unterschieden werden können, nicht kennen (Bild 2)
+      </p>
+    </div>
+
+    
+    <div>
+      <p class="text-overview">
+        Nun werden die zufälligen Werte der einzelnen Neuronen werden entsprechend des Ergebnisses angepasst, sodass sie das richtige Ergebnis berechnen (Bild 3).
+      </p>
+    </div>
+
+
+    
+    <div>
+      <p class="text-overview">
+       
+      </p>
+    </div>
+    
+    
   </main>
 </body>
 </html>
