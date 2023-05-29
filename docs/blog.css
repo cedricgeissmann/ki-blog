@@ -228,3 +228,14 @@ a {
   font-family:'Courier New', Courier, monospace
 }
 
+.ziffer-text{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.ziffer_body{
+  margin: 0;
+  padding: 0;
+  background-color: rgb(156, 181, 114);
+  color: rgb(0, 0, 0);
+}
+
