@@ -145,9 +145,8 @@ a {
 }
 
 .chatgpt_blog{
-  padding-top: 20vh;
-  font-size: 40px;
   font-family: monospace;
+  font-size: 50px;
 }
 
 .chatgpt_body{
