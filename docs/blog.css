@@ -13,7 +13,17 @@ body {
 
 }
 
+.ChatGPT {
+background-color: rgb(65, 102, 224) ;
+}
 
+.KI {
+background-color:  rgb(65, 102, 224);
+}
+
+.ziffern {
+background-color:  rgb(65, 102, 224);
+}
 
 nav > ul > li {
   list-style: none;
