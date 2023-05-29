@@ -3,16 +3,21 @@ body {
   margin: 0px;
   background-color: #FF8040;
 }
+section {
+  font-size: 11px;
+}
 #kopf {
   height: 150px;
   margin: 5px;
   background-color: #c3c319;
   width: auto;
 }
+
 #inhalt {
   width: auto;
   margin: 0px 180px;
   background-color: #FFFFCC;
+  text-align: center;
 }
 #links {
   position: absolute;
@@ -47,7 +52,7 @@ nav > ul {
 nav > ul > li > a {
   font-size: 2rem;
   text-decoration: none;
-  color: antiquewhite;
+  color: rgb(32, 29, 25);
 }
 
 nav > ul > li > a:hover {
@@ -94,7 +99,7 @@ h2 {
 }
 
 .navbar ul li a {
-  color: beige;
+  color: rgb(55, 55, 54);
   text-decoration: none;
   font-size: 15pt;
 }

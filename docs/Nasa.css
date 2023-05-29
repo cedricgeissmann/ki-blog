@@ -2,6 +2,10 @@ body {
   margin: 20px;
   background-color: #191e33;
 }
+
+section {
+  font-size: 11px;
+}
 #menu {
   position: absolute;
   top: 20px;
@@ -12,7 +16,7 @@ body {
 }
 #inhalt {
   margin-left: 150px;
-  background-color: #fbfcfc;
+  background-color: #cbcfcf;
   text-align: center;
 }
   nav > ul > li {

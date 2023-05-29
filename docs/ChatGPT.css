@@ -15,6 +15,9 @@ body {
   background-color: #FFFFCC;
   text-align: center;
 }
+section {
+  font-size: 11px;
+}
 
   nav > ul > li {
     list-style: none;
