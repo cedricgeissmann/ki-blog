@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: black;
+  text-align: center;
   color: yellow
 }
 
@@ -30,6 +31,8 @@ nav > ul > li > a:hover {
 
 main {
   padding: 20px 50px;;
+  width:70vw;
+  margin:0 auto;
 }
 
 h1{
@@ -40,15 +43,16 @@ h2,h3{
   color:aqua;
 }
 
+
 .box1{
   color:yellow;
 }
 
 .box2{
   color:yellow;
-
 }
 
 .img{
-  height:10px;
+  width: 100%;
+  text-align: center;
 }
