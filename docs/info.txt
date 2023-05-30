@@ -10,7 +10,7 @@ welches alle Anstrengungen umfasst, deren Ziel es ist, Maschinen intelligent zu 
  geben kann, falls ihn jemand anderes die gleiche Frage nochmals stellt. So lernt er stetig dazu und kennt meist die aktuellen richtigen 
  Antworten.
  
-iWie funktioniert ein neuronales Netz? 
+Wie funktioniert ein neuronales Netz? 
  In einem neuronalen Netz ahmen künstliche Neuronen durch Algorhithmen dei Nervenzellen im gehirn nach. Durch diese komplexen Verknüpfungen 
  ist es möglich, Aufgaben aus den Bereichen Statistik, Informatik und Wrtschaft zu lösen. Das neuronale Netzwerk lernt durch diverse Eingaben 
  ständig dazu und kann sich so selbst verbessern. Zum Beispiel haben wir hier den von Herr Geissmann vorgegebenen Zahlenerkenner. Man zeichnet 
