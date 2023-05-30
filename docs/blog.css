@@ -59,6 +59,20 @@ img {
 .wrap img {
   width: 350px;
 }
+.lwrap{
+  float: left;
+  margin-right: 10px;
+}
+.lwrap img{
+  width: 350px; 
+}
+
+
+.logo {
+  width: 350px;
+  text-align: center;
+  margin-left: 180px;
+}
 
 // text-align: center;
  
