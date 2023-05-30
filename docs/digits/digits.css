@@ -1,7 +1,7 @@
 canvas {
   border: 1px solid #d3d3d3;
   height: 80vw;
-  background-color: white;
+  background-color: antiquewhite;
   image-rendering: pixelated;
 }
 nav > ul > li {
@@ -20,7 +20,7 @@ nav > ul {
 nav > ul > li > a {
   font-size: 2rem;
   text-decoration: none;
-  color: antiquewhite;
+  color: black;
 }
 
 nav > ul > li > a:hover {
@@ -40,7 +40,7 @@ body {
 }
 
 .display-container {
-  color: white;
+  color: black;
   font-size: 2rem;
   font-weight: bold;
   padding: 20px;
