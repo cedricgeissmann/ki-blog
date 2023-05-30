@@ -33,6 +33,35 @@ main {
   padding: 100px 500px;;
   
 }
+
+img {
+  text-align: center; 
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.img-container img {
+  width: 70%;
+}
+
+h2{
+ text-align: center;
+}
+
+.wrap {
+  float: right;
+  margin-left: 10px;
+}
+
+.wrap img {
+  width: 350px;
+}
+
 // text-align: center;
  
 
