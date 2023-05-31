@@ -5,6 +5,26 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>KI Blog</title>
+  <link rel="stylesheet" href="chatGPT.css/">
+  <script>
+
+            function toggleAnswer(id) {
+
+              var answer = document.getElementById(id);
+
+              if (answer.style.display === "none") {
+
+                answer.style.display = "block";
+
+              } else {
+
+                answer.style.display = "none";
+
+              }
+
+            }
+
+          </script>
 
   <link rel="stylesheet" href="blog.css">
 </head>
@@ -15,10 +35,35 @@
       <li><a href="ziffern.html">Ziffern</a></li></li>
       <li><a href="chatGPT.html">ChatGPT</a></li></li>
       <li><a href="ki.html">KI</a></li></li>
-      <li><a href="Ziffernerkennung.html">Ziffernerkennnung</a></li></li>
+      <li><a href="ziffernerkennung.html">Ziffernerkennnung</a></li></li>
     </ul>
   </nav>
   <main>
+
+
+    <div class="question" onclick="toggleAnswer('answer1')">
+   
+                   Wie funktioniert ChatGPT? </div>
+   
+               <div id="answer1" class="answer">
+
+                        ChatGPT basiert auf dem Prinzip des Deep Learning und verwendet das Modell GPT (Generative Pre-trained Transformer). Es wurde in zwei Phasen trainiert: Pre-training und Fine-tuning. Im Pre-training erlernte das Modell die Struktur und den Kontext von Texten. Im Fine-tuning wurde es speziell für das Chatten trainiert. Bei der Verwendung gibt der Benutzer eine Texteingabe ein, das Modell analysiert den Kontext und generiert eine passende Antwort. Es verwendet sein internes Wissen und Muster aus den Trainingsdaten. Es ist wichtig zu beachten, dass ChatGPT auf vorhandenen Trainingsdaten basiert und daher gelegentlich ungenaue Antworten liefern kann. Kritische Überprüfung ist ratsam, besonders bei sensiblen Themen. Zusammenfassend basiert ChatGPT auf neuronalen Netzwerken, um kontextbezogene Textantworten zu generieren, basierend auf Pre-training und Fine-tuning.
+   
+               </div>
+   
+               <div class="question" onclick="toggleAnswer('answer3')">
+   
+                   Was für einen Einfluss haben Daten auf eine KI?
+   
+                  
+   
+               </div>
+
+
+
+
+
+
     
     <section>
     
