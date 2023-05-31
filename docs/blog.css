@@ -224,7 +224,7 @@ h1:hover {
 }
 .button {
   position: fixed;
-  top: calc(100% - 770px);
+  top: calc(100% - 550px);
   left: 20px;
   margin-bottom: 10px;
   padding: 10px 30px 15px;
@@ -242,7 +242,7 @@ h1:hover {
 }
 
 #button2 {
-  top: calc(100% - 840px);
+  top: calc(100% - 620px);
 }
 
 .button:hover {
