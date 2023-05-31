@@ -6,7 +6,7 @@ canvas {
 }
 
 body {
-  background-color: #000000;
+  background-color: black;
   display: flex;
   justify-content: center;
   align-items: center;
