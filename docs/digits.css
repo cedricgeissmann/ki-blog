@@ -6,7 +6,7 @@ canvas {
 }
 
 body {
-  background-color: darkslategray;
+  background-image: url("https://img.freepik.com/vektoren-kostenlos/dunkler-dynamischer-linienhintergrund-mit-farbverlauf_23-2148995950.jpg?w=2000&t=st=1685530750~exp=1685531350~hmac=6a066dd4d751039cb2dd927788ebeafae6712c20696fe5625719de6c58085475");
   display: flex;
   justify-content: center;
   align-items: center;
