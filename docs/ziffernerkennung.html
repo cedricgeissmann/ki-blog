@@ -2,6 +2,20 @@
 <html lang="en">
 <head>
   
+ 
+
+    <style>
+      .letter {
+        opacity: 0;
+        animation: fadeIn 0.5s ease-in-out forwards;
+      }
+  
+      @keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+      }
+    </style>
+ 
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +24,8 @@
 
   <link rel="stylesheet" href="blog.css">
 </head>
+
+<body> 
 
   <nav>
     <ul>
@@ -21,11 +37,30 @@
     </ul>
   </nav>
   
- 
+  
   <main>
     <div>
-    <section> 
-      <h2> Wie kann der Computer Ziffern erkennen? </h2>
+    <section>
+      
+
+      <h2 id="animated-title">Wie kann der Computer Ziffern erkennen?</h2>
+  
+      <script>
+        const title = document.getElementById('animated-title');
+        const text = title.innerText;
+        title.innerHTML = '';
+    
+        for (let i = 0; i < text.length; i++) {
+          const span = document.createElement('span');
+          span.classList.add('letter');
+          span.innerText = text[i];
+          span.style.animationDelay = `${i * 0.2}s`;
+          title.appendChild(span);
+        }
+      </script>
+
+
+
       Die Ziffernerkennung bei einem Computer basiert oft auf dem Einsatz von künstlicher Intelligenz, insbesondere auf maschinellem Lernen und neuronalen Netzwerken. Im Folgenden erkläre ich den grundlegenden Ablauf:
 
       <p>Datensammlung: Zunächst werden große Mengen an Trainingsdaten gesammelt, die aus Bildern von handgeschriebenen Ziffern bestehen.

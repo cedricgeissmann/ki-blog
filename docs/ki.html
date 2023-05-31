@@ -6,13 +6,49 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>KI Blog</title>
 
+
+  
+    <style>
+      @keyframes slideIn {
+        0% { transform: translateX(-100%); opacity: 0; }
+        100% { transform: translateX(0); opacity: 1; }
+      }
+  
+      .slide-title {
+        animation: slideIn 1.5s ease-in-out;
+      }
+    </style>
+
+ 
+
+
+<style>
+  .letter {
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+  }
+
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+</style>
+
+
+
+
+
+
   <link rel="stylesheet" href="blog.css">
 </head>
 <body>
+
+
+
   <nav>
     <ul>
       <li><a href="index.html">Home</a></li></li>
-      <li><a href="ziffern.html">Ziffern</a></li></li>
+      <li><a href="digits.html">Ziffern</a></li></li>
       <li><a href="chatGPT.html">ChatGPT</a></li></li>
       <li><a href="ki.html">KI</a></li></li>
       <li><a href="ziffernerkennung.html">Ziffernerkennung</a></li></li>
@@ -21,7 +57,11 @@
   <main>
   
     <section>
-    <h2>Was ist KI? </h2>  
+
+
+      
+
+      <h2 class="slide-title">Was ist KI?</h2>
       
 Künstliche Intelligenz (KI) ist ein Teilbereich der Informatik, der sich darauf konzentriert, Systeme zu entwickeln, die Aufgaben erledigen können, die normalerweise menschliche Intelligenz erfordern. Das Ziel der KI besteht darin, Computern menschenähnliches Verhalten beizubringen, indem sie bestimmte Fähigkeiten wie Lernen, Schlussfolgern, Problemlösen, Wahrnehmung und Sprachverarbeitung nachahmen.
 
@@ -30,7 +70,22 @@ Es gibt verschiedene Ansätze zur Entwicklung von KI, darunter maschinelles Lern
 KI-Systeme finden in vielen Bereichen Anwendung, wie zum Beispiel bei der Automatisierung, Datenanalyse, Spracherkennung, Bildverarbeitung, Robotik, Medizin und Finanzen. Obwohl KI bereits in vielen Anwendungen erfolgreich eingesetzt wird, ist das Feld der künstlichen Intelligenz ständig in Entwicklung und es werden kontinuierlich neue Fortschritte erzielt. 
     </section>
     <section>
-     <h2>Wie funktioniert KI?</h2> 
+      <h2 id="animated-title">Wie funktioniert KI? </h2>
+    
+  
+      <script>
+        const title = document.getElementById('animated-title');
+        const text = title.innerText;
+        title.innerHTML = '';
+    
+        for (let i = 0; i < text.length; i++) {
+          const span = document.createElement('span');
+          span.classList.add('letter');
+          span.innerText = text[i];
+          span.style.animationDelay = `${i * 0.2}s`;
+          title.appendChild(span);
+        }
+      </script>
      KI nutzt eine Vielzahl von Techniken und Algorithmen, um Computern menschenähnliches Verhalten und intelligentes Handeln zu ermöglichen. Dazu gehören:
 
 Maschinelles Lernen: Dabei lernen Computer aus Daten, ohne explizit programmiert zu werden. Mithilfe von Trainingsdaten erkennt das System Muster und Regeln, um Vorhersagen oder Entscheidungen zu treffen.
