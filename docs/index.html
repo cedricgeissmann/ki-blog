@@ -6,133 +6,170 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>KI Blog</title>
   <link rel="stylesheet" href="blog.css">
+  <script src="blog.js">
+  </script>
 </head>
 <body>
-  <div class="navbar-container">
-    <nav class="navbar">
-      <ul >
-        <p> 
-          <li><a href="index.html">Home</a></li>
-        </p><p>
-          <li><a href="#Was ist eine KI?">Was ist eine KI?</a></li>
-        </p>
-        <p>
-          <li><a href="#Wie funktioniert eine KI?">Wie funktioniert eine KI?</a></li>
-        </p><p>
-          <li><a href="#Wie funktioniert ein neurales Netz?">Wie funktioniert ein neurales Netz?</a></li>
-        </p><p>
-          <li><a href="#Was ist maschinelles Lernen?">Was ist maschinelles Lernen?</a></li>
-        </p><p>
-          <li><a href="#Was für einen Einfluss haben Daten auf eine KI??">Was für einen Einfluss haben Daten auf eine KI?</a></li>
-        </p>
-        <li><a href="#Wie funktioniert ChatGPT?">Wie funktioniert ChatGPT?</a></li>
-        <li><a href="#Was sind die Grenzen von ChatGPT und worauf sollte man bei der Verwendung achten?">Was sind die Grenzen von ChatGPT und worauf sollte man bei der Verwendung achten?</a></li>
-        <li><a href="#KI für Ziffernerkennung">KI für Ziffernerkennung</a></li>
+  <div class="alert-container">
+
+    <div id="alertBox" class="alert">
+      <span class="closebtn" onclick="closeAlert()">&times;</span>
+      <strong>Benutze "shift" und das "Maus-Zahnrad" um auf der Navbar links und rechts zu scrollen!</strong>
+    </div>
+<script>
+  // Function to close the alert box
+  function closeAlert() {
+      var alertBox = document.getElementById("alertBox");
+      alertBox.style.animation = "flyAway 3s ease-in-out forwards"; // Apply the fly away animation
+      setTimeout(function() {
+        alertBox.parentNode.removeChild(alertBox); // Remove the alert box after the animation ends
+      }, 500);
+    }
+
+    // Animation to fly away the alert box
+    var flyAwayKeyframes = `
+      @keyframes flyAway {
+        0% {
+          top: 30%; /* Set the initial position */
+        }
+        100% {
+          top: 300%; /* Set position outside the page */
+        }
+      }
+    `;
+
+    var styleSheet = document.createElement("style");
+    styleSheet.type = "text/css";
+    styleSheet.innerHTML = flyAwayKeyframes;
+    document.head.appendChild(styleSheet);
+      </script>
+
+
+      <nav class="navbar">
+  <div class="logo"></div>
+      <ul class="nav-links">
         
+        <div class="menu">
+          <li><a href="index.html" class="active">Home</a></li>
+       
+          <li><a href="#Was ist eine KI?" class="active">Was ist eine KI?</a></li>
+        
+       
+          <li><a href="#Wie funktioniert eine KI?" class="active">Wie funktioniert eine KI?</a></li>
+  
+          <li><a href="#Was ist maschinelles Lernen?" class="active">Was ist maschinelles Lernen?</a></li>
+       
+          <li><a href="#Was für einen Einfluss haben Daten auf eine KI?" class="active">Was für einen Einfluss haben Daten auf eine KI?</a></li>
+        <li><a href="#Wie funktioniert ChatGPT?"class="active">Wie funktioniert ChatGPT?</a></li>
+        <li><a href="#Was sind die Grenzen von ChatGPT und worauf sollte man bei der Verwendung achten?" class="active">Was sind die Grenzen von ChatGPT und worauf sollte man bei der Verwendung achten?</a></li>
+        <li><a href="#KI für Ziffernerkennung" class="active">KI für Ziffernerkennung</a></li>
+      </div>
       </ul>
     </nav>
-  </div>
   <main>
     <div>
     <a href="http://127.0.0.1:5500/digits.html">
-      <button class="button1">Ziffern</button>
+      <button class="button" id="button1">Ziffern</button>
     </a>
   </div>
     <div>
       <a href="neurales-netz.html">
-        <button class="button1">Neurales-Netz</button>
+        <button class="button" id="button2">Neurales-Netz</button>
       </a>
     </div>
-    <h1>KI Blog</h1>
-    <section class="textcontent">
-      <b><h2 id="Was ist eine KI?">Was ist eine KI?</h2></b>
-      Eine KI ist eine künstliche Intelligenz. Sie lernt durch sogennante layers.
-      Künstliche Intelligenz (KI) ist ein System oder eine Maschine, die in der Lage ist, menschenähnliche Intelligenz und Verhaltensmuster nachzuahmen, indem sie aus Daten lernt und selbstständig Entscheidungen trifft.
-      KI kann auf verschiedenen Technologien zur Erkennung von Mustern in großen Datenmengen und zur Vorhersage basieren, wie z. B. maschinelles Lernen, tiefes Lernen, neuronale Netze und Algorithmen. 
-      KI-Systeme werden in vielen Bereichen eingesetzt, darunter Automatisierung, Robotik, Spracherkennung, Bilderkennung, Gesichtserkennung, medizinische Diagnose und viele andere.
+    <div class="animate">
 
-       <p></p>
-       <h2 id="Wie funktioniert eine KI?">Wie funktioniert eine KI?</h2>
-      Eine Künstliche Intelligenz (KI) ist ein Computersystem oder ein Algorithmus, der darauf abzielt, menschenähnliches Verhalten oder Denkprozesse zu simulieren. Es gibt verschiedene Arten von KIs, aber im Allgemeinen besteht ihre Funktionsweise aus den folgenden Schritten:
-      Datenerfassung: Eine KI benötigt Daten als Eingabe, um daraus zu lernen und Schlussfolgerungen zu ziehen. Diese Daten können strukturiert oder unstrukturiert sein und aus verschiedenen Quellen stammen, wie zum Beispiel Text, Bilder, Audio oder Sensordaten.
-      Datenverarbeitung und Mustererkennung: Die KI verarbeitet die erfassten Daten und sucht nach Mustern oder Zusammenhängen. Dafür werden oft mathematische Algorithmen und statistische Modelle verwendet, um die Daten zu analysieren und Muster zu erkennen.
-      Lernen und Training: Basierend auf den erkannten Mustern verwendet die KI verschiedene Lernalgorithmen, um aus den Daten zu lernen. Es gibt unterschiedliche Ansätze wie überwachtes Lernen, unüberwachtes Lernen oder bestärkendes Lernen. Durch wiederholtes Training und Anpassung ihrer internen Modelle verbessert die KI ihre Fähigkeiten im Laufe der Zeit.
-      Entscheidungsfindung und Vorhersage: Nach dem Training kann die KI Entscheidungen treffen oder Vorhersagen treffen, indem sie neue Daten analysiert und die erlernten Muster anwendet. Die Entscheidungsfindung kann automatisiert erfolgen, basierend auf vordefinierten Regeln oder durch maschinelles Lernen, bei dem die KI aus Beispielen lernt und Muster generalisiert.
-      
-      <h2 id="Was ist maschinelles Lernen?">Was ist maschinelles Lernen?</h2>
-      Maschinelles Lernen in einer generellen Künstlichen Intelligenz (KI) bezieht sich auf die Fähigkeit der KI, aus Daten zu lernen und ihre Leistung in bestimmten Aufgaben im Laufe der Zeit zu verbessern, ohne explizit programmiert werden zu müssen. Generelle KI bezieht sich auf eine KI, die in der Lage ist, eine Vielzahl von Aufgaben zu bewältigen, die normalerweise menschliches Verständnis und Intelligenz erfordern.
-      Im maschinellen Lernen verwendet eine generelle KI verschiedene Algorithmen und Techniken, um Muster und Zusammenhänge in den Daten zu erkennen. Es kann unterschiedliche Formen des maschinellen Lernens anwenden, wie beispielsweise überwachtes Lernen, unüberwachtes Lernen oder verstärkendes Lernen.
-      Im überwachten Lernen wird die KI mit gelabelten Daten trainiert, wobei ihr Beispiele gezeigt werden, um bestimmte Muster oder Zusammenhänge zu erkennen. Im unüberwachten Lernen versucht die KI, Muster oder Strukturen in den Daten zu identifizieren, ohne dass ihr vorher gesagt wird, wonach sie suchen soll. Im verstärkenden Lernen interagiert die KI mit einer Umgebung und erhält Feedback in Form von Belohnungen oder Bestrafungen, um ihre Entscheidungen und Aktionen zu optimieren.
-      Durch maschinelles Lernen kann eine generelle KI verschiedene Fähigkeiten entwickeln, wie beispielsweise Spracherkennung, Bilderkennung, Übersetzung, Textgenerierung und vieles mehr. Sie kann diese Fähigkeiten verbessern, indem sie kontinuierlich mit neuen Daten trainiert wird, um ihre Modelle und Algorithmen anzupassen und präzisere Ergebnisse zu erzielen.
+      <h1>KI Blog</h1>
+      <section class="textcontent">
+        <b><h2 id="Was ist eine KI?">Was ist eine KI?</h2></b>
+        Eine KI ist eine künstliche Intelligenz. Sie lernt durch sogennante layers.
+        Künstliche Intelligenz (KI) ist ein System oder eine Maschine, die in der Lage ist, menschenähnliche Intelligenz und Verhaltensmuster nachzuahmen, indem sie aus Daten lernt und selbstständig Entscheidungen trifft.
+        KI kann auf verschiedenen Technologien zur Erkennung von Mustern in großen Datenmengen und zur Vorhersage basieren, wie z. B. maschinelles Lernen, tiefes Lernen, neuronale Netze und Algorithmen. 
+        KI-Systeme werden in vielen Bereichen eingesetzt, darunter Automatisierung, Robotik, Spracherkennung, Bilderkennung, Gesichtserkennung, medizinische Diagnose und viele andere.
 
-      <h2 id="Was für einen Einfluss haben Daten auf eine KI?">Was für einen Einfluss haben Daten auf eine KI?</h2>
-      Daten haben einen wesentlichen Einfluss auf eine Künstliche Intelligenz (KI). Die Qualität, Menge und Relevanz der Daten können darüber entscheiden, wie gut eine KI funktioniert und wie zuverlässig sie Vorhersagen oder Entscheidungen treffen kann.
-
-     <p> Hier sind einige wichtige Aspekte, wie Daten eine KI beeinflussen:
-     </p>
-       <p> 1.Trainingsdaten: Um eine KI zu trainieren, werden große Mengen an Daten benötigt. Diese Daten dienen als Grundlage für das Lernen von Mustern und Zusammenhängen. Je vielfältiger und repräsentativer die Trainingsdaten sind, desto besser kann die KI verschiedene Situationen und Variationen erfassen und verallgemeinern. Wenn die Trainingsdaten fehlerhaft, unausgewogen oder nicht ausreichend sind, kann dies zu einer schlechten Leistung der KI führen.
-       </p>
-       <p> 2.Datenqualität: Die Qualität der Daten ist entscheidend. Wenn die Daten fehlerhaft, unvollständig oder verzerrt sind, kann sich dies negativ auf die Leistung der KI auswirken. Es ist wichtig sicherzustellen, dass die Daten korrekt und verlässlich sind, um genaue und zuverlässige Ergebnisse zu erzielen.
-       </p>
-         <p> 3.Bias in den Daten: Daten können Vorurteile oder Verzerrungen enthalten, die sich auf die KI übertragen können. Wenn die Trainingsdaten beispielsweise bestimmte Bevölkerungsgruppen unterrepräsentieren oder bestimmte Muster bevorzugen, kann dies zu einem verzerrten Verhalten der KI führen. Es ist wichtig, bei der Datenerfassung und -auswahl auf Vorurteile zu achten und sicherzustellen, dass die Daten repräsentativ und ausgewogen sind.
-         </p>
-         <p> 4.Aktualität der Daten: Eine KI kann von aktuellen Daten profitieren, da sich die Umwelt, in der sie agiert, im Laufe der Zeit ändern kann. Aktuelle Daten ermöglichen es der KI, sich an neue Situationen anzupassen und aktuelle Informationen zu berücksichtigen.
+        <p></p>
+        <h2 id="Wie funktioniert eine KI?">Wie funktioniert eine KI?</h2>
+        Eine Künstliche Intelligenz (KI) ist ein Computersystem oder ein Algorithmus, der darauf abzielt, menschenähnliches Verhalten oder Denkprozesse zu simulieren. Es gibt verschiedene Arten von KIs, aber im Allgemeinen besteht ihre Funktionsweise aus den folgenden Schritten:
+        Datenerfassung: Eine KI benötigt Daten als Eingabe, um daraus zu lernen und Schlussfolgerungen zu ziehen. Diese Daten können strukturiert oder unstrukturiert sein und aus verschiedenen Quellen stammen, wie zum Beispiel Text, Bilder, Audio oder Sensordaten.
+        Datenverarbeitung und Mustererkennung: Die KI verarbeitet die erfassten Daten und sucht nach Mustern oder Zusammenhängen. Dafür werden oft mathematische Algorithmen und statistische Modelle verwendet, um die Daten zu analysieren und Muster zu erkennen.
+        Lernen und Training: Basierend auf den erkannten Mustern verwendet die KI verschiedene Lernalgorithmen, um aus den Daten zu lernen. Es gibt unterschiedliche Ansätze wie überwachtes Lernen, unüberwachtes Lernen oder bestärkendes Lernen. Durch wiederholtes Training und Anpassung ihrer internen Modelle verbessert die KI ihre Fähigkeiten im Laufe der Zeit.
+        Entscheidungsfindung und Vorhersage: Nach dem Training kann die KI Entscheidungen treffen oder Vorhersagen treffen, indem sie neue Daten analysiert und die erlernten Muster anwendet. Die Entscheidungsfindung kann automatisiert erfolgen, basierend auf vordefinierten Regeln oder durch maschinelles Lernen, bei dem die KI aus Beispielen lernt und Muster generalisiert.
+        
+        <h2 id="Was ist maschinelles Lernen?">Was ist maschinelles Lernen?</h2>
+        Maschinelles Lernen in einer generellen Künstlichen Intelligenz (KI) bezieht sich auf die Fähigkeit der KI, aus Daten zu lernen und ihre Leistung in bestimmten Aufgaben im Laufe der Zeit zu verbessern, ohne explizit programmiert werden zu müssen. Generelle KI bezieht sich auf eine KI, die in der Lage ist, eine Vielzahl von Aufgaben zu bewältigen, die normalerweise menschliches Verständnis und Intelligenz erfordern.
+        Im maschinellen Lernen verwendet eine generelle KI verschiedene Algorithmen und Techniken, um Muster und Zusammenhänge in den Daten zu erkennen. Es kann unterschiedliche Formen des maschinellen Lernens anwenden, wie beispielsweise überwachtes Lernen, unüberwachtes Lernen oder verstärkendes Lernen.
+        Im überwachten Lernen wird die KI mit gelabelten Daten trainiert, wobei ihr Beispiele gezeigt werden, um bestimmte Muster oder Zusammenhänge zu erkennen. Im unüberwachten Lernen versucht die KI, Muster oder Strukturen in den Daten zu identifizieren, ohne dass ihr vorher gesagt wird, wonach sie suchen soll. Im verstärkenden Lernen interagiert die KI mit einer Umgebung und erhält Feedback in Form von Belohnungen oder Bestrafungen, um ihre Entscheidungen und Aktionen zu optimieren.
+        Durch maschinelles Lernen kann eine generelle KI verschiedene Fähigkeiten entwickeln, wie beispielsweise Spracherkennung, Bilderkennung, Übersetzung, Textgenerierung und vieles mehr. Sie kann diese Fähigkeiten verbessern, indem sie kontinuierlich mit neuen Daten trainiert wird, um ihre Modelle und Algorithmen anzupassen und präzisere Ergebnisse zu erzielen.
+        
+        <h2 id="Was für einen Einfluss haben Daten auf eine KI?">Was für einen Einfluss haben Daten auf eine KI?</h2>
+        Daten haben einen wesentlichen Einfluss auf eine Künstliche Intelligenz (KI). Die Qualität, Menge und Relevanz der Daten können darüber entscheiden, wie gut eine KI funktioniert und wie zuverlässig sie Vorhersagen oder Entscheidungen treffen kann.
+        
+        <p> Hier sind einige wichtige Aspekte, wie Daten eine KI beeinflussen:
+        </p>
+        <p> 1.Trainingsdaten: Um eine KI zu trainieren, werden große Mengen an Daten benötigt. Diese Daten dienen als Grundlage für das Lernen von Mustern und Zusammenhängen. Je vielfältiger und repräsentativer die Trainingsdaten sind, desto besser kann die KI verschiedene Situationen und Variationen erfassen und verallgemeinern. Wenn die Trainingsdaten fehlerhaft, unausgewogen oder nicht ausreichend sind, kann dies zu einer schlechten Leistung der KI führen.
+        </p>
+        <p> 2.Datenqualität: Die Qualität der Daten ist entscheidend. Wenn die Daten fehlerhaft, unvollständig oder verzerrt sind, kann sich dies negativ auf die Leistung der KI auswirken. Es ist wichtig sicherzustellen, dass die Daten korrekt und verlässlich sind, um genaue und zuverlässige Ergebnisse zu erzielen.
+        </p>
+        <p> 3.Bias in den Daten: Daten können Vorurteile oder Verzerrungen enthalten, die sich auf die KI übertragen können. Wenn die Trainingsdaten beispielsweise bestimmte Bevölkerungsgruppen unterrepräsentieren oder bestimmte Muster bevorzugen, kann dies zu einem verzerrten Verhalten der KI führen. Es ist wichtig, bei der Datenerfassung und -auswahl auf Vorurteile zu achten und sicherzustellen, dass die Daten repräsentativ und ausgewogen sind.
+        </p>
+        <p> 4.Aktualität der Daten: Eine KI kann von aktuellen Daten profitieren, da sich die Umwelt, in der sie agiert, im Laufe der Zeit ändern kann. Aktuelle Daten ermöglichen es der KI, sich an neue Situationen anzupassen und aktuelle Informationen zu berücksichtigen.
          </p>
          <p> 5.Datenschutz und Sicherheit: Der Umgang mit Daten sollte den Datenschutz- und Sicherheitsrichtlinien entsprechen. Insbesondere bei sensiblen Daten ist es wichtig sicherzustellen, dass die Daten angemessen geschützt sind und die Privatsphäre der Nutzer respektiert wird.
-         </p>
-         <p> Zusammenfassend lässt sich sagen, dass Daten einen erheblichen Einfluss auf eine KI haben. Sie sind das Fundament, auf dem die KI basiert, und beeinflussen ihre Fähigkeit zur Problemlösung, Vorhersage oder Entscheidungsfindung. Es ist von großer Bedeutung, qualitativ hochwertige, repräsentative und aktuelle Daten zu verwenden, um die Leistung und Zuverlässigkeit einer KI zu verbessern.
-         </p>
-      <h2 id="Wie funktioniert ChatGPT?">Wie funktioniert ChatGPT?</h2>
-      ChatGPT basiert auf der GPT (Generative Pre-trained Transformer) Architektur, die von OpenAI entwickelt wurde. Es handelt sich um ein neuronales Netzwerk, das mit Hilfe von maschinellem Lernen trainiert wird, um menschenähnlichen Text zu generieren.
-     <p> Der Trainingsprozess von GPT erfolgt in zwei Hauptphasen: Pre-Training und Fine-Tuning.
-     </p>
-       <p> Im Pre-Training wird das Modell auf einer großen Menge von Textdaten trainiert, die aus dem Internet stammen. Das Modell versucht, statistische Muster und Abhängigkeiten in den Texten zu lernen, um ein grundlegendes Sprachverständnis zu entwickeln. Dabei wird ein sogenanntes "unsupervised learning" angewendet, bei dem das Modell nicht mit spezifischen Fragen oder Antworten trainiert wird, sondern nur mit dem rohen Text.
-       </p>
+        </p>
+        <p> Zusammenfassend lässt sich sagen, dass Daten einen erheblichen Einfluss auf eine KI haben. Sie sind das Fundament, auf dem die KI basiert, und beeinflussen ihre Fähigkeit zur Problemlösung, Vorhersage oder Entscheidungsfindung. Es ist von großer Bedeutung, qualitativ hochwertige, repräsentative und aktuelle Daten zu verwenden, um die Leistung und Zuverlässigkeit einer KI zu verbessern.
+        </p>
+        <h2 id="Wie funktioniert ChatGPT?">Wie funktioniert ChatGPT?</h2>
+        ChatGPT basiert auf der GPT (Generative Pre-trained Transformer) Architektur, die von OpenAI entwickelt wurde. Es handelt sich um ein neuronales Netzwerk, das mit Hilfe von maschinellem Lernen trainiert wird, um menschenähnlichen Text zu generieren.
+        <p> Der Trainingsprozess von GPT erfolgt in zwei Hauptphasen: Pre-Training und Fine-Tuning.
+        </p>
+        <p> Im Pre-Training wird das Modell auf einer großen Menge von Textdaten trainiert, die aus dem Internet stammen. Das Modell versucht, statistische Muster und Abhängigkeiten in den Texten zu lernen, um ein grundlegendes Sprachverständnis zu entwickeln. Dabei wird ein sogenanntes "unsupervised learning" angewendet, bei dem das Modell nicht mit spezifischen Fragen oder Antworten trainiert wird, sondern nur mit dem rohen Text.
+        </p>
        <p> Nach dem Pre-Training folgt die Fine-Tuning-Phase. Dabei wird das Modell mit einer spezifischen Aufgabe oder einem spezifischen Datensatz weitertrainiert. Bei ChatGPT wird das Modell mit einer großen Menge von Dialogdaten trainiert, um eine bessere Fähigkeit zur Beantwortung von Fragen und zum interaktiven Textverständnis zu entwickeln. Das Training beinhaltet auch eine Reihe von Optimierungstechniken und Verfeinerungen, um die Leistung und die Fähigkeit des Modells zu verbessern.
+      </p>
+      <p> Sobald das Modell trainiert ist, kann es für die Textgenerierung verwendet werden, indem man ihm einen Texteingabe gibt und es darauf basierend eine Antwort generiert. ChatGPT verwendet dabei die Transformer-Architektur, die auf Aufmerksamkeitsmechanismen beruht, um die Abhängigkeiten zwischen den Wörtern im Text zu modellieren und die Antwort zu generieren. Das Modell berücksichtigt den Kontext der Eingabe und versucht, eine sinnvolle und relevante Antwort zu erzeugen.
+      </p>
+      <p> Es ist wichtig zu beachten, dass ChatGPT ein Modell ist, das aufgrund seines Trainings auf großen Mengen von Textdaten einen Text generiert, aber keine tatsächliche Bedeutung oder echtes Verständnis des Textes hat. Es kann nützlich sein, um Informationen bereitzustellen oder bei einfachen Aufgaben zu helfen, aber es ist immer wichtig, die generierten Antworten zu überprüfen und kritisch zu bewerten.
        </p>
-         <p> Sobald das Modell trainiert ist, kann es für die Textgenerierung verwendet werden, indem man ihm einen Texteingabe gibt und es darauf basierend eine Antwort generiert. ChatGPT verwendet dabei die Transformer-Architektur, die auf Aufmerksamkeitsmechanismen beruht, um die Abhängigkeiten zwischen den Wörtern im Text zu modellieren und die Antwort zu generieren. Das Modell berücksichtigt den Kontext der Eingabe und versucht, eine sinnvolle und relevante Antwort zu erzeugen.
-         </p>
-       <p> Es ist wichtig zu beachten, dass ChatGPT ein Modell ist, das aufgrund seines Trainings auf großen Mengen von Textdaten einen Text generiert, aber keine tatsächliche Bedeutung oder echtes Verständnis des Textes hat. Es kann nützlich sein, um Informationen bereitzustellen oder bei einfachen Aufgaben zu helfen, aber es ist immer wichtig, die generierten Antworten zu überprüfen und kritisch zu bewerten.
-       </p>
-      <h2 id="Was sind die Grenzen von ChatGPT und worauf sollte man bei der Verwendung achten?">Was sind die Grenzen von ChatGPT und worauf sollte man bei der Verwendung achten?</h2>
-      ChatGPT hat einige Grenzen, auf die man bei der Verwendung achten sollte:
-      <br>
-      1.Begrenzte Weltkenntnis: ChatGPT wurde bis September 2021 trainiert und hat kein direktes Wissen über Ereignisse oder Entwicklungen, die danach stattgefunden haben. Es kann also veraltete oder ungenaue Informationen geben, insbesondere wenn es um aktuelle Themen geht.
-      <p></p><br>
-      2.Mangelnde Fähigkeit zur Überprüfung von Fakten: ChatGPT kann keine Fakten überprüfen und gibt Antworten basierend auf dem vorhandenen Wissen wieder. Es ist wichtig, seine Antworten kritisch zu hinterfragen und zusätzliche Quellen für die Bestätigung von Informationen heranzuziehen.
-      <p></p><br>
-      3.Anfälligkeit für Voreingenommenheit: ChatGPT wird durch das Training mit großen Mengen an Textdaten geprägt, die Voreingenommenheiten enthalten können. Dadurch können unbewusste Vorurteile oder Stereotypen in den Antworten auftreten. Es ist wichtig, dies bei der Interpretation der Antworten zu berücksichtigen und verschiedene Perspektiven zu berücksichtigen.
-      <p></p><br>
-      4.Neigung zur Erfindung von Informationen: Wenn ChatGPT mit Fragen konfrontiert wird, auf die es keine konkreten Antworten hat, besteht die Möglichkeit, dass es Informationen erfindet, um eine Antwort zu generieren. Es ist daher ratsam, Antworten, die von ChatGPT bereitgestellt werden, zu überprüfen und mit anderen Quellen abzugleichen.
-      <p></p><br>
-      5.Unfähigkeit zur Empathie oder emotionalem Verständnis: ChatGPT ist ein rein textbasiertes Modell und hat keine Emotionen oder empathische Fähigkeiten. Es kann keine echte emotionale Unterstützung bieten und sollte nicht als Ersatz für menschliche Interaktionen in emotional belastenden Situationen betrachtet werden.
-      <p></p><br>
-      6.Unzureichende Kontrolle über generierte Inhalte: ChatGPT ist ein kreatives Modell und kann auf Anfragen reagieren, die unangemessene, beleidigende oder gefährliche Inhalte fördern. Es ist wichtig, die Verwendung von ChatGPT zu überwachen und die generierten Inhalte zu überprüfen, insbesondere in sensiblen Bereichen wie Medizin, Recht oder Finanzen.
-      <p></p><br>
-      Bei der Verwendung von ChatGPT ist es daher ratsam, kritisch zu den Antworten zu sein, zusätzliche Quellen zu überprüfen, unterschiedliche Perspektiven einzubeziehen und die generierten Inhalte sorgfältig zu überwachen. ChatGPT sollte als Werkzeug zur Unterstützung und Inspiration betrachtet werden, aber nicht als alleinige Quelle für verlässliche Informationen oder Entscheidungen.
+       <h2 id="Was sind die Grenzen von ChatGPT und worauf sollte man bei der Verwendung achten?">Was sind die Grenzen von ChatGPT und worauf sollte man bei der Verwendung achten?</h2>
+       ChatGPT hat einige Grenzen, auf die man bei der Verwendung achten sollte:
+       <br>
+       1.Begrenzte Weltkenntnis: ChatGPT wurde bis September 2021 trainiert und hat kein direktes Wissen über Ereignisse oder Entwicklungen, die danach stattgefunden haben. Es kann also veraltete oder ungenaue Informationen geben, insbesondere wenn es um aktuelle Themen geht.
+       <p></p><br>
+       2.Mangelnde Fähigkeit zur Überprüfung von Fakten: ChatGPT kann keine Fakten überprüfen und gibt Antworten basierend auf dem vorhandenen Wissen wieder. Es ist wichtig, seine Antworten kritisch zu hinterfragen und zusätzliche Quellen für die Bestätigung von Informationen heranzuziehen.
+       <p></p><br>
+       3.Anfälligkeit für Voreingenommenheit: ChatGPT wird durch das Training mit großen Mengen an Textdaten geprägt, die Voreingenommenheiten enthalten können. Dadurch können unbewusste Vorurteile oder Stereotypen in den Antworten auftreten. Es ist wichtig, dies bei der Interpretation der Antworten zu berücksichtigen und verschiedene Perspektiven zu berücksichtigen.
+       <p></p><br>
+       4.Neigung zur Erfindung von Informationen: Wenn ChatGPT mit Fragen konfrontiert wird, auf die es keine konkreten Antworten hat, besteht die Möglichkeit, dass es Informationen erfindet, um eine Antwort zu generieren. Es ist daher ratsam, Antworten, die von ChatGPT bereitgestellt werden, zu überprüfen und mit anderen Quellen abzugleichen.
+       <p></p><br>
+       5.Unfähigkeit zur Empathie oder emotionalem Verständnis: ChatGPT ist ein rein textbasiertes Modell und hat keine Emotionen oder empathische Fähigkeiten. Es kann keine echte emotionale Unterstützung bieten und sollte nicht als Ersatz für menschliche Interaktionen in emotional belastenden Situationen betrachtet werden.
+       <p></p><br>
+       6.Unzureichende Kontrolle über generierte Inhalte: ChatGPT ist ein kreatives Modell und kann auf Anfragen reagieren, die unangemessene, beleidigende oder gefährliche Inhalte fördern. Es ist wichtig, die Verwendung von ChatGPT zu überwachen und die generierten Inhalte zu überprüfen, insbesondere in sensiblen Bereichen wie Medizin, Recht oder Finanzen.
+       <p></p><br>
+       Bei der Verwendung von ChatGPT ist es daher ratsam, kritisch zu den Antworten zu sein, zusätzliche Quellen zu überprüfen, unterschiedliche Perspektiven einzubeziehen und die generierten Inhalte sorgfältig zu überwachen. ChatGPT sollte als Werkzeug zur Unterstützung und Inspiration betrachtet werden, aber nicht als alleinige Quelle für verlässliche Informationen oder Entscheidungen.
 
-      <h2 id="KI für Ziffernerkennung">KI für Ziffernerkennung</h2>
+       <h2 id="KI für Ziffernerkennung">KI für Ziffernerkennung</h2>
       Eine Künstliche Intelligenz (KI) für Ziffernerkennung kann mithilfe von maschinellem Lernen trainiert werden. Hier ist eine grundlegende Erklärung, wie eine solche KI funktionieren könnte:
-
-    <p> 1.Datensatz: Zunächst wird ein umfangreicher Datensatz benötigt, der Bilder von handgeschriebenen Ziffern enthält. Diese Bilder werden zusammen mit den zugehörigen Labeln, also den korrekten Ziffern, gesammelt.
-    </p>
-       <p> 2.Daten vorbereiten: Die Bilder werden in ein geeignetes Format umgewandelt, das von der KI verarbeitet werden kann. In der Regel werden die Bilder in Graustufen umgewandelt und auf eine feste Größe normalisiert.
-       </p>
-         <p> 3.Modellarchitektur: Es wird eine geeignete Modellarchitektur ausgewählt, wie zum Beispiel ein Convolutional Neural Network (CNN). CNNs sind aufgrund ihrer Fähigkeit zur Merkmalsextraktion und Mustereerkennung besonders gut für Bilderkennungsaufgaben geeignet.
+      
+      <p> 1.Datensatz: Zunächst wird ein umfangreicher Datensatz benötigt, der Bilder von handgeschriebenen Ziffern enthält. Diese Bilder werden zusammen mit den zugehörigen Labeln, also den korrekten Ziffern, gesammelt.
+      </p>
+      <p> 2.Daten vorbereiten: Die Bilder werden in ein geeignetes Format umgewandelt, das von der KI verarbeitet werden kann. In der Regel werden die Bilder in Graustufen umgewandelt und auf eine feste Größe normalisiert.
+      </p>
+      <p> 3.Modellarchitektur: Es wird eine geeignete Modellarchitektur ausgewählt, wie zum Beispiel ein Convolutional Neural Network (CNN). CNNs sind aufgrund ihrer Fähigkeit zur Merkmalsextraktion und Mustereerkennung besonders gut für Bilderkennungsaufgaben geeignet.
          </p>
          <p> 4.Training: Das CNN wird mit den vorbereiteten Bildern und den zugehörigen Labeln trainiert. Während des Trainings passt das Modell seine Gewichte und Parameter an, um die bestmögliche Übereinstimmung zwischen den Eingabebildern und den tatsächlichen Ziffern zu erzielen. Das Training erfolgt durch das Minimieren einer Kostenfunktion, die den Unterschied zwischen den vom Modell vorhergesagten Ziffern und den tatsächlichen Ziffern misst.
-         </p>
-         <p> 5.Validierung und Optimierung: Das trainierte Modell wird auf einem separaten Validierungsdatensatz getestet, um seine Leistung zu bewerten. Basierend auf den Validierungsergebnissen können Anpassungen am Modell vorgenommen werden, um die Genauigkeit zu verbessern. Dieser Prozess wird iterativ durchgeführt, bis eine zufriedenstellende Leistung erreicht ist.
-         </p>
-         <p> 6.Evaluation: Nachdem das Modell erfolgreich trainiert wurde, wird es auf einem separaten Testdatensatz getestet, um die endgültige Genauigkeit zu bewerten. Dies gibt Aufschluss darüber, wie gut das Modell in der Lage ist, bisher ungesehene handgeschriebene Ziffern korrekt zu erkennen.
-         </p>
-         <p> 7.Vorhersage: Das trainierte Modell kann nun eingesetzt werden, um Vorhersagen für neue handgeschriebene Ziffern zu treffen. Dazu wird das Bild der Ziffer als Eingabe in das Modell gegeben, und das Modell gibt die vorhergesagte Ziffer aus.
-         </p>
+        </p>
+        <p> 5.Validierung und Optimierung: Das trainierte Modell wird auf einem separaten Validierungsdatensatz getestet, um seine Leistung zu bewerten. Basierend auf den Validierungsergebnissen können Anpassungen am Modell vorgenommen werden, um die Genauigkeit zu verbessern. Dieser Prozess wird iterativ durchgeführt, bis eine zufriedenstellende Leistung erreicht ist.
+        </p>
+        <p> 6.Evaluation: Nachdem das Modell erfolgreich trainiert wurde, wird es auf einem separaten Testdatensatz getestet, um die endgültige Genauigkeit zu bewerten. Dies gibt Aufschluss darüber, wie gut das Modell in der Lage ist, bisher ungesehene handgeschriebene Ziffern korrekt zu erkennen.
+        </p>
+        <p> 7.Vorhersage: Das trainierte Modell kann nun eingesetzt werden, um Vorhersagen für neue handgeschriebene Ziffern zu treffen. Dazu wird das Bild der Ziffer als Eingabe in das Modell gegeben, und das Modell gibt die vorhergesagte Ziffer aus.
+        </p>
          <p> Durch diesen Prozess des Trainierens und Validierens auf einem großen Datensatz kann die KI lernen, Muster und Merkmale in den handgeschriebenen Ziffern zu erkennen und sie korrekt zu klassifizieren. Die Leistung der KI hängt jedoch stark von der Qualität und Repräsentativität des Datensatzes ab, der für das Training verwendet wird.
          </p> <p>
-        Um die eigene KI jetzt zu testen klicke <a href="http://127.0.0.1:5500/digits.html" class="link">hier</a>.
-      </p>
-    </section>
-  </main>
-</body>
-</html>
+           Um die eigene KI jetzt zu testen klicke <a href="http://127.0.0.1:5500/digits.html" class="link">hier</a>.
+          </p>
+        </div>
+        </section>
+      </main>
+    </body>
+    </html>

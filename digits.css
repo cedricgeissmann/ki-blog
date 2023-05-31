@@ -16,6 +16,26 @@ body {
   padding: 0;
   flex-direction: column;
 }
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* Adjust this height to make the scrolling effect more noticeable */
+  background: linear-gradient(to bottom, red, blue); /* Initial background gradient */
+  transition: background 0.5s ease;
+}
+
+@keyframes scroll {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 100%;
+  }
+}
+
+body.animate {
+  animation: scroll 5s linear infinite;
+}
 
 .display-container {
   color: white;
@@ -102,13 +122,14 @@ body {
   left: 0;
   position: fixed;
   display: inline-block;
+  margin-top: 15px;
   margin: 20px;
   padding: 10px 30px 15px;
   text-align: center;
   font-size: 18px;
   letter-spacing: 1px;
   text-decoration: none;
-  color: #725AC1;
+  color: white;
   background: transparent;
   cursor: pointer;
   transition: ease-out 0.5s;
@@ -118,7 +139,7 @@ body {
 }
 
 .button1:hover {
-  color: white;
+  color: black;
   box-shadow: inset 0 -100px 0 0 #725AC1;
 }
 

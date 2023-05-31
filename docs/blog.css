@@ -1,9 +1,77 @@
+  /* Styles for the alert box */
+  .alert {
+    position: fixed;
+    top: -100px; /* Set initial position above the top of the page */
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px;
+    background-color: #f44336;
+    color: black; /* Change the text color to black */
+    text-align: center;
+    width: 60%; /* Adjust the width as desired */
+    max-width: 400px;
+    z-index: 9999; /* Ensure it appears on top of other elements */
+    border-radius: 10px; /* Add rounded border */
+    overflow: hidden; /* Hide the overflow caused by pseudo-element */
+    animation: slideDown 0.5s ease forwards;  /* Use animation for slide down */
+  }
+
+  /* Styles for the close button */
+  .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: black; /* Change the close button color to black */
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 18px;
+    cursor: pointer;
+  }
+
+  /* Animation to slide down the alert box */
+  @keyframes slideDown {
+    0% {
+      top: -100px;
+    }
+    100% {
+      top: 30%; /* Set the final position */
+    }
+  }
+
+
+
 body {
   margin: 0;
   padding: 0;
-  background-color: antiquewhite;
-  color: black;
+  color: white;
   text-decoration: solid;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  height: 2000px; /* Adjust this height to make the scrolling effect more noticeable */
+  background: linear-gradient(to bottom, darkblue, blue, purple, darkred,darkblue); /* Initial background gradient */
+  transition: background 0.5s ease;
+}
+
+
+@keyframes scroll {
+  0% {
+    background-position: 0 0;
+  }
+  25% {
+    background-position: 0 100%;
+  }
+  50% {
+    background-position: 0 200%;
+  }
+  75% {
+    background-position: 0 300%;
+  }
+  100% {
+    background-position: 0 400%;
+  }
+}
+
+body.animate {
+  animation: scroll 5s linear infinite;
 }
 .content {
   display: none;
@@ -11,6 +79,7 @@ body {
 .textcontent{
   margin-left: 300px;
   margin-right: 300px;
+  font-size: 20px;
 }
 
 
@@ -20,7 +89,7 @@ main {
 
 h2 {
   transition: transform 0.3s;
-  color: darkblue;
+  color: white;
 }
 
 h2:hover {
@@ -28,61 +97,164 @@ h2:hover {
 }
 
 h1 {
+  margin-top: 100px;
   font-size: 75px;
   text-align: center;
   transition: transform 0.3s;
-  color: darkblue;
+  color: white;
   
 }
 
 h1:hover {
   transform: translateX(10px); /* Adjust the desired amount of movement */
 }
-
 .navbar {
-  background-color: #333;
-  padding: 10px;
-  display: none;
-  position: absolute;
-  top: 100%;
+  position: fixed;
+  top: 0;
   left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: transparent;
+  color: #ec1e1e;
+  transition: transform 0.5s ease;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  white-space: nowrap; /* Prevent line breaks */
+  scrollbar-color: #725AC1 antiquewhite; /* For Chrome, Edge, and Safari */
 }
 
-.navbar a {
-  color: white;
+
+/* For Chrome, Edge, and Safari */
+.navbar::-webkit-scrollbar {
+  width: 2px; /* Adjust the width as needed */
+}
+
+.navbar::-webkit-scrollbar-thumb {
+  background-color: transparent #725AC1; /* Color of the thumb */
+}
+
+.navbar::-webkit-scrollbar-thumb:hover {
+  background-color: #A78FDE; /* Color of the thumb on hover */
+}
+
+.navbar::-webkit-scrollbar-track {
+  background-color: transparent ; /* Color of the track */
+}
+
+.navbar.hidden {
+  transform: translateY(-100%);
+}
+
+.active:hover{
+  color: black;
+  box-shadow: inset 0 -100px 0 0 #725AC1;
+}
+
+.active:active{
+  transform: scale(0.9);
+}
+
+.nav-links a {
+  margin-bottom: 10px;
+  padding: 10px 30px 15px;
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 1px;
   text-decoration: none;
-  margin-right: 10px;
+  color: white;
+  background: transparent;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  border: 3px solid #725AC1;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 0 #725AC1;
 }
 
 
 
-  .button {
-    display: block;
-    margin-bottom: 10px;
-    padding: 10px 30px 15px;
-    text-align: center;
-    font-size: 18px;
-    letter-spacing: 1px;
-    text-decoration: none;
-    color: #725AC1;
-    background: transparent;
-    cursor: pointer;
-    transition: ease-out 0.5s;
-    border: 2px solid #725AC1;
-    border-radius: 10px;
-    box-shadow: inset 0 0 0 0 #725AC1;
-  }
 
-  .button:hover {
-    color: white;
-    box-shadow: inset 0 -100px 0 0 #725AC1;
-  }
+/* NAVBAR MENU */
+.menu {
+  display: flex;
+  gap: 1em;
+  font-size: 18px;
+  list-style-type: none
+}
 
-  .button:active {
-    transform: scale(0.9);
-  }
+.menu li:hover {
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.menu li {
+  padding: 5px 14px;
+}
+
+/* DROPDOWN MENU */
+.services {
+  position: relative;
+}
+
+.dropdown {
+  background-color: rgb(1, 139, 139);
+  padding: 1em 0;
+  position: absolute; /* WITH RESPECT TO PARENT */
+  display: none;
+  border-radius: 8px;
+  top: 35px;
+}
+
+.dropdown li + li {
+  margin-top: 10px;
+}
+
+.dropdown li {
+  padding: 0.5em 1em;
+  width: 8em;
+  text-align: center;
+}
+
+.dropdown li:hover {
+  background-color: #4c9e9e;
+}
+
+.services:hover .dropdown {
+  display: block;
+}
+.button {
+  position: fixed;
+  top: calc(100% - 770px);
+  left: 20px;
+  margin-bottom: 10px;
+  padding: 10px 30px 15px;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: white;
+  background: transparent;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  border: 2px solid #725AC1;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 0 #725AC1;
+}
+
+#button2 {
+  top: calc(100% - 840px);
+}
+
+.button:hover {
+  color: black;
+  box-shadow: inset 0 -100px 0 0 #725AC1;
+}
+
+.button:active {
+  transform: scale(0.9);
+}
 
 .link {
-  color: #725AC1;
+  color: white;
   cursor: pointer;
 }
