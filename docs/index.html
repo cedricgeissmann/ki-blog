@@ -8,28 +8,43 @@
   <link rel="stylesheet" href="blog.css">
 </head>
 <body>
-  <nav class="navbar-container">
-    <ul class="navbar-list">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="#Was ist eine KI?">Was ist eine KI?</a></li>
-      <li><a href="#Wie funktioniert eine KI?">Wie funktioniert eine KI?</a></li>
-      <li><a href="#Wie funktioniert ein neurales Netz?">Wie funktioniert ein neurales Netz?</a></li>
-      <li><a href="#Was ist maschinelles Lernen?">Was ist maschinelles Lernen?</a></li>
-      <li><a href="#Was für einen Einfluss haben Daten auf eine KI??">Was für einen Einfluss haben Daten auf eine KI?</a></li>
-      <li><a href="#Wie funktioniert ChatGPT?">Wie funktioniert ChatGPT?</a></li>
-      <li><a href="#Was sind die Grenzen von ChatGPT und worauf sollte man bei der Verwendung achten?">Was sind die Grenzen von ChatGPT und worauf sollte man bei der Verwendung achten?</a></li>
-      <li><a href="#KI für Ziffernerkennung">KI für Ziffernerkennung</a></li>
-      
-    </ul>
-  </nav>
+  <div class="navbar-container">
+    <nav class="navbar">
+      <ul >
+        <p> 
+          <li><a href="index.html">Home</a></li>
+        </p><p>
+          <li><a href="#Was ist eine KI?">Was ist eine KI?</a></li>
+        </p>
+        <p>
+          <li><a href="#Wie funktioniert eine KI?">Wie funktioniert eine KI?</a></li>
+        </p><p>
+          <li><a href="#Wie funktioniert ein neurales Netz?">Wie funktioniert ein neurales Netz?</a></li>
+        </p><p>
+          <li><a href="#Was ist maschinelles Lernen?">Was ist maschinelles Lernen?</a></li>
+        </p><p>
+          <li><a href="#Was für einen Einfluss haben Daten auf eine KI??">Was für einen Einfluss haben Daten auf eine KI?</a></li>
+        </p>
+        <li><a href="#Wie funktioniert ChatGPT?">Wie funktioniert ChatGPT?</a></li>
+        <li><a href="#Was sind die Grenzen von ChatGPT und worauf sollte man bei der Verwendung achten?">Was sind die Grenzen von ChatGPT und worauf sollte man bei der Verwendung achten?</a></li>
+        <li><a href="#KI für Ziffernerkennung">KI für Ziffernerkennung</a></li>
+        
+      </ul>
+    </nav>
+  </div>
   <main>
     <div>
     <a href="http://127.0.0.1:5500/digits.html">
       <button class="button1">Ziffern</button>
     </a>
+  </div>
+    <div>
+      <a href="neurales-netz.html">
+        <button class="button1">Neurales-Netz</button>
+      </a>
     </div>
     <h1>KI Blog</h1>
-    <section>
+    <section class="textcontent">
       <b><h2 id="Was ist eine KI?">Was ist eine KI?</h2></b>
       Eine KI ist eine künstliche Intelligenz. Sie lernt durch sogennante layers.
       Künstliche Intelligenz (KI) ist ein System oder eine Maschine, die in der Lage ist, menschenähnliche Intelligenz und Verhaltensmuster nachzuahmen, indem sie aus Daten lernt und selbstständig Entscheidungen trifft.
@@ -44,35 +59,6 @@
       Lernen und Training: Basierend auf den erkannten Mustern verwendet die KI verschiedene Lernalgorithmen, um aus den Daten zu lernen. Es gibt unterschiedliche Ansätze wie überwachtes Lernen, unüberwachtes Lernen oder bestärkendes Lernen. Durch wiederholtes Training und Anpassung ihrer internen Modelle verbessert die KI ihre Fähigkeiten im Laufe der Zeit.
       Entscheidungsfindung und Vorhersage: Nach dem Training kann die KI Entscheidungen treffen oder Vorhersagen treffen, indem sie neue Daten analysiert und die erlernten Muster anwendet. Die Entscheidungsfindung kann automatisiert erfolgen, basierend auf vordefinierten Regeln oder durch maschinelles Lernen, bei dem die KI aus Beispielen lernt und Muster generalisiert.
       
-      <p></p>
-      <h2 id="Wie funktioniert ein neurales Netz?">Wie funktioniert ein neurales Netz?</h2>
-      Ein neuronales Netzwerk ist eine Art von Künstlicher Intelligenz, das von der Struktur und Funktion des menschlichen Gehirns inspiriert ist. Es besteht aus einer großen Anzahl miteinander verbundener künstlicher Neuronen, die in Schichten angeordnet sind. Jedes Neuron nimmt Eingaben entgegen, verarbeitet sie und gibt ein Ergebnis aus, das als Ausgabe an die nächsten Neuronen weitergeleitet wird.  
-      Die Funktionsweise eines neuronalen Netzwerks lässt sich in folgende Schritte unterteilen:
-      <p></p>
-      <br>
-      1.Eingabeschicht: Die Eingabeschicht ist die erste Schicht des neuronalen Netzwerks und empfängt die Rohdaten als Eingabe. Je nach Anwendungsfall können dies beispielsweise Bilder, Texte oder Sensordaten sein.
-      <br>
-      <p></p>
-      2.Versteckte Schichten: Nach der Eingabeschicht folgen eine oder mehrere versteckte Schichten. Jede versteckte Schicht besteht aus einer Anzahl von Neuronen, die mit den Neuronen der vorherigen Schicht verbunden sind. Diese Schichten dienen dazu, die Eingabe zu verarbeiten und komplexe Muster oder Merkmale zu extrahieren.
-      <br>
-      <p></p>
-      3.Ausgabeschicht: Die Ausgabeschicht ist die letzte Schicht des neuronalen Netzwerks und gibt die endgültigen Ergebnisse aus. Je nach Anwendungsfall kann die Ausgabeschicht verschiedene Formen haben, z. B. eine einzelne Ausgabe für binäre Klassifikation, mehrere Ausgaben für multiklassen Klassifikation oder kontinuierliche Werte für Regressionsprobleme.
-      <br>
-      <p></p>
-      4.Verbindungen und Gewichte: Zwischen den Neuronen bestehen Verbindungen, die mit Gewichten versehen sind. Diese Gewichte geben an, wie stark das Ausgabesignal eines Neurons auf das Eingangssignal eines anderen Neurons wirkt. Während des Trainingsprozesses werden die Gewichte des neuronalen Netzwerks angepasst, um optimale Ergebnisse zu erzielen.
-      <br>
-      <p></p>
-      5.Vorwärtspropagation: Die Vorwärtspropagation ist der Prozess, bei dem das Eingangssignal durch das neuronale Netzwerk geleitet wird. Dabei werden die Gewichte der Verbindungen und die Aktivierungsfunktionen der Neuronen verwendet, um die Ausgabe des Netzwerks zu berechnen.
-      <br>
-      <p></p>
-      6.Rückwärtspropagation (Backpropagation): Nach der Vorwärtspropagation wird der Fehler zwischen den vorhergesagten Ausgaben des Netzwerks und den tatsächlichen Ausgaben berechnet. Die Rückwärtspropagation ist der Prozess, bei dem dieser Fehler durch das Netzwerk zurück propagiert wird, um die Gewichte entsprechend anzupassen. Dies geschieht mithilfe von Optimierungsalgorithmen wie dem Gradientenabstiegsverfahren.
-      <p></p>
-      <br>
-      7.Training: Das Training eines neuronalen Netzwerks beinhaltet das wiederholte Durchlaufen von Datensätzen, um die Gewichte anzupassen und die Leistung des Netzwerks zu verbessern. Durch die Anpassung der Gewichte können neuronale Netzwerke Muster in den Daten lernen und nützliche Informationen extrahieren.
-      <br>
-      <p></p>
-      Es ist wichtig zu beachten, dass neuronale Netzwerke in verschiedenen Varianten und Architekturen auftreten können.
-
       <h2 id="Was ist maschinelles Lernen?">Was ist maschinelles Lernen?</h2>
       Maschinelles Lernen in einer generellen Künstlichen Intelligenz (KI) bezieht sich auf die Fähigkeit der KI, aus Daten zu lernen und ihre Leistung in bestimmten Aufgaben im Laufe der Zeit zu verbessern, ohne explizit programmiert werden zu müssen. Generelle KI bezieht sich auf eine KI, die in der Lage ist, eine Vielzahl von Aufgaben zu bewältigen, die normalerweise menschliches Verständnis und Intelligenz erfordern.
       Im maschinellen Lernen verwendet eine generelle KI verschiedene Algorithmen und Techniken, um Muster und Zusammenhänge in den Daten zu erkennen. Es kann unterschiedliche Formen des maschinellen Lernens anwenden, wie beispielsweise überwachtes Lernen, unüberwachtes Lernen oder verstärkendes Lernen.
