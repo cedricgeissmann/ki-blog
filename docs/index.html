@@ -67,20 +67,22 @@
       </ul>
     </nav>
   <main>
-    <div class="animate">
-      
-      <h1>KI Blog</h1>
-      <div>
-      <a href="http://127.0.0.1:5500/digits.html">
-        <button class="button" id="button1">Ziffern</button>
-      </a>
-    </div>
-      <div>
+    
+    <h1 class="animate"> KI Blog</h1>
+    <div class="Buttons">
+      <label class="label">Hier zu den anderen Webseiten</label>
+      <p>
+        <a href="http://127.0.0.1:5500/digits.html">
+          <button class="button" id="button1">Ziffernerkennung</button>
+        </a>
+        
         <a href="neurales-netz.html">
           <button class="button" id="button2">Neurales-Netz</button>
         </a>
-      </div>
-      <section class="textcontent">
+      </p>
+      <div>
+    </div>
+      <section class="textcontent" class="animate">
         <b><h2 id="Was ist eine KI?">Was ist eine KI?</h2></b>
         Eine KI ist eine künstliche Intelligenz. Sie lernt durch sogennante layers.
         Künstliche Intelligenz (KI) ist ein System oder eine Maschine, die in der Lage ist, menschenähnliche Intelligenz und Verhaltensmuster nachzuahmen, indem sie aus Daten lernt und selbstständig Entscheidungen trifft.
@@ -95,11 +97,71 @@
         Lernen und Training: Basierend auf den erkannten Mustern verwendet die KI verschiedene Lernalgorithmen, um aus den Daten zu lernen. Es gibt unterschiedliche Ansätze wie überwachtes Lernen, unüberwachtes Lernen oder bestärkendes Lernen. Durch wiederholtes Training und Anpassung ihrer internen Modelle verbessert die KI ihre Fähigkeiten im Laufe der Zeit.
         Entscheidungsfindung und Vorhersage: Nach dem Training kann die KI Entscheidungen treffen oder Vorhersagen treffen, indem sie neue Daten analysiert und die erlernten Muster anwendet. Die Entscheidungsfindung kann automatisiert erfolgen, basierend auf vordefinierten Regeln oder durch maschinelles Lernen, bei dem die KI aus Beispielen lernt und Muster generalisiert.
         
-        <h2 id="Was ist maschinelles Lernen?">Was ist maschinelles Lernen?</h2>
-        Maschinelles Lernen in einer generellen Künstlichen Intelligenz (KI) bezieht sich auf die Fähigkeit der KI, aus Daten zu lernen und ihre Leistung in bestimmten Aufgaben im Laufe der Zeit zu verbessern, ohne explizit programmiert werden zu müssen. Generelle KI bezieht sich auf eine KI, die in der Lage ist, eine Vielzahl von Aufgaben zu bewältigen, die normalerweise menschliches Verständnis und Intelligenz erfordern.
-        Im maschinellen Lernen verwendet eine generelle KI verschiedene Algorithmen und Techniken, um Muster und Zusammenhänge in den Daten zu erkennen. Es kann unterschiedliche Formen des maschinellen Lernens anwenden, wie beispielsweise überwachtes Lernen, unüberwachtes Lernen oder verstärkendes Lernen.
-        Im überwachten Lernen wird die KI mit gelabelten Daten trainiert, wobei ihr Beispiele gezeigt werden, um bestimmte Muster oder Zusammenhänge zu erkennen. Im unüberwachten Lernen versucht die KI, Muster oder Strukturen in den Daten zu identifizieren, ohne dass ihr vorher gesagt wird, wonach sie suchen soll. Im verstärkenden Lernen interagiert die KI mit einer Umgebung und erhält Feedback in Form von Belohnungen oder Bestrafungen, um ihre Entscheidungen und Aktionen zu optimieren.
-        Durch maschinelles Lernen kann eine generelle KI verschiedene Fähigkeiten entwickeln, wie beispielsweise Spracherkennung, Bilderkennung, Übersetzung, Textgenerierung und vieles mehr. Sie kann diese Fähigkeiten verbessern, indem sie kontinuierlich mit neuen Daten trainiert wird, um ihre Modelle und Algorithmen anzupassen und präzisere Ergebnisse zu erzielen.
+        <div>
+
+
+          <h2 id="Was ist maschinelles Lernen?">Was ist maschinelles Lernen?</h2>
+<div class="container">
+<p>Maschinelles Lernen kann automatisiert Wissen generieren, Algorithmen trainieren, Zusammenhänge identifizieren und unbekannte Muster erkennen.
+   Anders als bei der traditionellen Softwareentwicklung, liegt bei Machine Learning der Schwerpunkt auf dem selbstständigen Lernen aus Daten. 
+   Damit maschinelles Lernen funktioniert und die Software die Entscheidung treffen kann, muss ein Mensch den Algorithmus trainieren. 
+   Durch das Bereitstellen von Trainings- und Beispieldaten, kann der Algorithmus Muster und Zusammenhänge erkennen und somit aus den Daten lernen. 
+   Maschinelles Lernen wird mit den Begriffen Data Mining und predictive Analytics in Verbindung gebracht. Letztlich nutzen Data Mining und predictive Analytics
+    die Verfahren des maschinellen Lernens. Damit Machine Learning funktioniert und ein Muster lernen kann, muss es von einem Menschen trainiert werden. 
+    <p>
+
+      Dieser Lernprozess beginnt mit einem vorbereiteten Datensatz (Trainingsdatensatz), der von einem Machine Learning Algorithmus nach Mustern und Zusammenhängen durchsucht wird. 
+      Nach einem erfolgreich abgeschlossenen Lernprozess wird das trainierte Modell genutzt, unbekannte Daten zu bewerten. Das Hauptziel ist, es ohne menschliche Eingriffe automatisch
+      zu lernen und die Aktionen anzupassen. Die Entwicklung eines Modells ist ein interaktiver Prozess, der durchlaufen wird, bis das Ergebnis eine gewisse Qualität erreicht hat.
+    </p>
+      In der Praxis finden Entwicklungschleifen statt, in denen ein Mensch die Ergebnisse aus dem Machine Learning Algorithmus bewerten muss. Es gibt verschiedene Arten von Training:
+      <p>
+
+        1.Überwachtes Lernen (englisch: Supervised Machine Learning) nutzt bekannte Daten, um daraus Muster und Zusammenhänge zu erkennen. 
+        Der Algorithmus lernt die Muster anhand eines Trainingsdatensatzes (Beispieldaten). Beim überwachten Lernen wird immer im Zusammenhang mit einer Zielvariable gelernt und der 
+        Algorithmus versucht diese richtig vorherzusagen.
+      </p>
+      <p>
+
+        2.Unüberwachtes maschinelles Lernen
+        Bei dem Unüberwachten maschinellem Lernen (Unsupervised Machine Learning) bekommt der Algorithmus keine Beispieldaten, 
+        sondern Daten, aus denen der Algorithmus eigenständig interessante, versteckte Gruppen und Muster erkennen soll.
+        Der grundsätzliche Unterschied zum Supervised Machine Learning ist also, dass das Unsupervised Machine Learning nicht dafür ausgelegt ist, 
+        eine Vorhersage für eine bekannte Zielvariable (z.B. Klassifikation oder Prognose) zu berechnen. Auch die Ergebnisse müssen beim Unüberwachten
+        Lernen von Data Scientist an relativ „weichen“ Faktoren bewertet werden, um final einzuschätzen, wie gut die Ergebnisse zur Business-Anwendung passen.
+      </p>
+       <p>
+        <p>
+          3.Teilüberwachtes Lernen
+          Teilüberwachtes Lernen (Semi-supervised Machine Learning) nutzt sowohl Beispieldaten mit konkreten Zielvariablen,
+           als auch unbekannte Daten und ist somit eine Mischung aus überwachtem und unüberwachtem Lernen.
+           Die Einsatzgebiete von teilüberwachtem Lernen sind im Grunde die gleichen wie bei dem überwachten Lernen.
+          Der Unterschied liegt darin, dass für den Lernprozess nur eine geringe Menge an Daten mit einer bekannten Zielvariable genutzt wird und eine große Menge an Daten, 
+          bei der diese Zielvariable noch nicht vorhanden ist. Dies hat den Vorteil, dass schon mit einer geringeren Menge von bekannten Daten trainiert werden kann. Denn oft ist die Beschaffung von
+          bekannten Beispieldaten extrem aufwendig und kostenintensiv, da häufig Menschen diese Daten durch manuelle Prozesse erstellen müssen (bspw. das manuelle Labeling von Bildern).
+        </p>
+        <p>
+          4.Verstärkendes Lernen
+          Verstärkendes Lernen (Reinforcement Learning) oder auch bestärkendes Lernen ist eine besondere Form des maschinellen Lernens.Diese Algorithmen interagieren mit der Umgebung 
+          und werden durch eine Kostenfunktion oder ein Belohnungssystem bewertet, um so selbständig eine Strategie zur Lösung des Problems zu erlernen und die Belohnung zu maximieren.
+          Bei verstärkendem Lernen wird dem Algorithmus nicht gezeigt, welche Aktion oder Handlung in welcher Situation die richtige ist, sondern dieser erhält durch die 
+          Kostenfunktion eine positive oder negative Rückmeldung (Feedback). Anhand der Kostenfunktion wird dann eingeschätzt, 
+          welche Aktion zu welchem Zeitpunkt, die Richtige ist. Somit lernt das System „bestärkend“ durch Lob oder Bestrafung die Belohnungsfunktion zu maximieren.
+        </p>
+          <h3>
+
+            Wie funktioniert der Machine Learning Prozess? 
+          </h3>
+          Ziele und Einsatzzweck von Machine Learning muss im Vorfeld
+           klar festgelegt werden. In der Regel ist dieser Schritt der zeitaufwändigste, da es wichtig ist, qualitativ hochwertige Daten zu nutzen. In diesem Schritt findet das 
+           maschinelle Lernen statt. Ein wichtiger Schritt, um Akzeptanz für maschinelles Lernen im Fachbereich zu schaffen. Produktive Nutzung. Maschinelles Lernen in Innovationslabs
+            zu entwickeln und diese nicht in realen Prozessen zu nutzen, hat keinen Mehrwert. Die technischen Anforderungen für Machine Learning sind komplex, ist die 
+            Produktivnahme nicht einfach. Praktisch gesehen ist Deep Learning eine Teilmenge von Machine Learning, ist tiefes Lernen technisch gesehen maschinelles Lernen.
+             Allerdings unterscheiden sich die Fähigkeiten dieser beiden Arten. Der Hauptunterschied zwischen Deep Learning und Machine Learning liegt in der Fähigkeit, 
+             durch künstliche neuronale Netzwerke (KNN), unstrukturierte Daten zu verarbeiten. Diese extrahierten Informationen lassen sich zur Mustererkennung, Vorhersage oder 
+             zum weiteren Lernen verwendet.</p>
+</div>
+        </div>
         
         <h2 id="Was für einen Einfluss haben Daten auf eine KI?">Was für einen Einfluss haben Daten auf eine KI?</h2>
         Daten haben einen wesentlichen Einfluss auf eine Künstliche Intelligenz (KI). Die Qualität, Menge und Relevanz der Daten können darüber entscheiden, wie gut eine KI funktioniert und wie zuverlässig sie Vorhersagen oder Entscheidungen treffen kann.
