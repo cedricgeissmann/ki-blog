@@ -19,20 +19,22 @@
       }
     </style>
 
- 
+
 
 
 <style>
-  .letter {
-    opacity: 0;
-    animation: fadeIn 1.5s ease-in-out forwards;
+  @keyframes slideIn {
+    0% { transform: translateX(-100%); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
   }
 
-  @keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
+  .slide-title1 {
+    animation: slideIn 50s ease-in-out;
   }
 </style>
+ 
+
+
 
 
 
@@ -63,43 +65,32 @@
 
       <h2 class="slide-title">Was ist KI?</h2>
       
-Künstliche Intelligenz (KI) ist ein Teilbereich der Informatik, der sich darauf konzentriert, Systeme zu entwickeln, die Aufgaben erledigen können, die normalerweise menschliche Intelligenz erfordern. Das Ziel der KI besteht darin, Computern menschenähnliches Verhalten beizubringen, indem sie bestimmte Fähigkeiten wie Lernen, Schlussfolgern, Problemlösen, Wahrnehmung und Sprachverarbeitung nachahmen.
+Künstliche Intelligenz (KI) ist ein Teilbereich der Informatik, der sich darauf konzentriert, Systeme zu entwickeln, die Aufgaben erledigen können, die normalerweise menschliche Intelligenz erfordern. Das Ziel der KI besteht darin, Computern menschenähnliches Verhalten beizubringen, indem sie bestimmte Fähigkeiten wie Lernen, Schlussfolgern, Problemlösen, Wahrnehmung und Sprachverarbeitung nachahnen.
 
 Es gibt verschiedene Ansätze zur Entwicklung von KI, darunter maschinelles Lernen, neuronale Netzwerke, Expertensysteme und genetische Algorithmen. Beim maschinellen Lernen werden Algorithmen entwickelt, die es Computern ermöglichen, aus Daten zu lernen und Vorhersagen oder Entscheidungen zu treffen, ohne dass sie explizit programmiert werden müssen.
 
 KI-Systeme finden in vielen Bereichen Anwendung, wie zum Beispiel bei der Automatisierung, Datenanalyse, Spracherkennung, Bildverarbeitung, Robotik, Medizin und Finanzen. Obwohl KI bereits in vielen Anwendungen erfolgreich eingesetzt wird, ist das Feld der künstlichen Intelligenz ständig in Entwicklung und es werden kontinuierlich neue Fortschritte erzielt. 
     </section>
     <section>
-      <h2 id="animated-title">Wie funktioniert KI? </h2>
+      <h2 class="slide-title1">Wie funktioniert KI? </h2>
     
   
-      <script>
-        const title = document.getElementById('animated-title');
-        const text = title.innerText;
-        title.innerHTML = '';
-    
-        for (let i = 0; i < text.length; i++) {
-          const span = document.createElement('span');
-          span.classList.add('letter');
-          span.innerText = text[i];
-          span.style.animationDelay = `${i * 0.2}s`;
-          title.appendChild(span);
-        }
+   
       </script>
      KI nutzt eine Vielzahl von Techniken und Algorithmen, um Computern menschenähnliches Verhalten und intelligentes Handeln zu ermöglichen. Dazu gehören:
 
-Maschinelles Lernen: Dabei lernen Computer aus Daten, ohne explizit programmiert zu werden. Mithilfe von Trainingsdaten erkennt das System Muster und Regeln, um Vorhersagen oder Entscheidungen zu treffen.
+<p>Maschinelles Lernen: Dabei lernen Computer aus Daten, ohne explizit programmiert zu werden. Mithilfe von Trainingsdaten erkennt das System Muster und Regeln, um Vorhersagen oder Entscheidungen zu treffen.
 
-Neuronale Netzwerke: Diese Netzwerke sind von biologischen neuronalen Netzwerken inspiriert. Sie bestehen aus künstlichen Neuronen, die Informationen verarbeiten und weiterleiten. Durch Training können neuronale Netzwerke komplexe Probleme wie Bild- oder Spracherkennung lösen.
+</p><p>Neuronale Netzwerke: Diese Netzwerke sind von biologischen neuronalen Netzwerken inspiriert. Sie bestehen aus künstlichen Neuronen, die Informationen verarbeiten und weiterleiten. Durch Training können neuronale Netzwerke komplexe Probleme wie Bild- oder Spracherkennung lösen.
 
-Expertensysteme: Expertensysteme nutzen das Wissen von Fachexperten, um spezifische Probleme zu lösen. Sie basieren auf Regeln und verwenden einen Inferenzmechanismus, um Lösungen zu generieren. Expertensysteme finden Anwendung in Bereichen, die spezialisiertes Fachwissen erfordern, wie beispielsweise medizinische Diagnosen.
+  </p><p>Expertensysteme: Expertensysteme nutzen das Wissen von Fachexperten, um spezifische Probleme zu lösen. Sie basieren auf Regeln und verwenden einen Inferenzmechanismus, um Lösungen zu generieren. Expertensysteme finden Anwendung in Bereichen, die spezialisiertes Fachwissen erfordern, wie beispielsweise medizinische Diagnosen.
 
-Natürliche Sprachverarbeitung: KI ermöglicht es Computern, menschliche Sprache zu verstehen, zu analysieren und zu generieren. Durch maschinelles Lernen und linguistische Regeln können KI-Systeme Texte verstehen, übersetzen, Zusammenfassungen erstellen und mit Menschen kommunizieren.
+   </p> <p>Natürliche Sprachverarbeitung: KI ermöglicht es Computern, menschliche Sprache zu verstehen, zu analysieren und zu generieren. Durch maschinelles Lernen und linguistische Regeln können KI-Systeme Texte verstehen, übersetzen, Zusammenfassungen erstellen und mit Menschen kommunizieren.
 
-Datenanalyse und Mustererkennung: KI nutzt große Datenmengen, um Muster, Trends und Zusammenhänge zu erkennen. Durch statistische Analysen und maschinelles Lernen gewinnen KI-Systeme Einblicke aus den Daten und treffen Vorhersagen oder unterstützen Entscheidungen.
+     </p> <p>Datenanalyse und Mustererkennung: KI nutzt große Datenmengen, um Muster, Trends und Zusammenhänge zu erkennen. Durch statistische Analysen und maschinelles Lernen gewinnen KI-Systeme Einblicke aus den Daten und treffen Vorhersagen oder unterstützen Entscheidungen.
 
-Es ist wichtig zu beachten, dass KI verschiedene Techniken kombiniert, um spezifische Aufgaben zu lösen. Die Entwicklung von KI-Systemen erfordert oft umfangreiche Datensätze, leistungsstarke Computerressourcen und Fachkenntnisse in den entsprechenden Bereichen.
-
+       </p> <p>Es ist wichtig zu beachten, dass KI verschiedene Techniken kombiniert, um spezifische Aufgaben zu lösen. Die Entwicklung von KI-Systemen erfordert oft umfangreiche Datensätze, leistungsstarke Computerressourcen und Fachkenntnisse in den entsprechenden Bereichen.
+          </p>
     </section>
 
     <section>
@@ -129,7 +120,7 @@ Nach dem Training kann das neuronale Netz neue, unbekannte Daten verarbeiten und
 Neuronale Netze haben in verschiedenen Anwendungen große Fortschritte erzielt, darunter Bilderkennung, Spracherkennung, maschinelles Übersetzen und vieles mehr. Sie sind ein leistungsfähiges Werkzeug zur Verarbeitung und Analyse großer Datenmengen und haben das Potenzial, komplexe Probleme zu lösen.
 
     </section>
-<img src="download.jpg">
+<img src="download2.jpg">
     <section> 
       <h2>Was ist maschinelles Lernen?</h2>
       Maschinelles Lernen ist ein Teilgebiet der künstlichen Intelligenz, das es Computern ermöglicht, aus Daten zu lernen und automatisch Muster oder Regeln zu erkennen, ohne explizit programmiert zu werden. Durch das Trainieren von Algorithmen mit Trainingsdaten werden Modelle erstellt, die den Fehler zwischen Vorhersagen und tatsächlichen Ausgaben minimieren. Es gibt verschiedene Arten des maschinellen Lernens, darunter überwachtes Lernen, bei dem das Modell mit gelabelten Daten arbeitet, unüberwachtes Lernen, bei dem es Muster in ungelabelten Daten erkennt, und verstärkendes Lernen, bei dem das Modell durch Belohnungen und Bestrafungen lernt. Maschinelles Lernen wird in verschiedenen Bereichen wie Spracherkennung, Bilderkennung, Finanzanalyse und medizinischer Diagnose eingesetzt und ermöglicht es Computern, auf Basis von Daten adaptive Entscheidungen zu treffen

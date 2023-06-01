@@ -5,19 +5,30 @@
 
 
 
+  <style>
+    @keyframes scaleIn {
+      0% { transform: scale(0.5); }
+      100% { transform: scale(1); }
+    }
 
-  
-    <style>
-      @keyframes jump {
-        0% { transform: translateY(0); }
-        50% { transform: translateY(-20px); }
-        100% { transform: translateY(0); }
-      }
-  
-      .jumping-title {
-        animation: jump 1s infinite;
-      }
-    </style>
+    .scale-title {
+      animation: scaleIn 2s ease-in-out;
+    }
+  </style>
+
+
+
+
+  <style>
+    .slow-grow {
+      font-size: 24px;
+      transition: font-size 2s ease-in-out;
+    }
+
+    .slow-grow:hover {
+      font-size: 36px;
+    }
+  </style>
 
 
 
@@ -45,7 +56,7 @@
 
 
     <section>
-      <h2 class="jumping-title">Wie funktioniert ChatGPT?</h2>
+      <h2 class="scale-title">Wie funktioniert ChatGPT?</h2>
     <section> 
       ChatGPT basiert auf dem Prinzip des Deep Learning und verwendet das Modell GPT (Generative Pre-trained Transformer). Es wurde in zwei Phasen trainiert: Pre-training und Fine-tuning. Im Pre-training erlernte das Modell die Struktur und den Kontext von Texten. Im Fine-tuning wurde es speziell für das Chatten trainiert. Bei der Verwendung gibt der Benutzer eine Texteingabe ein, das Modell analysiert den Kontext und generiert eine passende Antwort. Es verwendet sein internes Wissen und Muster aus den Trainingsdaten. Es ist wichtig zu beachten, dass ChatGPT auf vorhandenen Trainingsdaten basiert und daher gelegentlich ungenaue Antworten liefern kann. Kritische Überprüfung ist ratsam, besonders bei sensiblen Themen. Zusammenfassend basiert ChatGPT auf neuronalen Netzwerken, um kontextbezogene Textantworten zu generieren, basierend auf Pre-training und Fine-tuning.
     </section>
@@ -54,9 +65,24 @@
 
       <h2>Was sind die Grenzen von ChatGPT und worauf sollte man bei der Verwendung achten? </h2>
 
-      ChatGPT hat einige Grenzen und Einschränkungen, die bei der Verwendung beachtet werden sollten. Diese umfassen ein begrenztes Verständnis von Kontext, Anfälligkeit für Fehlinformationen, Neigung zu generischen Antworten, mangelnde Kritikfähigkeit, potenzielle Verletzung von Privatsphäre und Sicherheit sowie Missbrauchspotenzial. Um diese Grenzen zu berücksichtigen, sollte man kritisch bleiben, den Kontext klar halten, vorsichtig mit persönlichen Informationen umgehen, externe Quellen zur Verifizierung nutzen und ChatGPT ethisch und verantwortungsbewusst einsetzen.
+      ChatGPT hat einige Grenzen und Einschränkungen, die bei der Verwendung beachtet werden sollten. Diese umfassen ein begrenztes Verständnis von Kontext, Anfälligkeit für Fehlinformationen, Neigung zu generischen Antworten, potenzielle Verletzung von Privatsphäre und Sicherheit sowie Missbrauchspotenzial. Um diese Grenzen zu berücksichtigen, sollte man kritisch bleiben, den Kontext klar halten, vorsichtig mit persönlichen Informationen umgehen, externe Quellen zur Verifizierung nutzen und ChatGPT ethisch und verantwortungsbewusst einsetzen.
 
     </section>
+    <section> 
+      <h2>Welche Gefahren bringt die KI mit sich? </h2>
+      Obwohl Künstliche Intelligenz (KI) viele Vorteile und Potenziale bietet, sind auch einige potenzielle Gefahren zu beachten. Hier sind einige der wichtigsten Gefahren im Zusammenhang mit KI:
+
+    Arbeitsplatzverlust: Durch den Einsatz von KI und Automatisierung könnten bestimmte Arbeitsplätze und Branchen ersetzt oder verändert werden. Dies kann zu Arbeitsplatzverlusten und sozialen Ungleichheiten führen, wenn nicht genügend Umschulungs- und Anpassungsmaßnahmen getroffen werden
+    </p>
+    <p>
+      Ethik und Datenschutz: KI-Systeme können sensible persönliche Daten sammeln, analysieren und nutzen. Wenn diese Daten nicht angemessen geschützt werden oder in die falschen Hände geraten, kann dies zu Verletzungen der Privatsphäre und des Datenschutzes führen. Darüber hinaus stellen sich ethische Fragen im Zusammenhang mit der Verwendung von KI, z. B. bei autonomen Waffensystemen oder bei algorithmischer Diskriminierung.
+    </p>
+    <p> 
+      Abhängigkeit und Manipulation: Eine zunehmende Abhängigkeit von KI kann dazu führen, dass Menschen ihre Fähigkeiten und Fertigkeiten verlieren. Darüber hinaus besteht das Risiko, dass KI-Systeme manipuliert werden, um Fehlinformationen zu verbreiten oder Menschen zu täuschen.
+    </p>
+    <p> 
+      Diese Gefahren erfordern eine umfassende Auseinandersetzung mit ethischen, rechtlichen und sozialen Aspekten von KI. Es ist wichtig, geeignete Richtlinien, Regulierungen und Kontrollmechanismen zu entwickeln, um die Vorteile von KI zu nutzen und gleichzeitig potenzielle Risiken zu minimieren.
+    </p>
 
   </main> 
 </body>
