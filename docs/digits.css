@@ -1,3 +1,7 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 canvas {
   border: 1px solid #d3d3d3;
   height: 80vw;
@@ -6,7 +10,7 @@ canvas {
 }
 
 body {
-  background-color: #d4d;
+  background-color: lavenderblush;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,7 +36,7 @@ nav > ul {
 nav > ul > li > a {
   font-size: 2rem;
   text-decoration: none;
-  color: darkorchid;
+  color: mediumvioletred;
 }
 
 nav > ul > li > a:hover {
@@ -40,7 +44,7 @@ nav > ul > li > a:hover {
 }
 
 .display-container {
-  color: white;
+  color: deeppink;
   font-size: 2rem;
   font-weight: bold;
   padding: 20px;
@@ -54,4 +58,15 @@ nav > ul > li > a:hover {
 
 #prediction-container div {
   margin: 0 20px;
+}
+
+.box1 {
+  font-size: 20px;
+  color: black;
+  width: 70%;
+}
+
+.margin:hover{
+  margin: 100px;
+  transition: 2s;
 }

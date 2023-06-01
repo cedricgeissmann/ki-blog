@@ -1,6 +1,7 @@
 body{
     color:black;
-    background-color: white;
+    background-color: aliceblue;
+    font-size: 30px;
 }
 
 nav > ul > li {
@@ -19,7 +20,7 @@ nav > ul {
   nav > ul > li > a {
     font-size: 2rem;
     text-decoration: none;
-    color: darkorchid;
+    color: darkblue;
   }
   
   nav > ul > li > a:hover {
@@ -27,6 +28,12 @@ nav > ul {
   }
 
   h1{
-    font-size:x-large;
-    color: darkblue;
+    font-size:30px;
+    color: deepskyblue;
+  }
+
+  .box1{
+    color: black;
+    width: 70%;
+    font-size: 20px;
   }

@@ -1,6 +1,6 @@
 body{
     color:black;
-    background-color: white;
+    background-color: honeydew;
 }
 
 nav > ul > li {
@@ -19,15 +19,15 @@ nav > ul {
   nav > ul > li > a {
     font-size: 2rem;
     text-decoration: none;
-    color: darkorchid;
+    color: darkgreen;
   }
   
   nav > ul > li > a:hover {
     text-decoration: underline;
   }
-  
+
 h1, h2 {
     font-size: x-large;
-    color: red;
+    color: limegreen;
     font-style: bold;
 }
