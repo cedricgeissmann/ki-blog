@@ -53,14 +53,32 @@
                 <section>Eingabeschicht: Neuronen nehmen die Informationen aus der Aussenwelt aus und geben die Informationen gewichtet an die verborgene Schicht weiter.</section>
                 <section>Verborgene Schicht: Sie besteht aus beliebigen vielen Ebenen von Neuronen. In dieser Schicht werden die empfangenen Informationen weitergeleitet und in jeder Ebene der Schicht neu gewichtet. Da die genaue Gewichtung und Verarbeitung der Informationen in dieser Schicht nicht direkt ersichtlich sind, wird sie als verborgene Schicht bezeichnet.</section>
                 <section>Ausgabeschicht: Bei der letzten Schicht geben die Neuronen die verarbeiteten Informationen als Ergebnis aus. Beispielsweise kann ein Ergebnis eine Wahrscheinlichkeitsverteilung sein. Durch diese Verteilung können anschliessend Entscheidungen abgeleitet werden.</section>
-                <section>Anhand von einem Beispiel kann man betrachten, wie das neuronale Netz aufgebaut ist und funktioniert. Dazu der Link <a href="digits.html">Ziffernerkennung</a>.</section>
+               
                 <img src="neuronal.jpg" alt="Beschreibung des Bildes">
               </div>
-            <div class="question" onclick="toggleAnswer('answer3')">
+              <div class="question" onclick="toggleAnswer('answer3')">Beispiel Äpfel und Birnen
+         
+              </div>
+              <div id="answer3" class="answer">
+                <section>Eingabeschicht:
+                Die Eingabeschicht besteht aus Neuronen, die die Farbwerte der Pixel im Bild repräsentieren. Jedes Neuron erhält die Informationen über einen bestimmten Farbwert eines Pixels im Bild. Die Anzahl der Neuronen in der Eingabeschicht entspricht der Anzahl der Pixel im Bild.
+            </section>
+            <section> Verborgene Schichten:
+                Das neuronale Netzwerk kann eine oder mehrere versteckte Schichten haben. Jedes Neuron in den versteckten Schichten nimmt die Informationen von den Neuronen in der vorherigen Schicht auf und führt Berechnungen durch, um abstraktere Merkmale des Bildes zu erkennen. In unserem Beispiel könnten die Neuronen in den versteckten Schichten bestimmte Farb- oder Formmuster in den Bildern erkennen, die spezifisch für Äpfel oder Birnen sind.
+            </section>
+            <section> Ausgabeschicht:
+                Die Ausgabeschicht besteht aus zwei Neuronen, einem für Äpfel und einem für Birnen. Jedes Neuron gibt die Wahrscheinlichkeit aus, dass das Eingabebild entweder einen Apfel oder eine Birne darstellt. Das Neuron mit der höchsten Wahrscheinlichkeit gibt die vorhergesagte Klassenzugehörigkeit an.
+            </section>
+            <section>Ebenfalls ist hier ein anderes Beispiel mit einer Ziffernerkennung verlinkt.  <a href="digits.html">Ziffernerkennung</a>.</section>
+
+
+              </div>
+             
+            <div class="question" onclick="toggleAnswer('answer4')">
                 Was ist maschinelles Lernen?
                
             </div>
-            <div id="answer3" class="answer">Maschinelles Lernen ist ein Teilgebiet der künstlichen Intelligenz, in dem Computer die Fähigkeit entwickeln, aus Erfahrungen zu lernen und Aufgaben zu bewältigen, ohne dafür explizit programmiert zu werden. Anstatt spezifische Anweisungen für jede Situation zu erhalten, analysiert ein maschinelles Lernsystem Daten, erkennt Muster und trifft Vorhersagen oder nimmt Anpassungen vor.
+            <div id="answer4" class="answer">Maschinelles Lernen ist ein Teilgebiet der künstlichen Intelligenz, in dem Computer die Fähigkeit entwickeln, aus Erfahrungen zu lernen und Aufgaben zu bewältigen, ohne dafür explizit programmiert zu werden. Anstatt spezifische Anweisungen für jede Situation zu erhalten, analysiert ein maschinelles Lernsystem Daten, erkennt Muster und trifft Vorhersagen oder nimmt Anpassungen vor.
                 Der Lernprozess basiert auf Algorithmen, die auf Trainingsdaten basieren. Diese Daten werden dem System zur Verfügung gestellt, damit es Muster, Zusammenhänge und Trends erkennen kann. Durch wiederholtes Training mit verschiedenen Beispielen verbessert das System seine Leistung und ist anschließend in der Lage, neue Daten zu analysieren und Entscheidungen zu treffen.
                 Es gibt verschiedene Arten von Algorithmen im maschinellen Lernen, wie zum Beispiel überwachtes Lernen, unüberwachtes Lernen und bestärkendes Lernen. Beim überwachten Lernen werden die Algorithmen mit Trainingsdaten und den entsprechenden Labels trainiert, um Vorhersagen zu treffen. Beim unüberwachten Lernen werden die Algorithmen ohne Labels trainiert, um Muster und Strukturen in den Daten zu erkennen. Beim bestärkenden Lernen lernen die Algorithmen durch Interaktion mit der Umgebung, indem sie Belohnungen oder Strafen erhalten.
                 
