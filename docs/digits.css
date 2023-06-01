@@ -1,0 +1,34 @@
+canvas {
+  border: 1px solid white;
+  height: 80vw;
+  background-color: white;
+  image-rendering: pixelated;
+}
+
+body {
+  background-color: #8d7474;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+}
+
+.display-container {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 20px;
+}
+
+#prediction-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#prediction-container div {
+  margin: 0 20px;
+}
