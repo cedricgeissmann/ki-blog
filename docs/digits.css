@@ -32,3 +32,46 @@ body {
 #prediction-container div {
   margin: 0 20px;
 }
+.controlls button {
+  background-color: #7870e6; /* Hintergrundfarbe */
+  color: white; /* Textfarbe */
+  padding: 10px 20px; /* Innenabstand */
+  border: none; /* Rand entfernen */
+  border-radius: 4px; /* abgerundete Ecken */
+  cursor: pointer; /* Zeiger bei Hover */
+  margin-right: 10px; /* Abstand zwischen den Buttons */
+}
+
+.controlls button:disabled {
+  background-color: #ccc; /* Hintergrundfarbe für deaktivierte Buttons */
+  cursor: not-allowed; /* Zeiger nicht erlaubt */
+}
+.button1 {
+  top: 0;
+ left: 0;
+ position: fixed;
+ display: inline-block;
+ margin: 20px;
+ padding: 10px 30px 15px;
+text-align: center;
+font-size: 18px;
+letter-spacing: 1px;
+text-decoration: none;
+color: #1869c5;
+ background: transparent;
+ cursor: pointer;
+transition: ease-out 0.5s;
+border: 2px solid #725AC1;
+border-radius: 10px;
+box-shadow: inset 0 0 0 0 #725AC1;
+ }
+ 
+ 
+ 
+ .button1:hover {
+color: white;
+box-shadow: inset 0 -100px 0 0 #725AC1;
+ }
+ .button1:active {
+  transform: scale(0.9);
+  }
