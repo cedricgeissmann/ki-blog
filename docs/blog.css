@@ -1,9 +1,9 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: black;
+  background-color: white;
   text-align: center;
-  color: yellow
+  color: black
 }
 
 nav > ul > li {
@@ -22,7 +22,7 @@ nav > ul {
 nav > ul > li > a {
   font-size: 2rem;
   text-decoration: none;
-  color: yellow;
+  color: darkorchid;
 }
 
 nav > ul > li > a:hover {
@@ -40,16 +40,16 @@ h1{
 }
 
 h2,h3{
-  color:aqua;
+  color:black;
 }
 
 
 .box1{
-  color:yellow;
+  color:black;
 }
 
 .box2{
-  color:yellow;
+  color:black;
 }
 
 .img{

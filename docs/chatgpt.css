@@ -1,0 +1,10 @@
+body {
+    color:white;
+    background-color: black;
+}
+
+h1, h2 {
+    font-size: x-large;
+    color: red;
+    font-style: bold;
+}
