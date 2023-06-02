@@ -46,4 +46,15 @@ main {
 
 .neue_schrift{
 font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+text-align: center;
 }
+
+h2 {
+  text-align: center;
+}
+
+.img {
+  width: 50%;
+  text-align: center;
+}
+
