@@ -1,0 +1,27 @@
+• Was ist KI? 
+KI steht für Künstliche Intelligenz. Es ist ein Teilgebiet der Informatik, es bezieht sich auf die Fähigkeit
+von Maschienen, menschenähnlich Denkprozesse und Lernprozesse auszuführen. 
+
+• Wie funktioniert KI?
+KI funktioniert mit Verarbeitung grosser Datenmengen mit der Hilfe von Algorihmen und machinellem Lernen. 
+Die Algorithmen sind so programmiert, dass sie Muster in den Daten erkennen können und durch diese schlüsse ziehen können.
+Durch das maschinelle Lernen können die KI-Systeme ihre Fähigkeiten und ihr können verbessern, indem sie aus Erfahrungen lernen und sich dann verbessern.
+
+ • Wie funktioniert ein neuronales Netz? 
+ Ein Neuronales Netz ist ein KI Modell, welches wie ein menschliches Hirn funktioniert. 
+ Es besteht aus einer Reihe von miteinander verbundenen Neuronen, die Informationen verarbeiten und weiter geben.
+ Die Verbindungen zwischen den Neuronen haben unterschiedliche Gewichte, die die stärker der Verbindung darstellen. 
+
+• Was ist maschinelles Lernen? 
+Maschinelles Lernen ist ein Teilgebiet der KI, welches sich mit der Entwicklung von Algorhithmen und Techniken beschäftigt, mit jenen dem Computer beigebracht wird , 
+wie es aaus daten zu lernen und Entscheidungen zu treffen, wenn sie neuen, unbekannten Daten ausgesetzt werden.
+
+• Was für einen Einfluss haben Daten auf eine KI?
+Die Daten spielen eine wichtige Rolle für die KI, sie sind die Grundlage, auf der KI-Modelle trainiert und angewendet werden.
+
+ • Wie funktioniert ChatGPT? 
+ ChatGPT basiert auf dem GPT-3.5-Modell (Generative Pre-trained Transformer 3.5), das von OpenAI entwickelt wurde. Es handelt sich um ein leistungsstarkes Sprachmodell, 
+ das auf der Transformer-Architektur beruht und mit großen Mengen an Textdaten trainiert wurde.
+
+• Was sind die Grenzen von ChatGPT und worauf sollte man bei der Verwendung achten?
+Fehlende Kontextsensibilität/Fehlende Kontextsensibilität/Neigung zu voreingenommenen Antworten/Begrenztes Verständnis des Kontexts/Mangel an Urteilsvermögen und Kreativität
