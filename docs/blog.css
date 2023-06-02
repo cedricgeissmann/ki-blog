@@ -3,6 +3,7 @@ body {
   padding: 0;
   background-color: darkslategray;
   color: antiquewhite
+
 }
 
 nav {
@@ -47,3 +48,21 @@ nav > ul > li > a:hover {
 main {
   padding: 20px 50px;;
 }
+
+.background {
+  position:fixed; 
+  top:0; 
+  left:0; 
+  width:100%; 
+  height:100%; 
+  background-image:url("https://images8.alphacoders.com/559/559128.jpg"); 
+  background-repeat:no-repeat; 
+  background-size:cover; 
+  z-index:-1
+}
+.section
+{
+  text-align: center;
+}
+
+
