@@ -8,6 +8,12 @@ body {
   background-image: url("https://www.weltderphysik.de/fileadmin/_processed_/2/4/csm_16920210602_KI_iStock_97941453c9.webp");
   background-size: cover;
 }
+
+body > footer {
+  font-size: 20px;
+}
+
+
 nav {
   position: absolute;
   top: 0;
