@@ -2,7 +2,8 @@ body {
   margin: 0;
   padding: 0;
   background-color: lavender;
-  color: black
+  color: black;
+  
 }
 
 nav > ul > li {
@@ -22,11 +23,13 @@ nav > ul > li > a {
   font-size: 2rem;
   text-decoration: none;
   color: black;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 nav > ul > li > a:hover {
   text-decoration: underline;
   font-weight: bold;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 
 main {
@@ -74,18 +77,30 @@ img {
   margin-left: 180px;
 }
 
-// text-align: center;
- 
+.font {
+  font-size: 20px;
+  font-weight: 200;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
 
-//darkslategray
-//schrift:  antiquewhite
+h1{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif 
+}
+h2{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
 
-//lavender
-//black
+.bildgrösse{
+text-align: center;
+transform: translateX(-25%);
 
-// salmon 
-//white or black
+}
 
-//goldenrod
-//black
- 
+.bildgrösse img{
+  width:fit-content
+}
+
+.mitte {
+  text-align: center;
+  font: size 100px;
+}
