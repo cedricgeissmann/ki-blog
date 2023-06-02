@@ -76,7 +76,7 @@ h1 > span {
 
   text-align: center;
 
- 
+  
 
  }
 
@@ -122,17 +122,3 @@ h3{
     animation-fill-mode: forwards;
 }
 
-.controlls button{
-  background-color: beige; /*hintergrundfarbe*/
-  color: wihte; /*textfarbe*/
-padding: 10px 20px;/*Innenabsatnd*/
-border:none;/*rand entfernen*/
-border-radius: 4px;/*abgerunderte Ecken*/
-cursor:pointer; /*Zeiger bei Hover*/
-margin-right: 10px;/*abstand zwischen den buttons*/
-
-}
-.controlls button:disabled{
-  background-color: aquamarine;/*Hintergrundfarbe für deaktivierte buttons*/
-  cursor: not-allowed; /*Zeiger nicht erlaubt*/
-}
