@@ -1,3 +1,10 @@
 body {
-    background-color: darkcyan;
+    background-color: black;
+    text-align: center;
+    color: aliceblue;
 }
+
+h1 {
+    text-align: center;
+}
+
