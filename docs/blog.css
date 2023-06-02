@@ -2,15 +2,19 @@ body {
   margin: 0;
   padding: 0;
   background-color: rgb(56, 105, 129);
+  font-size: 25px;
   color: antiquewhite
+  
 }
 
 h1 {
   text-align: center;
+  font-size: 100px;
 }
 
 h2 {
   text-align: center;
+  font-size: 50px;
 }
 
 nav > ul > li {
@@ -39,3 +43,62 @@ nav > ul > li > a:hover {
 main {
   padding: 20px 50px;;
 }
+
+.buttonhome1 {
+  top: 0;
+  right: 0;
+  position: fixed;
+  display: inline-block;
+  margin: 20px;
+  padding: 10px 30px 15px;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #bc1c1c;
+  background: transparent;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  border: 2px solid #bc1c1c;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 0 #bc1c1c;
+}
+
+.buttonhome1:hover {
+  color: white;
+  box-shadow: inset 0 -100px 0 0 #bc1c1c;
+}
+
+.buttonhome1:active {
+  transform:scale(2);
+}
+
+.buttonhome {
+  top: 0;
+  left: 0;
+  position: fixed;
+  display: inline-block;
+  margin: 20px;
+  padding: 10px 30px 15px;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #bc1c1c;
+  background: transparent;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  border: 2px solid #bc1c1c;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 0 #bc1c1c;
+}
+
+.buttonhome:hover {
+  color: white;
+  box-shadow: inset 0 -100px 0 0 #bc1c1c;
+}
+
+.buttonhome:active {
+  transform:scale(2);
+}
+
