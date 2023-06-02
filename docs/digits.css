@@ -34,20 +34,20 @@ body {
   margin: 0 20px;
 }
 
-nav{
+nav {
   position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
   background-color:rgb(58, 53, 53);
-  transform: translateX(calc(-93%));
+  transform: translateX(calc(-400px + 10px));
   height: 100%;
   padding-right: 20px;
   transition-duration: 1s;
 }
 
 nav:hover {
-  transform: translateX(0);
+  transform: translateX(0px);
 }
 
 nav > ul > li {
@@ -59,8 +59,7 @@ nav > ul > li {
 nav > ul {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 0;
+  padding: 0 20px;
   flex-direction: column;
 }
 

@@ -5,7 +5,7 @@ body {
   font-size: 20px;
   padding-left: 100px;
   padding-right: 80px;
- background-image: url("https://de.allianzgi.com/-/media/allianzgi/eu/germany/editorial/artificial-intelligence/treiber-unserer-zukunft/2304x1296-ai-treiber-zukunft.jpg?rev=-1&hash=F0C8FED72B22703616B428F553FE9D56");
+  background-image: url("https://de.allianzgi.com/-/media/allianzgi/eu/germany/editorial/artificial-intelligence/treiber-unserer-zukunft/2304x1296-ai-treiber-zukunft.jpg?rev=-1&hash=F0C8FED72B22703616B428F553FE9D56");
 }
 nav {
   position: absolute;
@@ -13,14 +13,14 @@ nav {
   left: 0;
   z-index: 1;
   background-color:rgb(58, 53, 53);
-  transform: translateX(calc(-93%));
+  transform: translateX(calc(-400px + 10px));
   height: 100%;
   padding-right: 20px;
   transition-duration: 1s;
 }
 
 nav:hover {
-  transform: translateX(0);
+  transform: translateX(0px);
 }
 
 nav > ul > li {
@@ -32,8 +32,7 @@ nav > ul > li {
 nav > ul {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 0;
+  padding: 0 20px;
   flex-direction: column;
 }
 
