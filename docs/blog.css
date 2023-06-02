@@ -8,7 +8,7 @@ body {
   background-image: url("https://de.allianzgi.com/-/media/allianzgi/eu/germany/editorial/artificial-intelligence/treiber-unserer-zukunft/2304x1296-ai-treiber-zukunft.jpg?rev=-1&hash=F0C8FED72B22703616B428F553FE9D56");
 }
 nav {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 1;
