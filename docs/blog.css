@@ -16,7 +16,7 @@ nav {
   transform: translateX(calc(-400px + 10px));
   height: 100%;
   padding-right: 20px;
-  transition-duration: 1s;
+  transition-duration: 0.7s;
 }
 
 nav:hover {
