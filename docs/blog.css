@@ -44,11 +44,11 @@ body {
   margin: 0;
   padding: 0;
   color: white;
-  text-align: left;
+  text-align: center;
   text-decoration: solid;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   height: 2000px; /* Adjust this height to make the scrolling effect more noticeable */
-  background: linear-gradient(to bottom, darkblue, blue, purple, darkred,darkblue); /* Initial background gradient */
+  background: linear-gradient(to bottom,#EDD1B0 ,darkblue , blue ,purple ,purple,blue , darkblue, #EDD1B0 );
   transition: background 0.5s ease;
 }
 
@@ -81,6 +81,7 @@ body.animate {
   margin-left: 300px;
   margin-right: 300px;
   font-size: 20px;
+  text-align: center;
 }
 
 
@@ -102,11 +103,12 @@ h1 {
   font-size: 75px;
   text-align: center;
   transition: transform 0.3s;
-  color: white;
+  
   
 }
 
 h1:hover {
+  color: linear-gradient(to bottom,darkblue 100px, blue 100px,purple 200px,blue 100px, darkblue );
   transform: translateX(10px); /* Adjust the desired amount of movement */
 }
 
@@ -228,6 +230,7 @@ h1:hover {
 
 .button {
   position: relative;
+  align-items: center;
   left: 20px;
   margin-bottom: 10px;
   padding: 10px 30px 15px;
@@ -260,8 +263,9 @@ h1:hover {
 
 .Buttons {
   display: inline-block;
-  padding: 10px;
-  border: 2px solid white; /* Add white border around the entire div */
+  padding: 20px;
+  padding-right: 50px;
+  border: 5px solid white; /* Add white border around the entire div */
   border-radius: 5px; /* Add border radius for a rounded appearance */
   text-align: center;
   align-items: center;
