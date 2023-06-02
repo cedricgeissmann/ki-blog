@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    #text {
+      font-size: 24px;
+      white-space: pre;
+    }
+  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KI-Blog</title>
+  <link rel="stylesheet" href="nlog.css">
+</head>
+<body>
+  <div id="text"></div>
+
+  <script>
+    const textElement = document.getElementById("text");
+    const text = "";
+
+    let index = 0;
+    function displayText() {
+      if (index < text.length) {
+        textElement.innerHTML += text.charAt(index);
+        index++;
+        setTimeout(displayText, 0.01); // Verzögerung zwischen den Buchstaben (in Millisekunden)
+      }
+    }
+
+    displayText();
+  </script>
+  <h1>KI-Blog</h1>
+  <ul>
+    <li><a href="wasistki.html">Was ist KI?</a></li>
+    <li><a href="wiefunktioniertki.html">Wie funktioniert KI?</a></li>
+    <li><a href="neuralesnetzwerk.html">Wie funktioniert ein neurales Netzwerk?</a></li>
+    <li><a href="machinelleslernen.html">Was ist maschinelles Lernen?</a></li>
+    <li><a href="datenki.html">Was für Einfluss haben Daten auf eine KI?</a></li>
+    <li><a href="wiefunktioniertchatgpt.html">Wie funktioniert ChatGPT?</a></li>
+    <li><a href="grenzenchatgpt.html">Was sind die Grenzen von ChatGPT?</a></li>
+    <li><a href="wasbeachten.html">Worauf sollte man bei der Verwendung achten?</a></li>
+    <li><a href="digits.html">Zahlenerkenner</a></li>
+  </ul>
+</body>
+</html>
+
+
+ 

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Was ist maschinelles Lernen?</title>
+  <link rel="stylesheet" href="unterwebsiten.css">
+  
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      width: 400px;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 2px solid rgb(0, 0, 0);
+      padding: 20px;
+    }
+
+    #text {
+      font-size: 24px;
+      white-space: pre;
+    }
+  </style>
+</head>
+<body>
+  <h1></h1>
+  <div class="container">
+    <div id="text"></div>
+  </div>
+
+  <script>
+    const textElement = document.getElementById("text");
+  const text = "Ein neuronales Netzwerk ist ein Kernkonzept in der KI, das von der Funktionsweise des menschlichen Gehirns inspiriert ist. Es besteht aus miteinander verbundenen künstlichen Neuronen, die Informationen verarbeiten und weitergeben. Ein neuronales Netzwerk besteht aus Eingabeschichten, versteckten Schichten und Ausgabeschichten. Durch das Trainieren des Netzwerks mit Beispieldaten können die Verbindungen zwischen den Neuronen gestärkt oder geschwächt werden, um Muster zu erkennen und Vorhersagen zu treffen. Neuronale Netzwerke finden Anwendung in Bereichen wie Bild- und Spracherkennung, maschinellem Lernen und vielen anderen KI-Anwendungen.";
+
+    let index = 0;
+    function displayText() {
+      if (index < text.length) {
+        textElement.innerHTML += text.charAt(index);
+        index++;
+        setTimeout(displayText, 50); // Verzögerung zwischen den Buchstaben (in Millisekunden)
+      }
+    }
+
+    displayText();
+  </script>
+</body>
+</html>

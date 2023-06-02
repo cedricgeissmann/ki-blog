@@ -1,0 +1,84 @@
+body {
+    background-color: #000;
+    color: #0f0;
+    font-family: monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+ 
+   
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 2em; /* Vergrößert die Schriftgröße auf das Doppelte */
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+  a {
+    color: #0f0;
+    text-decoration: none;
+    font-size: 2em; /* Vergrößert die Schriftgröße auf das Doppelte */
+  }
+  
+  a:hover {
+    color: #0f0;
+    text-decoration: underline;
+  }
+
+  
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200vh;
+  }
+  
+  .container {
+    width: 700px;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 20px;
+  }
+  
+  .container #text {
+    font-size: 24px;
+    text-align: justify;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+  }
+  .text-with-delay {
+    white-space: pre-wrap;
+    font-family: monospace;
+    overflow-wrap: break-word;
+  }
+  
+  .text-with-delay span {
+    display: inline-block;
+    animation: text-appear 0.2s linear forwards;
+  }
+  
+  @keyframes text-appear {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  

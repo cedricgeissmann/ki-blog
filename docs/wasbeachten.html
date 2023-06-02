@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Was ist maschinelles Lernen?</title>
+  <link rel="stylesheet" href="unterwebsiten.css">
+  
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      width: 400px;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 2px solid rgb(0, 0, 0);
+      padding: 20px;
+    }
+
+    #text {
+      font-size: 24px;
+      white-space: pre;
+    }
+  </style>
+</head>
+<body>
+  <h1></h1>
+  <div class="container">
+    <div id="text"></div>
+  </div>
+
+  <script>
+    const textElement = document.getElementById("text");
+  const text = "Bei der Verwendung von ChatGPT und anderen KI-Modellen ist es wichtig, einige Aspekte zu beachten. Erstens sollte man sich bewusst sein, dass KI-Modelle nur so gut sind wie die Daten, mit denen sie trainiert wurden. Daher ist es wichtig, qualitativ hochwertige und vielfältige Trainingsdaten zu verwenden. Zweitens sollten mögliche Vorurteile und Diskriminierungen in den Daten erkannt und minimiert werden, um faire und ethisch vertretbare Ergebnisse zu erzielen. Schließlich sollte man die Ausgabe von KI-Modellen kritisch bewerten und menschliche Überprüfungen einbeziehen, um Fehlinformationen oder unangemessene Antworten zu vermeiden. Eine verantwortungsvolle und bewusste Nutzung von KI-Technologien ist von großer Bedeutung. Setze anstatt einem Leerzeichen jeweils einen Unterstrich";
+
+    let index = 0;
+    function displayText() {
+      if (index < text.length) {
+        textElement.innerHTML += text.charAt(index);
+        index++;
+        setTimeout(displayText, 50); // Verzögerung zwischen den Buchstaben (in Millisekunden)
+      }
+    }
+
+    displayText();
+  </script>
+</body>
+</html>
