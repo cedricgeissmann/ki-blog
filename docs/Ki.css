@@ -87,15 +87,16 @@
                   transform: translateY(0);
                 }
               }
-            
-            
-              #Bild-neuronal {
+              .verkleinern{
                 text-align: center;
-            }
-
-            #Bild-neuronal img {
-                width: 60%
                 
-                
-                
-            }
+               } 
+               
+               .verkleinern img {
+                width: 300px;
+               }
+            
+               
+            
+            
+              
