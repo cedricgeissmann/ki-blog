@@ -34,6 +34,11 @@ h1 {
     box-shadow: inset 0 0 0 0 #725AC1;
   
   }
+  .textcontent{
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
 
   body {
     margin: 0;

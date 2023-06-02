@@ -5,6 +5,12 @@ body {
   color: antiquewhite
 }
 
+.textcontent{
+  text-align: center;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
 nav > ul > li {
   list-style: none;
   padding: 10px;
