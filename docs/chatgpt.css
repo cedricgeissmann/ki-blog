@@ -1,6 +1,11 @@
 body{
     color:black;
     background-color: honeydew;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px 50px;;
+    width:70vw;
+    margin:0 auto;
 }
 
 nav > ul > li {
@@ -30,4 +35,12 @@ h1, h2 {
     font-size: x-large;
     color: limegreen;
     font-style: bold;
+}
+
+.padding:hover{
+  padding:150px;
+}
+
+.margin:hover{
+  margin: 100px;
 }
