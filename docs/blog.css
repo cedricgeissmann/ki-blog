@@ -1,8 +1,27 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: darkslategray;
-  color: antiquewhite
+  color: rgb(196, 137, 59);
+  font-size: 30px;
+  padding-left: 100px;
+  padding-right: 80px;
+  background-image: url("https://www.weltderphysik.de/fileadmin/_processed_/2/4/csm_16920210602_KI_iStock_97941453c9.webp");
+  background-size: cover;
+}
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color:rgb(126, 119, 119);
+  transform: translateX(calc(-99%));
+  height: 100%;
+  padding-right: 20px;
+  transition-duration: 1s;
+}
+
+nav:hover {
+  transform: translateX(0);
 }
 
 nav > ul > li {
@@ -16,12 +35,13 @@ nav > ul {
   justify-content: space-between;
   align-items: center;
   padding: 0;
+  flex-direction: column;
 }
 
 nav > ul > li > a {
   font-size: 2rem;
   text-decoration: none;
-  color: antiquewhite;
+  color: rgb(251, 248, 244);
 }
 
 nav > ul > li > a:hover {
@@ -29,5 +49,5 @@ nav > ul > li > a:hover {
 }
 
 main {
-  padding: 20px 50px;;
+  padding:20px50px;;
 }

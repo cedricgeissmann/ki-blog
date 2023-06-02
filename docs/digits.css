@@ -1,0 +1,78 @@
+canvas {
+  border: 1px solid #d3d3d3;
+  height: 80vw;
+  background-color: white;
+  image-rendering: pixelated;
+}
+
+body {
+  background-color: #2d2b2b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+}
+
+.display-container {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 20px;
+}
+
+#prediction-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#prediction-container div {
+  margin: 0 20px;
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color:rgb(58, 53, 53);
+  transform: translateX(calc(-93%));
+  height: 100%;
+  padding-right: 20px;
+  transition-duration: 1s;
+}
+
+nav:hover {
+  transform: translateX(0);
+}
+
+nav > ul > li {
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  flex-direction: column;
+}
+
+nav > ul > li > a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: antiquewhite;
+}
+
+nav > ul > li > a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding:20px50px;;
+}
