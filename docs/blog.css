@@ -109,6 +109,7 @@ h1 {
 h1:hover {
   transform: translateX(10px); /* Adjust the desired amount of movement */
 }
+
 .navbar {
   position: fixed;
   top: 0;
@@ -223,6 +224,8 @@ h1:hover {
 .services:hover .dropdown {
   display: block;
 }
+
+
 .button {
   position: relative;
   left: 20px;
