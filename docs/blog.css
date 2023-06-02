@@ -40,7 +40,7 @@ h1{
   font-size: 40px;
 }
 
-h2,h3{
+h2,h3,h4{
   color:aqua;
   font-size: 30px;
 }
@@ -53,6 +53,11 @@ h2,h3{
 
 .box2{
   color: yellow;
+  font-size: 20px;
+}
+
+.box3{
+  color:yellow;
   font-size: 20px;
 }
 
