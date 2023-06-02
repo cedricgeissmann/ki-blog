@@ -30,14 +30,14 @@ nav > ul {
     text-decoration: underline;
   }
 
-  h1{
+  h1, h2{
     font-size:30px;
     color: deepskyblue;
+    text-align: center;
   }
 
   .box1{
     color: black;
     width: 100%;
     font-size: 20px;
-    text-align: center;
   }

@@ -25,18 +25,28 @@
         </ul>
     </nav>
     <div class="box1">
-    <h1>Wie funktioniert ein neuronales Netz?</h1>
+    <h1>Was ist ein neuronales Netz?</h1>
     <p>
-        Ein neuronales Netz besteht aus künstlichen Neuronen, die versuchen das Gehirn nachzuahmen. Es besteht aus 3 Schichten:
+        Neuronale Netze sind ein Teilgebiet des maschinellen Lernens. Das Ziel dabei ist es, dass die Neuronen wie die Nerven im Nervensystem eines Menschen zusammenarbeiten und funktionieren, sodass sie ähnlich Informationen verarbeiten können.
     </p>
-    <li>Die <b>Eingabeschicht</b>, wo die Neuronen Informationen von der Aussenwelt aufnehmen und an die verborgene Schicht weitergeben.</li>
-    <li>Die <b>verborgene Schicht</b> kann als einzige Schicht aus unterschiedlich vielen Neuronen-Ebenen bestehen. Was man hier nicht sieht, ist dass die erhaltenen Informationen hier von Ebene zu Ebene gewichtet und verarbeitet werden, weshalb sie auch die «verborgene» Schicht heisst.</li>
-    <li>Die <b>Ausgabeschicht</b> ist die, welche die verarbeiteten Informationen wieder herausgeben.</li>
-    <p>
-        Hier noch ein Bild zur Veranschaulichung:
-    </p>
+        Ein neuronales Netz besteht aus mehreren Schichten von miteinander verbundenen Neuronen. Es gibt 3 Arten von Schichten: die <b>Eingabeschicht</b>, eine oder mehrere <b>verborgene Schichten</b> und eine <b>Ausgabeschicht</b>.
+        Man kann es sich wie ein Netz vorstellen, da jedes Neuron mit Neuronen aus einer anderen Schicht verbunden ist:
     <p>
         <img src="https://d1g9li960vagp7.cloudfront.net/wp-content/uploads/2022/01/WP_neuronales-netz_aufbau-1024x576.jpg">
+    </p>
+    <h2>Wie funktioniert ein neuronales Netz?</h2>
+    <p>
+        Um ein neuronales Netz zum Funktionieren zu bringen, muss man es «trainieren». 
+        Dieses Training besteht aus zwei Schritten: der Fehlerfunktion und der Fehlerrückführung.
+    </p>
+    <p>
+        Als erstes werden Daten durch das Netzwerk geleitet, wobei jedes Neuron eine gewichtete Summe seiner Eingaben berechnet und dann die Aktivierungsfunktion auf diese Summe anwendet. Dadurch entsteht dann eine Ausgabe, die an ein Neuron in der nächsten Schicht weitergeleitet wird. Mit Hilfe der <b>Fehlerfunktion</b> wird dann bestimmt, wie fest das Ergebnis von dem Zielwert abweicht.
+    </p>
+    <p>
+    Danach findet die <b>Fehlerrückführung</b> statt. Das Netzwerk versucht dabei die Fehler zwischen den vorhergesagten und den korrekten Ausgaben zu verringern. Dies macht es, indem es die «Gewichte» (die unterschiedlich starken Verbindungen zwischen den einzelnen Neuronen) anpasst.
+    </p>
+    <p>
+        Dadurch, dass es diesen Prozess andauernd wiederholt, lernt das Netzwerk Muster in Daten zu erkennen und immer genauere Vorhersagen zu generieren. Dieser Lernprozess wird oft mit einem Datensatz durchgeführt, bei dem die erwarteten Ausgaben bekannt sind. Schliesslich kann das Netzwerk dann auch auf neue, unbekannte Daten reagieren und korrekte Antworten erzeugen.
     </p>
     </div>
 
