@@ -35,10 +35,11 @@ nav > ul {
   align-items: center;
   padding: 0;
   flex-direction: column;
+  
 }
 
 nav > ul > li > a {
-  font-size: 2rem;
+  font-size: 20px;
   text-decoration: none;
   color: rgb(72, 57, 50);
 }
@@ -55,11 +56,11 @@ main {
 h1 {
   text-align: center;
   color: black;
-  font-size: 300%;
+  font-size: 170%;
   
 }
 
 section {
-  font-size:180%;
+  font-size:80%;
   color: rgb(54, 41, 27);
 }
