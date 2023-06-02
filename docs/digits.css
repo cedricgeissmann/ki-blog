@@ -1,12 +1,12 @@
 canvas {
-  border: 1px solid #d3d3d3;
+  border: 1px solid #c52ebb;
   height: 80vw;
-  background-color: white;
+  background-color:whitesmoke;
   image-rendering: pixelated;
 }
 
 body {
-  background-color: #2d2b2b;
+  background-color: #92dae3;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,18 +17,21 @@ body {
 }
 
 .display-container {
-  color: white;
+  color: black;
   font-size: 2rem;
   font-weight: bold;
   padding: 20px;
+  background-color: #c52ebb;
 }
 
 #prediction-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: blue;
 }
 
 #prediction-container div {
   margin: 0 20px;
+  background-color: blue
 }

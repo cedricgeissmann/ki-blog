@@ -1,8 +1,9 @@
 body {
   margin: 0;
   padding: 0;
-  background-color:darkblue;
-  color:darkblue
+  background-color:rgb(220, 132, 132);
+  color:black;
+  
 }
 
 nav > ul > li {
@@ -41,6 +42,97 @@ main {
   left: 0;
 }
 
+#ChatGBT {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 60px;
+  left:0;
+}
 h1 {
   overflow-y: hidden;
+  position: relative;
+  width: 100%;
+  font-size: 20px;
+  color:white;
+}
+
+h1 > img {
+  width: 100%;
+  z-index: 0;
+  
+}
+
+h1 > span {
+  font-size: 48pt;
+  color: white;
+  z-index: 1;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);;
+  top: 50%;
+}
+.verkleinern{
+
+  text-align: center;
+
+ 
+
+ }
+
+ .float-right {
+  float: right;
+ }
+
+ 
+
+ .verkleinern img {
+
+  width: 600px;
+  border-radius: 25px;
+
+ }
+ h1{
+  text-align: center;
+  margin-bottom: 20px;
+  margin: left 10px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 3rem;
+  color:black; 
+  opacity: 0;
+  animation-name: fade-in;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+@keyframes fade-in {
+  0%{
+    opacity: 0;
+    transform: translateY(50PX);
+  }
+  100%{
+    opacity: 1;
+    transform:translateY(0)
+  }
+}
+h3{
+  
+    opacity: 0;
+    animation-name: fade-in;
+    animation-duration: 6s;
+    animation-fill-mode: forwards;
+}
+
+.controlls button{
+  background-color: beige; /*hintergrundfarbe*/
+  color: wihte; /*textfarbe*/
+padding: 10px 20px;/*Innenabsatnd*/
+border:none;/*rand entfernen*/
+border-radius: 4px;/*abgerunderte Ecken*/
+cursor:pointer; /*Zeiger bei Hover*/
+margin-right: 10px;/*abstand zwischen den buttons*/
+
+}
+.controlls button:disabled{
+  background-color: aquamarine;/*Hintergrundfarbe für deaktivierte buttons*/
+  cursor: not-allowed; /*Zeiger nicht erlaubt*/
 }
