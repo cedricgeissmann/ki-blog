@@ -1,8 +1,8 @@
 canvas {
-  border: 1px solid #d3d3d3;
-  height: 80vw;
-  background-color: white;
-  image-rendering: pixelated;
+  border-radius: 50%; 
+  width: 500px; 
+  height: 500px; 
+  background-color: red; 
 }
 
 body {
@@ -18,7 +18,7 @@ body {
 
 .display-container {
   margin: 20px;
-  color: white;
+  color: rgb(164, 87, 87);
   font-size: 2rem;
   font-weight: bold;
   padding: 20px;
@@ -54,9 +54,8 @@ body {
   box-shadow: inset 0 0 0 0 #725AC1;
 }
 
-.controlls {
+.controlls1 {
   right: 0;
-  list-style: armenian;
   display: flex;
   flex-direction: column;
   position: fixed;
@@ -75,4 +74,41 @@ body {
   border-radius: 10px;
   box-shadow: inset 0 0 0 0 #725AC1;
 
+}
+
+.controlls {
+  display: inline-block;
+  background-color: pink;
+  color: #ffffff;
+  font-size: 16px;
+  border-radius: 5px;
+  text-decoration: aliceblue;
+  transition: background-color 0.3s ease;
+  font-size: 25px;
+  border-color: black;
+}
+
+.controlls:hover {
+  background-color:#1257b2;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-left: 15cm;
+  margin-top: 6cm;
+  align-items: flex-end;
+  z-index:1;
+  position: absolute;
+  right: 100px;
+
+}
+
+.list-item {
+  list-style-type: none;
+  padding: 1px;
+  background-color: #f2f2f2;
+  border-radius: 1px;
+  margin-bottom: 1px;
 }

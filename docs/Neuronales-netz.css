@@ -42,17 +42,15 @@ h2 {
   font-size: 35px;
 }
 
-.p { 
+p { 
   text-align: center;
-  margin-right: 4cm;
 }
-
 .KI {
   border-color: black;
   border: 15px;
   border-style: solid;
   height: 50px;
-  margin: 50px;
+  margin: 100px;
   padding: 30px;
   font-size: 10px
 }
@@ -97,7 +95,7 @@ h2 {
   box-shadow: inset 0 0 0 0 #725AC1;
 }
 
-.navbar {
+.Nav2 {
   background-color: #333; /* Hintergrundfarbe der Navbar */
   color: #fff; /* Textfarbe der Navbar */
   height: 80px; /* Höhe der Navbar */
@@ -105,34 +103,37 @@ h2 {
   white-space: nowrap; /* Verhindert Zeilenumbruch in der Navbar */
   overflow: top;
   overflow-y: hidden;
-  font-size: 10px;
+  
   
 }
 
-.navbar-list {
+.Navbar-list2 {
   list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
 }
 
-.navbar-list li {
+.Navbar-list2 li {
   margin-right: 10px;
 }
 
-.navbar-list li a {
+.Navbar-list2 li a {
   color: #fff; /* Textfarbe der Links */
   text-decoration: none;
   padding: 10px;
   font-size: 20px;
 }
 
-.navbar-list li a:hover {
+.Navbar-list2 li a:hover {
   background-color: #555555; /* Hintergrundfarbe der Links beim Hovern */
 }
 
-.textcontent {
+.maschinelleslernen {
+ color: black;
+}
+
+.textcontent2 {
   margin-left: 200px;
   margin-right: 200px;
-  
 }

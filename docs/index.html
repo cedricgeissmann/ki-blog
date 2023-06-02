@@ -9,21 +9,24 @@
   <link rel="stylesheet" href="blog.css">
 </head>
 <body>
-  <nav>
-    <ul>
-      <li><a  class="Buttonhome"href="index.html">Home</a></li></li>
-       <a href="#KI">Was ist eine KI?</a>
-       <a href="neuronales-netz.html">Was ist ein neuronales Netz?</a>
-       <li><a class="Buttonhome1" href="http://127.0.0.1:5500/ki-blog/digits.html">Ziffern</a></li></li>
-      
+  <nav class="navbar">
+    <ul class="navbar-list">
+      <li><a href="#Einfluss-KI">Was für einen Einfluss haben Daten auf eine KI?</a></li>
+       <li><a href="neuronales-netz.html">Neuronales Netz</a></li>
+       <li><a href="ChatGPT.html">ChatGPT</a></li>
+       <li><a class="Buttonhome1" href="digits.html">Ziffern</a></li>
     </ul>
   </nav>
+
+
   <main>
     <h1>KI Blog</h1>
-    <section>
+    
+    <section  id="#KI"></section>
 
       <h2>Was ist KI?</h2>
-      <p id="#KI">
+<section class="textcontent"> 
+      <p>
         Die Abkürzung KI steht für «künstliche Intelligenz (im englischen AI = Artificial 
         Intelligence). Sie ist ein Teilgebiet der Informatik. Die KI ist das Bestreben,
         wesentliche Aspekte der menschlichen Intelligenz auf eine Maschine zu übertragen.
@@ -36,20 +39,95 @@
         Aufgaben zu lösen. Zum Beispiel bei selbstfahrenden Autos, bei Sprachassistenten,
         bei Werbungen auf unseren Smartphones und bei noch viel mehr.
        </p>
+       
+      
 
-
+      
+<section id="Was-ist-KI" ></section>
 
       <h2>  Wie funktioniert KI?</h2>
 
+      <p >
+        Eine KI arbeitet auf der Grundlage von Algorithmen und Modellen, die entwickelt wurden,
+         um Daten zu analysieren, Muster zu erkennen und Schlussfolgerungen zu ziehen. Der genaue 
+         Funktionsmechanismus kann je nach Art der KI variieren, aber im Allgemeinen folgen KI-Systeme
+          einem ähnlichen Prozess:
+       <p>
+        Datenerfassung: Eine KI benötigt Daten, um daraus lernen und Muster erkennen zu können. Die Daten
+         können strukturiert (z.B. in Tabellenform) oder unstrukturiert (z.B. Texte, Bilder, Audiodateien) sein. 
+         Je umfangreicher und hochwertiger die Daten sind, desto besser kann die KI lernen und fundierte Entscheidungen
+          treffen.</p> 
+      <p>  Datenverarbeitung und -darstellung: Die Daten werden in einem für die KI-Verarbeitung geeigneten Format aufbereitet. 
+        Dies kann die Umwandlung von Texten in numerische Vektoren, die Segmentierung von Bildern oder die Umwandlung 
+        von Audiosignalen in spektrale Merkmale umfassen. Diese aufbereiteten Daten stellen den Input für die KI-Modelle dar.
+      </p>
+
+       <p> Training: Die KI-Modelle werden mit den vorverarbeiteten Daten trainiert. Das Training beinhaltet die Anpassung 
+        der Modellparameter, um eine bestimmte Aufgabe zu erfüllen. Dabei werden die Modelle mit den Eingabedaten gefüttert und 
+        passen ihre internen Gewichtungen und Strukturen an, um die gewünschten Ausgaben zu erzeugen.
+      </p>
+
+      <p> Evaluierung und Optimierung: Nach dem Training werden die KI-Modelle auf ihre Leistungsfähigkeit hin überprüft.
+         Sie werden mit Testdaten getestet, die während des Trainings nicht verwendet wurden. Die Leistung der Modelle
+          wird anhand verschiedener Metriken bewertet und gegebenenfalls werden Anpassungen vorgenommen, um die Leistung 
+          zu verbessern.
+        </p> 
+
+       <p> Inferenz: Nachdem das Modell trainiert und optimiert wurde, kann es zur Vorhersage oder Verarbeitung neuer Daten 
+        verwendet werden. Das Modell empfängt die neuen Eingabedaten und erzeugt entsprechende Ausgaben oder Vorhersagen 
+        auf der Grundlage des gelernten Wissens und der Muster aus dem Training.
+      </p>
+  
+
+
+
+      <section id="Einfluss-KI">
+      <h2>Was für einen Einfluss haben Daten auf eine KI?</h2>
+
+     <p> Daten spielen eine entscheidende Rolle bei der Entwicklung und dem Einsatz von Künstlicher Intelligenz (KI). 
+      Daten dienen als Grundlage für das maschinelle Lernen und ermöglichen es KI-Systemen, Muster, Zusammenhänge
+       und Modelle zu erkennen und zu erlernen. Der Einfluss von Daten auf eine KI kann wie folgt zusammengefasst werden:
+      </p>
+
+<p> Training von KI-Modellen: Um eine KI zu trainieren, werden große Mengen an Daten benötigt. 
+Diese Daten werden verwendet, um KI-Modelle zu trainieren und ihnen beizubringen, Muster und Regelmäßigkeiten 
+in den Daten zu erkennen. Je umfangreicher und repräsentativer die Trainingsdaten sind, desto besser kann die KI lernen 
+und präzise Vorhersagen oder Entscheidungen treffen.</p>
+
+<p>  Datenvorverarbeitung: Bevor Daten für das Training von KI-Modellen verwendet werden können, müssen sie oft vorverarbeitet
+ und gereinigt werden. Dies umfasst Schritte wie Datenbereinigung, Normalisierung, Entfernung von Ausreißern und 
+ Feature-Engineering. Eine sorgfältige Vorverarbeitung der Daten ist wichtig, um die Qualität der KI-Modelle zu 
+ verbessern und mögliche Verzerrungen oder Fehler in den Daten zu minimieren.</p>
+
+
+ <p>Datenqualität und Repräsentativität: Die Qualität der Daten hat einen erheblichen Einfluss auf die Leistung einer KI.
+ Daten sollten aktuell, vollständig, korrekt und repräsentativ für das Anwendungsgebiet sein. Wenn die Daten verzerrt, 
+ unausgewogen oder unrepräsentativ sind, kann dies zu ungenauen Vorhersagen oder voreingenommenen Ergebnissen führen.</p>
+
+
+ <p> Datenaktualisierung und Anpassung: KI-Modelle müssen regelmäßig mit neuen Daten aktualisiert und angepasst werden, um 
+ihre Leistung im Laufe der Zeit aufrechtzuerhalten. Neue Daten können helfen, die Modelle auf aktuelle Trends, Veränderungen 
+im Verhalten der Nutzer oder neue Muster anzupassen.</p>
+
+<p> Datenschutz und ethische Überlegungen: Der Zugriff auf Daten und deren Verarbeitung durch KI-Systeme wirft auch 
+wichtige Fragen des Datenschutzes und der Ethik auf. Es ist entscheidend, sicherzustellen, dass Daten ethisch behandelt 
+werden, die Privatsphäre der Nutzer gewahrt wird und potenzielle Vorurteile oder Diskriminierung vermieden werden.</p>
+
+<p> Insgesamt beeinflussen Daten die Leistung, Genauigkeit und Zuverlässigkeit von KI-Systemen maßgeblich. Hochwertige Daten,
+ sorgfältige Vorverarbeitung, Aktualisierung der Daten und ethische Betrachtungen sind wichtige Aspekte, um den 
+ Einfluss von Daten auf KI positiv zu gestalten. </p>
+
+
+</section>
 
 
 
       
-      </p>
+  
       
       
     
-    </section>
+</section>
   </main>
 </body>
 </html>
