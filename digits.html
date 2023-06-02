@@ -10,17 +10,25 @@
   <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
 </head>
 <body>
+  <div><a href="http://127.0.0.1:5500/ki-blog/docs/index.html">
+
+    <button class="Button1">Home</button>
+  </a></div>
+  
+  <div >
+    <ul class="controlls1">
+   <li class="Liste"><button class="controlls"id="btn-train">Train</button></li>
+    <li class="Liste"><button class="controlls"id="btn-load">Load</button></li>
+   <li class="Liste"> <button class="controlls" id="btn-save">Save</button></li>
+    <li class="Liste"><button class="controlls"id="btn-clear">Clear</button></li>
+    <li class="Liste"><button class="controlls"id="btn-guess">Guess</button></li>
+    <li class="Liste"><button class="controlls"id="btn-display">Display</button></li>
+  </ul>
+
+  </div>
   <div id="prediction-container" class="display-container">
     <div>Zahl: <span id="prediction-number">#</span></div>
     <div>Sicherheit: <span id="prediction-confidence">0.0</span></div>
-  </div>
-  <div class="controlls">
-    <button id="btn-train">Train</button>
-    <button id="btn-load">Load</button>
-    <button id="btn-save">Save</button>
-    <button id="btn-clear">Clear</button>
-    <button id="btn-guess">Guess</button>
-    <button id="btn-display">Display</button>
   </div>
   <canvas id="canvas"></canvas>
   <p class="display-container">Label: <span id="label-display">#</span></p>
