@@ -1,10 +1,28 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: darkslategray;
-  color: antiquewhite
+  color: antiquewhite;
+  font-size: 20px;
+  padding-left: 100px;
+  padding-right: 80px;
+  background-image: url("https://th.bing.com/th/id/R.4f7a8f5ea6be917aac56170f61b567db?rik=sqdJmlaK%2fefWnA&riu=http%3a%2f%2fblog.visme.co%2fwp-content%2fuploads%2f2017%2f07%2f50-Beautiful-and-Minimalist-Presentation-Backgrounds-041.jpg&ehk=K2NoZfN8TQF2hEozkr9%2bESZXGSSnmTR9G3HO253r1dM%3d&risl=&pid=ImgRaw&r=0");
 }
 
+nav {
+  position:absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color:rgb(173, 153, 124);
+  transform: translateX(calc(-90%));
+  height: 100%;
+  padding-right: 30px;
+  transition-duration: 1s;
+}
+
+nav:hover {
+  transform: translateX(0);
+}
 nav > ul > li {
   list-style: none;
   padding: 10px;
@@ -16,12 +34,13 @@ nav > ul {
   justify-content: space-between;
   align-items: center;
   padding: 0;
+  flex-direction: column;
 }
 
 nav > ul > li > a {
   font-size: 2rem;
   text-decoration: none;
-  color: antiquewhite;
+  color: rgb(72, 57, 50);
 }
 
 nav > ul > li > a:hover {
@@ -30,4 +49,17 @@ nav > ul > li > a:hover {
 
 main {
   padding: 20px 50px;;
+  
+}
+
+h1 {
+  text-align: center;
+  color: black;
+  font-size: 300%;
+  
+}
+
+section {
+  font-size:180%;
+  color: rgb(54, 41, 27);
 }
