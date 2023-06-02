@@ -1,7 +1,7 @@
 canvas {
   border: 1px solid #d3d3d3;
   height: 80vw;
-  background-color: white;
+  background-color: rgb(193, 212, 255);
   image-rendering: pixelated;
 }
 
