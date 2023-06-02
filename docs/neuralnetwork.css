@@ -1,0 +1,11 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: darkslategray;
+    color: antiquewhite
+  }
+
+.container {
+    font-size: 2rem;
+    text-decoration: none;
+}
