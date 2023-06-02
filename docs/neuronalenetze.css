@@ -2,6 +2,9 @@ body{
     color:black;
     background-color: aliceblue;
     font-size: 30px;
+    padding: 20px 50px;;
+    width:70vw;
+    margin:0 auto;
 }
 
 nav > ul > li {
@@ -34,6 +37,7 @@ nav > ul {
 
   .box1{
     color: black;
-    width: 70%;
+    width: 100%;
     font-size: 20px;
+    text-align: center;
   }

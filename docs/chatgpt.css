@@ -37,10 +37,20 @@ h1, h2 {
     font-style: bold;
 }
 
-.padding:hover{
-  padding:150px;
+
+.box1{
+  transition: 2s ease-in-out;
 }
 
-.margin:hover{
-  margin: 100px;
+.box2{
+  transition: 2s ease-in-out;
+}
+
+.box3{
+  transition: 2s ease-in-out;
+}
+
+.padding:hover{
+  padding:150px;
+  transition: 2s ease-in-out;
 }
