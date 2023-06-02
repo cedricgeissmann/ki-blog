@@ -1,7 +1,7 @@
 canvas {
   border: 1px solid #c52ebb;
   height: 80vw;
-  background-color:whitesmoke;
+  background-color:beige;
   image-rendering: pixelated;
 }
 
@@ -21,17 +21,31 @@ body {
   font-size: 2rem;
   font-weight: bold;
   padding: 20px;
-  background-color: #c52ebb;
+  background-color:#92dae3;
 }
 
 #prediction-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: blue;
+  background-color: #92dae3;
 }
 
 #prediction-container div {
   margin: 0 20px;
-  background-color: blue
+  background-color: #92dae3
+}
+.controlls button{
+  background-color: pink; /*hintergrundfarbe*/
+  color: wihte; /*textfarbe*/
+padding: 10px 20px;/*Innenabsatnd*/
+border:none;/*rand entfernen*/
+border-radius: 4px;/*abgerunderte Ecken*/
+cursor:pointer; /*Zeiger bei Hover*/
+margin-right: 10px;/*abstand zwischen den buttons*/
+
+}
+.controlls button:disabled{
+  background-color: orchid;/*Hintergrundfarbe für deaktivierte buttons*/
+  cursor: not-allowed; /*Zeiger nicht erlaubt*/
 }
