@@ -88,4 +88,13 @@ box-shadow: inset 0 -100px 0 0 #725AC1;
       }
     
     
-      
+   .verkleinern{
+    text-align: center;
+    
+   } 
+   
+   .verkleinern img {
+    width: 600px;
+   }
+
+   
