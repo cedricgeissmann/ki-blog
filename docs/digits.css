@@ -1,12 +1,12 @@
 canvas {
-  border: 1px solid #0084ff65;
+  border: 1px solid #001eff;
   height: 80vw;
-  background-color: rgb(4, 255, 0);
+  background-color: rgb(180, 225, 255);
   image-rendering: pixelated;
 }
 
 body {
-  background-color: black;
+  background-color:rgb(53, 67, 199);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,7 +17,7 @@ body {
 }
 
 .display-container {
-  color: rgb(255, 0, 0);
+  color: rgb(25, 186, 255);
   font-size: 2rem;
   font-weight: bold;
   padding: 20px;
