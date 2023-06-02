@@ -120,3 +120,15 @@ section img#mountains_front {
     /* margin-bottom: 10px; */
     color: #fff;
 }
+
+.space {
+margin: 30px;
+}
+
+a{
+    color: rgb(131, 155, 207);
+}
+
+.increase{
+    margin-left: -35px;
+}
