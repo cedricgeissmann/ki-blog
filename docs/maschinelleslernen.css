@@ -36,7 +36,6 @@ nav > ul {
 
 .img{
     width:50%;
-    align-items: center;
 }
 
 h1{
@@ -44,6 +43,7 @@ h1{
     color: darkviolet;
 }
 
-.box{
-    width:10px;
+.margin:hover {
+  margin:-100px;
+  transition: 2s ease-in-out;
 }

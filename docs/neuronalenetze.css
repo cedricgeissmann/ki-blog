@@ -38,6 +38,15 @@ nav > ul {
 
   .box1{
     color: black;
-    width: 100%;
     font-size: 20px;
+  }
+
+  .box2{
+    color: black;
+    font-size: 20px;
+  }
+  
+  .padding:hover{
+    padding: 100px;
+    transition: 2s ease-in-out;
   }

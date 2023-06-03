@@ -65,3 +65,13 @@ h2,h3,h4{
   width: 100%;
   text-align: center;
 }
+
+.padding:hover{
+  padding:150px;
+  transition: 2s ease-in-out;
+}
+
+.margin:hover{
+  margin: 100px;
+  transition: 2s ease-in-out;
+}
