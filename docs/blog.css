@@ -1,8 +1,9 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: darkslategray;
-    color: antiquewhite
+    background-color: rgb(133, 117, 211);
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
   }
   
   nav > ul > li {
@@ -19,16 +20,17 @@ body {
   }
   
   nav > ul > li > a {
+    padding: 38px;
     font-size: 2rem;
     text-decoration: none;
-    color: antiquewhite;
+    color:  rgb(255, 255, 255);
   }
   
   a,
   a:visited {
     font-size: 1.2rem;
     text-decoration: none;
-    color: antiquewhite;
+    color:  rgb(255, 255, 255);
   }
    
   a:hover {
@@ -42,6 +44,7 @@ body {
   h2 {
     font-size: 1.3rem;
   }
+
   
   main {
     padding: 20px 50px;;

@@ -8,12 +8,23 @@
     <title>Document</title>
 </head>
 <body>
+    <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li></li>
+          <li><a href="digits.html">Ziffern</a></li></li>
+        </ul>
+      </nav>
     <main>
     <h2>Wie funktioniert ein neuronales Netz?</h2>
-    Ein neuronales Netz besteht aus künstlichen Neuronen welche durch ein Netzwerk miteinander verbunden sind. Wie man bei dem Bild unten sehen kann, sind diese Neuronen in mehreren Schichten angeordnet. Es gibt die erste Schicht (blau im Bild), welche auch die Eingabeschicht (Input) genannt wird. Wie der Name schon sagt, kommen da die Eingaben rein, also bei dem Beispiel von der KI unter Ziffer wären das die Übungszahlen oder die Zahlen, welche man selber schreibt. 
-    Diese Input Daten werden dann von der Eingabeschicht weiter an die Neuronen der ersten Verborgenen Schicht gegeben (Hidden Layer), welche im Bild rot dargestellt ist. Je mehr Daten verarbeitet werden, desto mehr Verborgene Schichten gibt es in dem neuronalen Netz. Die Daten welche in den Verborgenen Schichten berechnet werden, werden dann in der Ausgabeschicht (grün im Bild) ausgegeben. Wie viele Ausgabeneuronen es gibt, kommt darauf an, wie wie viele Optionen es gibt, in die das neuronale Netz Informationen einteilt.
-    Schlussendlich wird diese Option, also diese Antwort angezeigt, von der KI, bei welcher das Neuron den höchsten Wert hat. Wenn man das jetzt mit der Beispiels KI Ziffer erklären würde, könnte man sagen, dass die Zahl, die man selber schreibt, die Eingabeschicht darstellt, danach wird mit den Verborgenen Schichten berechnet, welche Zahl, die geschriebene Zahl darstellt. Je dicker die Pfeile, zwischen den verschiedenen Schichten, desto wichtiger sind sie für die Ausgabe. Es gibt in der KI Ziffer 10 Ausgabeneuronen, weil der Computer 10 Zahlen hat, die er am Schluss ausgeben kann.
-    Das Ausgabeneuron, auf welches am meisten dicke Pfeile zeigen, ist das Neuron, welches der Computer als Ausgabe angibt. Wenn der Computer trainiert, wird bei jedem Fehler berechnet, welche Pfeile des Netzwerkes dicker gezeichnet werden müssen, also wichtiger sind, und welche weniger dick gezeichnet werden müssen, also zu viel Gewichtung haben. Somit kann sich der Computer verbessern und wird immer genauer, dass ist auch der Grund dafür, dass die KI, je nach Trainingsdaten besser oder schlechter ist.
+    Ein neuronales Netz besteht aus künstlichen Neuronen welche durch ein Netzwerk miteinander verbunden sind. Wie man bei dem Bild unten sehen kann, sind diese Neuronen in mehreren Schichten angeordnet.<br>
+    Es gibt die erste Schicht (blau im Bild), welche auch die Eingabeschicht (Input) genannt wird. Wie der Name schon verrät, kommen da die Eingaben hinein, also bei dem Beispiel von der KI unter Ziffer wären das die Übungszahlen oder die Zahlen, welche man selber schreibt. 
+    <br>Diese Input Daten werden dann von der Eingabeschicht weiter an die Neuronen der ersten Verborgenen Schicht gegeben (Hidden Layer), welche im Bild rot dargestellt ist. Je komplexer das zu lösende Problem, desto mehr verborgene Schichten braucht es in dem neuronalen Netz. 
+    <br>Die Daten welche in den Verborgenen Schichten berechnet werden, werden dann in der Ausgabeschicht (grün im Bild) ausgegeben. Wie viele Ausgabeneuronen es gibt, kommt darauf an, wie viele Optionen es gibt, in die das neuronale Netz Informationen einteilt.
+    Schlussendlich wird diese Option, also diese Antwort angezeigt, bei welcher das Neuron den höchsten Wert hat. 
+    <br>Wenn man das jetzt mit der beispiels KI Ziffer erklären würde, könnte man sagen, dass die Zahl, die man selber schreibt, die Eingabeschicht darstellt, danach wird mit den Verborgenen Schichten berechnet, welche Zahl, die geschriebene Zahl darstellt. Je dicker die Pfeile, zwischen den verschiedenen Schichten, desto wichtiger sind sie für die Ausgabe. Es gibt in der KI Ziffer 10 Ausgabeneuronen, weil der Computer 10 Zahlen hat, die er am Schluss ausgeben kann.
+    Das Ausgabeneuron, auf welches am meisten dicke Pfeile zeigen, ist das Neuron, welches der Computer als Ausgabe angibt. 
+    <br>Wenn der Computer trainiert, wird bei jedem Fehler berechnet, welche Pfeile des Netzwerkes dicker gezeichnet werden müssen, also wichtiger sind, und welche weniger dick gezeichnet werden müssen, also zu viel Gewichtung haben. 
+    Diesen Prozess nennt man Backpropagation. <a href="https://www.youtube.com/watch?v=q8SA3rM6ckI">(Backpropagation durch ein Neuronales Netz)</a>. Somit kann sich der Computer verbessern und wird immer genauer, dass ist auch der Grund dafür, dass die KI, je nach Trainingsdaten besser oder schlechter ist.
     <div class="image-container"></div>
     <img id="neuronalesnetz" src="https://d1g9li960vagp7.cloudfront.net/wp-content/uploads/2022/01/WP_neuronales-netz_aufbau2-1024x576.jpg" >
 </main>
