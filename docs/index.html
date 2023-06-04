@@ -1,25 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KI Blog</title>
-
-  <link rel="stylesheet" href="blog.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax scrolling website</title>
+    <link rel="stylesheet" href="blog.css">
 </head>
 <body>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li></li>
-      <li><a href="digits.html">Ziffern</a></li></li>
-    </ul>
-  </nav>
-  <main>
-    <h1>KI Blog</h1>
+    <header>
+        <a href="#sec" class="logo">AI-BLOG</a>
+        <ul>
+            <!-- make class active -->
+            <li><a href="#network" class="active" >Neural Network</a></li> 
+            <li><a href="#machinelearning">Machine learning</a></li>
+            <li><a href="#influence">Influence of data</a></li>
+            <li><a href="#chatgpt">ChatGPT</a></li>
+            <li><a href="#limitations">limitations and use</a></li>
+            <li><a href="digits.html">Application</a></li>
+        </ul>
+    </header>
     <section>
-      Hier ist ein Abschnitt.
+        <img src="../docs/resources/stars.png" id="stars">
+        <img src="../docs/resources/moon.png" id="moon">
+        <img src="../docs/resources/mountains_behind.png" id="mountains_behind">
+        <img src="../docs/resources/mountains_front.png" id="mountains_front">
     </section>
-  </main>
+    <div class="sec" id="sec">
+        <p>In order to introduce you to this work, it should be said that this AI blog deals with artificial intelligence and the related topic aspects, which can be reached via the navigation bar displayed above. The corresponding application for digit recognition can be opened via navigation bar and application reference. In the course of the blog, this will play a major role and serve as an interactive example for demonstrating deep learning and neural networks. So dive into the world of artificial intelligence AI with this blog and let impress you.</p>
+        <p class="space"></p>
+        <h2>Artificial intelligence</h2>
+        <h5>What's AI and how does it work?</h5>
+        <p>Artificial intelligence as a part of our modern society has become part of our lives. Although we all encounter AI applications on a daily basis in our web browsers or the commonly known AI applications such as chatgpt, kaiber or clipdrop, artificial intelligence is also involved in many other hidden digital processes that we as normal humans do not see, but which are of enormous significance.</p>
+        <p class="space"></p>
+        <p>Artificial intelligence has therefore become an essential part of our digitalised world and continues to demonstrate the importance of its place. For example face recognition in smartphones, human robots or automated driving, which is often used in modern Tesla models, would not be possible without AI. But what is AI actually? 
+            <p class="space"></p>
+            <p>In general, we can say that artificial intelligence, as a dynamic branch of computer science, deals with the question of creating mechanisms with which computers and digital devices can develop intelligent behaviour that is directly oriented towards the modern human example. Today's artificial intelligence enables learning, understanding and related action through hyperintelligent algorithms.
+            <p>Overall AI's require a massive amount of data, which is based on the quantity and quality of the data, influences the end result. To arrive at the desired result, the technology extracts certain features from the data set and classifies them.
+            In terms of the function of modern artificial intelligence, we differentiate between two types of artificial learning, machine learning and deep learning. The big difference between these two forms of learning in modern AI is that machine learning still needs human intervention so that the machine finally knows what to do, and deep learning is where the machine learns on its own, extracting and making sense of the data and information by itself.</p>
+            <p class="space"></p>
+            <p>Autonomous driving now serves as a common example for the described functioning of AI. The vehicle receives qualitative data from cameras, radar systems and other sensors, which provide a broad database of what is happening around the vehicle. In addition to receiving new data, the machine also evaluates its current driving behavior. With the help of its intelligence, the vehicle is ultimately able to rearrange the data it receives and decide whether to intervene. 
+                Ultimately, the vehicle receives feedback on how it can best master and manage the current traffic situation. The blog will go into these aspects in more detail later on with the involvement of the external AI application and use this example to show the importance of neural networks and their significance for artificial intelligence.</p>
+            <p class="space"></p>
+            <p>With regard to artificial intelligence, it is important to know that AI is not just an idea from yesterday, but has been gaining massive momentum since the 1950s, which continues to this day and has seen a massive increase in interest in recent years. As a result, billions of US dollars are invested every year in dominant startups from a wide range of industries and experts are sure that around two-thirds of our technologies will be related to artificial intelligence. Below you can see three interesting facts set up by the german BOSCH GmbH in relation to artificial intelligence what finally brings this chapter to an exciting end.</p>
+            <p class="space"></p>
+            <h2>AI-facts by BOSCH</h2>
+            <p>All of theese facts belong to the AI theme world of the BOSCH GmbH and are directly cited. if you follow this link, you will be taken to the corresponding website, which has many more exciting reports on artificial intelligence in addition to all of this;  <a href="https://www.bosch.com/de/stories/kuenstliche-intelligenz/">Artificial intelligence by the BOSCH GmbH</a></p>
+            <p class="space"></p>
+            <h5>Megatrend</h5>
+            <p> <img src="../docs/resources/increase.png" class="increase">According to PWC, AI will increase global gross domestic product by 14 percent and contribute $15.7 trillion by 2030. According to the report, AI is a "business advantage" for 72 percent of all business leaders. Gero Nießen, director at consultant Willis Tower Watson, calls artificial intelligence the "biggest economic transformation the world has ever seen."</p>
+            <p class="space"></p>
+            <h5>Milestones</h5>
+            <p><img src="../docs/resources/wavingflag.png">In 1997, the computer Deep Blue triumphed in chess against world champion Garry Kasparov. It was the breakthrough for artificial intelligence in duels with human opponents. Other significant victories followed: for example, in Scrabble and even the TV show Jeopardy! The final success was achieved by AI in what experts consider the most complicated board game: Go. In 2016, the AlphaGo computer defeated one of the world's best Go players.</p>
+            <p class="space"></p>
+            <h5>The future of work</h5>
+            <p> <img src="../docs/resources/technician.png">Experts believe that the fear of millions of jobs being eliminated by artificial intelligence is unfounded. Less than five percent of jobs are defined in such a way that they can be completely automated, says Michael Chui, a partner in the research department at McKinsey, for example. However, the focus is shifting for many activities, he adds. "There are things that machines are not as good at, such as interacting with other people and creative work," Chui says.</p>
+            <h2 id="network">Neural network</h2>
+        <h5>How does a neural network work?</h5>
+        <p>In order to understand the meaning of neural networks and the general automated learning of AI modelled on humans, we now need to take another step back and look at the question of the realisation of AI. In general, it must be seen that artificial intelligence can always be realised through the traditional way of programming, since a complex network of knowledge can be built up by stringing together if, then statements and other programmable control procedures. Such so-called "expert systems" are now often seen in modern medicine, where they are used to diagnose diseases through a variety of clinical pictures and symptoms. 
+        The problem with this type of realisation is that, depending on the complexity of the application, the algorithms used can sometimes become very complicated.</p>
+        <p class="space"></p>
+        <p>If you go one step further and take a closer look at machine learning, it is characterized by the fact that it learns independently and acquires the necessary rules by automated training of datasets. To get to the point, you have to admit that machine learning is the most popular method for realizing artificial intelligence. In the course of the blog, however, we will go back explicitly to this central point and now take a look at the deep learning and neural networks.</p>
+        <p class="space"></p>
+        <p>The so-called deep learning covers a unique and modern form of machine learning, which is a milestone of artificial intelligence and is an essential part of our modern technology. In this form, neural networks ANN, which amounts to programmatic replicas of human networked nerve cells, so-called neurons, are trained with data and the final results are compared with it. When comparing these results and the general deep learning, the nerve connections of these neurons are mathematically adjusted and re-weighted, respectively strengthened. The concept of deep learning derives from the point that there are many hidden levels between the initial input and the final output, which have a high complexity and determine this kind of realization of artificial intelligence.
+            So if we take a closer look at the following <a href="digits.html">Application</a>, which has been set up in the context of this blog, it quickly becomes clear that this number recognition is based exactly on this deep learning and is built on a neural network, that is equipped with a corresponding dataset. The application is initially trained and the results are then compared with the originally searched digit, which thus leads to the adjustment of the nerve connections of the individual neurons and makes the digit recognition with each training passage a bit more precise. So try them out and convince yourself of deep learning using neural networks.
+        </p>
+        <img src="../docs/resources/neuralnetwork.png">
+        <p class="space"></p>
+        <p>In the end, this means that deep learning is part of machine learning, which in turn is a part of artificial intelligence and its realization. Exactly this connection can also be seen in the chart below. In addition, to further deepen the principle, it is worthwhile to watch the following explanatory video of IBM technology; <a href="https://youtu.be/jmmW0F0biz0">Neural Networks Explained in 5 minutes</a></p>
+        <p class="space"></p>
+        <img src="../docs/resources/Intelligencediagram.png" class="diagram">
+        <p class="space"></p>
+        <h2 id="machinelearning">Machine learning</h2>
+        <h5>What's actually machine learning?</h5>
+        <p>As already announced in the section on neural networks and deep learning, we will now return to machine learning and note its importance in relation to artificial intelligence.
+        In general, it can be said that artificial intelligence has made significant progress in machine learning in recent years, which continues up to today and is characterised by the increasing availability of huge amounts of data and extremely high computing power, which is the basis for complex machine learning.</p>
+        <p class="space"></p>
+        <p>As already mentioned, machine learning represents the independent and autonomous learning process of a functioning algorithm through the constant repetition of a desired process until it is appropriately trained. The learning machine is oriented towards the criterion of goods and the information content of the given data. The big difference to conventional algorithms is, as already mentioned several times, that no solution path is modelled accordingly, but the machine develops its own ways of recognising and classifying data through machine learning.</p>
+        <p class="space"></p>
+        <p>A good example for the whole topic would be the many different robots that are currently being developed for various services, such as nursing or army service. If, for example, such a robot has the task of transporting a box of ammunition from A to B, it will find its own way to transport the essential ammunition by repeatedly trying out and adapting its task-based algorithm. The way in which it accesses the ammunition or the speed with which it walks will become clear in the course of its learning process and the human being does not need to make any further interventions. To clarify the example, the following is an illustration of such a possible military army robot.</p>
+        <p class="space"></p>
+        <img src="../docs/resources/militaryarmyrobot.png" class="armyrobot">
+        <p class="space"></p>
+        <h2 id="influence">Influence of data</h2>
+        <h5>How do data influence artificial intelligence?</h5>
+        <p> Let's take a closer look at the influence of data on modern artificial intelligence. Basically, it can be said that data plays an extremely important role in the development and use of artificial intelligence and serves as the basis of machine learning, which we have looked at before. However, in order to understand the general influence of data, certain points must be considered. In order to train an artificial intelligence based on its machine learning process, large amounts of data are required, which determines the precision and accuracy of the subsequent AI based on the points of view of the data representation and the general data volume. In this regard, data preprocessing is helpful, since the data used should first be pre-processed and cleaned to ensure the necessary data quality and to avoid data errors that restrict the AI. Data preprocessing includes some important steps, such as data cleaning, data normalization, and outlier removal, and feature engineering.<img src="../docs/resources/influencedata.png" class="data">In order to review the data quality and the general data representation, it must be said that the data used should always be complete, current and specifically representative for the respective application area. In order to additionally prevent this, data should be updated and adapted over time to maintain the performance of artificial intelligence and adapt it to various changes of the acute time.</p>
+        <p class="space"></p>
+        <p>At the end of this important topic, however, something should also be said about data protection and data ethics, as it is a very important point that is often underestimated. It is crucial to ensure that data is treated ethically and in privacy grounds in order to avoid potential bias and discrimination. In general, the importance of data and its impact on artificial intelligence should now be clear and we can move forward in the blog.</p>
+        <p class="space"></p>
+        <h2 id="chatgpt">ChatGPT</h2>
+        <h5>How does ChatGPT work?</h5>
+        <p>The popular and well-known ChatGPT is a chatbot based on artificial intelligence from the global company OpenAI, which was co-founded by Elon Musk and has gained massive interest in recent years. The chatbot usually communicates with users in various languages such as German and English and evaluates questions with detailed answers. But in general, the question arises how this ChatGPT works and is built up.</p>
+        <p class="space"></p>
+        <p>To address the question of how ChatGPT works at all and how this application could become so popular, you first have to look at how the artificial intelligence behind the chatbot was trained. ChatGPT was trained with a specific methodology called Reinforcement Learning from human feedback (RLHF) that has shaped the chatbot so significantly. In the first phase of the training of ChatGPT’s artificial intelligence, they worked with the conversation with the AI to learn how humans act in conversations, which ultimately promotes a large amount of data, that the far-reaching AI can access and is enlarged from day to day.</p>
+        <p class="space"></p>
+        <p> <img src="../docs/resources/symbolchatgpt.png">In a second step of the training of the AI ChatGBT, much emphasis was placed on the classification of the responses of ChatGPt based on human feedback to improve the quality of the responses of ChatGBT. The general human influence through crucial feedback is an important part of this AI and distinguishes it in the way of naturally realistic conversation with the chatbot. Finally, this is also the reason why ChatGPT is available to the public, because it should show weaknesses of the AI and its drivers and thus be integrated as a fixed training aspect in training system of OpenAI. The functionality of AI would thus be largely discussed and we can now look at some limits of this AI and dictate what to look at when using it. Follow this link to try <a href="https://openai.com/blog/chatgpt">ChatGPT</a>by yourself.</p>
+        <h2 id="limitations">limitations of ChatGPT and correct use</h2>
+        <h5>What are the limitations of the AI ChatGPT and what to look for in the use of it.</h5>
+        <p>With regard to artificial intelligence and the chatbot ChatGPT, we should finally get to know the limits of this AI and record on what you have to look at when using it. In general, it can be said that the debate about ChatGPT has increased drastically in recent months and has caused significant cuts in the field of education. Thus, the DFKI Labor Berlin warns against bringing ChatGPT unreflected and free to the Andwenung when it comes to the generation of specialized text. Such warnings and the general reference to conventional metodes is based exactly on the limits of AI, which we are now discussing.</p>
+        <p class="space"></p>
+        <p>The texts and answers generated by chatgpt often seem very plausible and true, which exactly shows one of the essential problems, as these can be simple plagiarism from the training data and also contain some serious errors and mistakes, which are simply not correct. Thus, according to the DFKI Labor Berlin, a recently published perprint points out that people can use digital tools such as ChatGPT, or other artificial intelligence to produce desired code, which contains many security gaps, although users expect to have generated fewer vulnerabilities related to this AI. In general, this ignorance is a big problem and limits the use of the chatbot chatGPT considerably. ChatGPT is also very limited in terms of source work in relation to generated texts, as sources are sometimes either incorrectly specified or simply invented by the AI, that do not exist at all and violate so many basic norms in relation to written texts. The limits of chatbots such as ChatGPT and other artificial intelligence-based applications are therefore numerous and in addition to the points discussed, still amount to many other aspects of the limitation, which one must simply be aware of as a user of ChatGPT. So what do you have to pay attention to when using chatGPT ?</p>
+        <p class="space"></p>
+        <p>In order to write the answer to this last question as natural and balanced as possible, you have to have just mentioned that the use of chatbots, how chatGPT can bring significant benefits and will establish itself as our everyday companion in terms of efficient research and generally improved working methods. However, as users of these applications, we are dependent on chatgbt to critically evaluate the resulting results such as AI generated responses and to check their correctness. It is one of the measures that presupposes the use of ChatGPT and is very important, because in the end it also applies to AI that not everything in the intenet must be right, what you see in relation to AI generated answers again and again, especially when it comes to scientific, or generally complicated things. Especially with regard to source lists and given information sources, you have to be extremely careful and not be fooled by the AI, because if you disregard such aspects in the use, you may also violate copyrights and can get great difficulties. It is therefore more fundamental for working with ChatGPT, not to give too much weight to answers and results and to always critically assess them on various aspects. This last section on the correct handling of artificial intelligence using the example of the chatbot ChatGPT is thus an optimal end for this AI blog, on which a small incidental, but for me important self-reflective section follows, which now briefly explains the work on this blog and provides an outlook for further work on it. 
+        <img src="../docs/resources/useandhandling.png" class="handling"></p>
+        <p class="space"></p>
+        <h2>Work on the AI-blog and outlook</h2>
+        <h5>What could I achieve with my work and what would be added in the following time?</h5>
+        <p class="space"></p>
+        <p>With this final work for the department of computer science on the topic of artificial intelligence, I was able to address some aspects of modern computer science and to further my education in the field of advanced AI applications. I once again used the three programming languages HTML, CSS and Javascript and just consolidated the correct use of HTML with this interactive and extensive website. With regard to the website design, it should also be said that, in addition to all the other things, I also set myself apart with the development of specific parallax websites, to which I initially got a template and enlarged and rebuilt it accordingly. For me it was therefore exciting to learn how to design dynamic and attractive websites with a few tricks, on which foreground and background objects move differently to each other. So this work has also brought me further in terms of web design and since I have often worked with Photoshop for image processing, I could also gain new experience there. However, the most important thing for me is that I was able to develop a comprehensive understanding of artificial intelligence and its functions during the work process, which no one takes away from me so quickly.</p>
+        <p class="space"></p>
+        <p>In order to finally arrive at a suitable outlook, I have to say that the website, as it is now, is actually fully developed and does not require any extension. The only things I would have addressed in the future would be purely ethical things that have nothing to do with the content of the blog. So currently I encounter the problem that the moving moon in the background is also moved when I simply scroll through the website and it becomes therefore endless. Accordingly, this could be solved quickly, however, in which the value by which the moon is shifted when scrolling, simply no longer becomes larger once it has reached a certain value for y. In addition to this aspect, there are hardly any other things that I could have added in the future, because otherwise everything works smoothly and the website is insightfully harmonious. Both in terms of content, as well as estethic and design.</p>
+        <p class="space"></p>
+        <p>Accordingly, I am very satisfied with the final result and classify this work as more than successful, which personally pleases me.</p>
+        <p class="space"></p>
+        <p class="space"></p>
+        <h5>Lionel Frey 1Eb </h5>
+        <h5>Focus Biology Chemistry</h5>
+    </div>
+    <script>
+        let stars =document.getElementById('stars');
+        let moon =document.getElementById('moon');
+        let mountains_behind =document.getElementById('mountain_behind');
+        let text =document.getElementById('text');
+        let header =document.getElementById('header');
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            stars.style.left=value *0.25 +'px';
+            moon.style.top=value *1.05 +'px';
+            mountain_behind.style.top=value *0.5 +'px';
+            mountains_front.style.top=value *0.0 +'px';
+            text.style.marginRight=value * 4 +'px';
+            text.style.marginTop=value * 1.5 +'px';
+            header.style.top=value *1.05 +'px';
+        })
+
+    </script>
 </body>
 </html>
