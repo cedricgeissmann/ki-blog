@@ -1,12 +1,12 @@
 canvas {
-  border: 1px solid #d3d3d3;
+  border: 1px solid black;
   height: 80vw;
-  background-color: white;
+  background-color: #d3eaf2;
   image-rendering: pixelated;
 }
 
 body {
-  background-color: bisque;
+  background-color: #a8d5e5;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,10 +14,11 @@ body {
   margin: 0;
   padding: 0;
   flex-direction: column;
+  position:relative;
 }
 
 .display-container {
-  color: white;
+  color: black;
   font-size: 2rem;
   font-weight: bold;
   padding: 20px;
