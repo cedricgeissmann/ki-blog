@@ -56,12 +56,11 @@ display: block;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
+  padding: 10px 30px;
 }
 
 .navigater > a{
   font-size: large;
-  padding-top: 690px;
 }
 
 
@@ -69,7 +68,13 @@ section{
   font-size: 1.3rem;
 } 
 
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
 
 #neuronalesNetz{
-  scale: 0.5;
+  width: 50%;
 }
