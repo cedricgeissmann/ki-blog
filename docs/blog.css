@@ -1,38 +1,29 @@
-
-
 body {
   margin: 0;
   padding: 0;
-  background-color: darkslategray;
-  color: antiquewhite
+  color: #abb2bf;
+  font-size: 14px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #1e1e1e;
+  font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
 }
 
-
-
-main ul p a {
-  color: antiquewhite;
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: #333;
+  transform: translateX(calc(-100% + 10px));
+  height: 100%;
+  padding-right: 10px;
+  transition-duration: 0.3s;
 }
 
-
-main ul p a:hover {
-  color: blue;
+nav:hover {
+  transform: translateX(0);
 }
-
-main ul p a {
-display: flex;
-justify-content: center;
-}
-
-main ul p a
- {font-size: 25px;
- }
-
- h1 {
-  text-align: center;
-  font-size: 60px;
-}
-
-
 
 nav > ul > li {
   list-style: none;
@@ -43,26 +34,20 @@ nav > ul > li {
 nav > ul {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 0;
+  padding: 0 10px;
+  flex-direction: column;
 }
 
 nav > ul > li > a {
-  font-size: 2rem;
+  font-size: 14px;
   text-decoration: none;
-  color: antiquewhite;
+  color: #abb2bf;
 }
 
 nav > ul > li > a:hover {
   text-decoration: underline;
 }
 
-
-
 main {
-  padding: 20px 50px;;
-}
-
-p {
-  font-size: 24px;
+  padding: 20px 50px;
 }
