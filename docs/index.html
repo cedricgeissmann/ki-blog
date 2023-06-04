@@ -7,19 +7,242 @@
   <title>KI Blog</title>
 
   <link rel="stylesheet" href="blog.css">
+  <style>
+    p {
+      font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    h2 {
+      font-size: 30px;
+      font-family: cursive;
+    }
+
+    h1{
+      font-family: cursive;
+      font-size: 40px;
+    }
+    #machinelearning {
+      font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+    }
+  </style>
 </head>
 <body>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li></li>
-      <li><a href="digits.html">Ziffern</a></li></li>
-    </ul>
-  </nav>
+  
   <main>
-    <h1>KI Blog</h1>
-    <section>
-      Hier ist ein Abschnitt.
-    </section>
+
+    <div id="side" class="fixed-container">
+      <div class="fixed-content">
+        <ul>
+        <li>
+          <a href="#section1">What is AI?</a>
+        </li>
+        <li>
+          <a href="#section2">How does AI work?</a>
+        </li>
+        <li>
+          <a href="#section3">How does a neural network work?</a>
+        </li>
+        <li>
+          <a href="#section4">What is machine learning?</a>
+        </li>
+        <li>
+          <a href="#section5">What impact does data have on an AI?</a>
+        </li>
+        <li>
+          <a href="#section6">How does chat GPT work?</a>
+        </li>
+        <li>
+          <a href="#section7">What are the limitations of ChatGPT and what should I pay attention to when using it?</a>
+        </li>
+          <a href="digits.html">Digits</a>
+        </li>
+      </ul>
+      </div>
+    </div>
+    
+    
+    <div id="hauptbox">
+      <div id="hiddenbox">
+      <h1>Artificial Intelligence</h1>
+      
+        <section id="section1">
+          <h2>What is AI?</h2>
+          <p>
+            Artificial Intelligence (AI) is a branch of computer science, but nevertheless an interdisciplinary domain that combines 
+            many fields besides computer science, as for example mathematics, statistics and psychology. It involves the development
+            and transposition of intelligent machines able to carry out tasks that typically require human intelligence. 
+            Therefore, it should represent a model of the human mind that has problem-solving and decision-making capabilities and 
+            is therefore able to recognize models and interpret language.
+            </p> <p> At its core, AI aims to create machines that can reason, learn, and adapt in ways similar to humans. These intelligent 
+            systems are designed to process large amounts of data, make informed decisions, and even interact with humans in a natural 
+            and human-like manner.
+            They are given certain datasets to learn with, and based on those they make choices, but humans usually supervise what 
+            exactly they are learning. Some things would be bad or even dangerous for them to know or understand, so therefore this kind 
+            of learning is denied.
+            One can find AI in a lot of different forms, among the most popular are inventions such as self-driving cars, Siri, 
+            Alexa or Chat GPT.
+            <p> (More detailed informations about Chat GPT, will be discussed here: <a href="#section6">How does chat GPT work?</a>)</p>
+          </p>
+          
+        </section>
+
+
+        <section id="section2">
+          <h2>How does AI work?</h2>
+          <p>
+            Algorithms and data are used to enable AI to mimic human behavior and mind. The AI needs to make intelligent and educated decisions, 
+            to make sure it does so, a massive amount of data is needed. This can be structured, as well as unstructured information.
+            Unstructured information includes text, photos or videos. The quality and variety of the data are essential for building powerful AI models. 
+            The system behind AI is discussed in <a href="#section3">How does a neural network work?</a> and the learning process in  <a href="#section4">What is machine learning?</a>
+           
+          </p>
+          <p>
+
+          </p>
+        </section>
+
+
+
+        <section id="section3">
+          <h2>How does a neural network work?</h2>
+          <p>
+            A neural network is a computational model based on how the human brain works and is organized. 
+            It is an essential part of many machine learning algorithms. 
+            Neural networks are needed for:
+            <p>- identifying patterns </p>
+            <p>- learning from data</p>
+            <p>- making predictions or judgments</p>
+           <p> It consists of a series of algorithms, inspired by the systems of neurons of the human brain and commonly looks something like this:</p>
+
+            <p><img id="neuralnetworkpic1" src="https://www.hotelmize.com/wp-content/uploads/2021/04/How-does-a-neural-network-works.png" alt="Neural Network"
+            style="height: 300px;">
+</p>
+<p>One of these points represents a so called “node” which imitates a neuron (A type of cell that receives and sends messages
+   from the body to the brain and vive versa). 
+  A node is a mathematical function that collects and 
+  classifies information according to specific architectures. The image above visualizes these mathematical functions to make 
+  them more understandable. </p>
+  <p>Those nodes are interconnected in different layers, called the “Input Layer”, the “Hidden Layers” and the “Output Layer”. In each 
+  layer, all nodes are connected with all nodes in the previous as well as in the following layer.
+  Every neural network starts with the input layer, in which all nodes are receiving the data later used to make a decision. 
+  There, each node receives different data, which they send to all nodes in the first hidden layer. The decision making takes place 
+  in the hidden layers, since every node in every hidden layer has certain requirements, without which they won’t send a signal to the 
+  nodes on the next layer. </p>
+  <p>When the signals are sent from the input layer to the first hidden layer, each connection has a parameter called “weight”. 
+  The weights are settled in the learning process of machine learning, which is explained here: <a href="#section4">What is machine learning?</a>. 
+  The weight of a certain connection determines the significance or contribution of each input signal to the node's output and 
+  contributes to the calculations made by that specific node. These calculations are done by passing through the weighted sum 
+  of the signal recieved in the so called “activation function”, which then gives the node an output. When this output meets the 
+  requirements of the node, it will send its output to all the nodes of the following layer. </p> <p> This system continues through all 
+  the hidden layers until they end in the node or nodes of the output layer. They then give the system its final output; the 
+  decision made by the AI considering all data received in the input layer.
+  </p>
+  <p>One can demonstrate this principle well with an AI that is able to recognize digits. It is a very simplified example which includes only 
+  one hidden layer. <br> All the nodes in the input layer receive data about a certain area of the written digit, this then gives the
+  information to the nodes in the hidden layer.<br> Each node is responsible to test one digit; which is their requirements.
+   As an example, if we would take the node for 6 and consider it in its calculations that is located in the lower area of the digit, "there needs to
+  be a circle and in the upper area a bow to the right". When the output of the calculations meets the requirements, it sends a signal to the output 
+  layer which would later decide that the shown digit is a 6. But if it does not meet the requirements, there won’t be any signals 
+  sent and the nodes in the output layer would wait for the signal of another node representing a different digit. Obviously, such a system 
+  would have way more than one hidden layer, therefore being able to test more details, but to understand this concept in a such simplified example is enough.
+   In a more complex version, different nodes would have smaller requirements like: "that the upper left corner must be empty". As a conclusion, this would give
+    us a more exact and correct solution. If such a digit recognition is not trained well or does not have enough nodes/layers, the probability that it would be
+   inexact would by higher.</p>
+<p><img src="wrong6.png" alt="6 mistaken as 4" style="height: 600px;"></p>
+
+<p>The image above is a good example for an inexact solution. I have drawn a six, but the AI mistakes it for a four. If you want to 
+  try the digit recognition AI yourself, click on this link: <a href="digits.html">Digits</a>
+          </p>
+          <p>Do not forget to train it before you try it!</p>
+          
+        </section>
+
+
+        <section id="section4">
+          <h2>What is machine learning?</h2>
+          <p>
+Machine learning refers to a subfield of artificial intelligence which focuses on the development of algorithms that are able to make reasonable
+ and intelligent decisions which are not explicitly programmed. With simpler words, it is the learning process of AI that enables it to 
+ make less and less errors with time. At a high level, there are generally 9 steps in machine learning, which are as follows: <br>
+<ul id="machinelearning">
+ <li>1.	Data Collection:
+Artificial Intelligence requires data to learn from. This could be structured data (e.g., databases, spreadsheets) or in form of 
+unstructured data (e.g., text, images, audio, video).</li><br>
+<li>	2.  Data preprocessing:
+Before a machine can start the learning process, the collected data must often be preprocessed by humans. This step involves cleaning 
+the data, handling missing values, normalizing or scaling numerical data, and converting unstructured data into a format suitable for 
+analysis. </li><br>
+<li>3.	Training Data Split: 
+The data available usually gets split into two or more subsets like the training set (used for training) or the validation/test set 
+(evaluating the machine’s performance later) </li><br>
+<li>4.	Model Selection:
+Various types of machine learning algorithms exist, each suiting a different type of problem. The choice of algorithm depends on the 
+nature of the data, the problem at hand, and the desired outcome. Examples would be decision trees, support vector machines, neural 
+networks, random forests, and many others.</li><br>
+<li>5.  Model Training:
+The real training phase. The dataset is fed into the input layer, which will then flow to the hidden layers and the parameters 
+called “weights” are randomly assigned to the different connections. (Process further on explained in<a href="#section3"> How does a 
+  Neural Network work?</a>
+)
+The final output of the network is then compared to the required labeled data of the dataset and the final error is accordingly 
+calculated. This tells us, how good the network is. That means that we try to get to the smallest possible error.
+Since the weights are adjusted through backpropagation (which reduces the error), this backpropagation process can be considered as 
+the central mechanism with which neural networks learn. It is essentially used to fine-tune the weights of the deep neural network 
+in order to reduce the final error.</li><br>
+<li>6.	Model Evaluation:
+Here, the before mentioned validation/test set is used to see how well the machine performs on yet unseen data.</li><br>
+<li>7. Model tuning:
+If the model does not meet the desired performance criteria, it may require further adjustments. This can involve tuning 
+hyperparameters, which are parameters that control the behavior of the machine learning algorithm.</li><br>
+<li>	8. Model deployment:
+Once the machine has been trained and evaluated enough, it can be used in real life scenarios based on new and yet unseen data.</li><br>
+<li>9. Continuous Learning and Improvement:
+Even if the model works well enough, artificial intelligences are often periodically retrained to new data in order to stay up to date.
+</li></ul> 
+<p>The success of machine learning heavily relies on the quality of the data given as well as the precise tuning of the machine learning algorithms.
+</p>
+
+          </p>
+          <p>
+
+          </p>
+        </section>
+        
+        <section id="section5">
+          <h2>What impact does data have on an AI?</h2>
+          <p>
+            kajsfhgakjhg
+          </p>
+          <p>
+
+          </p>
+        </section>
+
+        <section id="section6">
+          <h2>How does chat GPT work?</h2>
+          <p>
+            kajsfhgakjhg
+          </p>
+          <p>
+
+          </p>
+        </section>
+
+        <section id="section7">
+          <h2>What are the limitations of ChatGPT and what should I pay attention to when using it?</h2>
+          <p>
+            kajsfhgakjhg
+          </p>
+          <p>
+
+          </p>
+        </section>
+        <div>
+
+    </div>
   </main>
 </body>
 </html>
