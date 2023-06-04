@@ -33,3 +33,7 @@ body {
 #prediction-container div {
   margin: 0 20px;
 }
+
+a {
+  color: rgb(39, 59, 44);
+}
