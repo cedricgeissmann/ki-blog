@@ -6,7 +6,8 @@ canvas {
 }
 
 body {
-  background-color: #2d2b2b;
+  background-color: darkslategray;
+  color: antiquewhite;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,6 +17,18 @@ body {
   flex-direction: column;
 }
 
+ a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: antiquewhite;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;}
+
+  a:hover {
+    text-decoration: underline;}
+  
 .display-container {
   color: white;
   font-size: 2rem;
