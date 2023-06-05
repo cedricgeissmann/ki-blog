@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: lightblue;
+    text-align: center;
+  }
+  
+  h2,h1{
+    color: cornflowerblue;
+
+  }
+
+  #p1{
+    color: rgb(112, 174, 237);
+  }
+  .container{
+    background-color: aliceblue;
+    height: 1580px;
+    width: 510px;
+    left: 50%;
+    position: absolute;
+    left: 35%;
+  }
+
+  footer{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    position: relative bottom 10px; 
+  }

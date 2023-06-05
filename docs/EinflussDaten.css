@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: lightblue;
+    text-align: center;
+  }
+  
+  h2{
+    color: cornflowerblue;
+
+  }
+
+  .container{
+    background-color: aliceblue;
+    height: 700px;
+    width: 510px;
+    left: 50%;
+    position: absolute;
+    left: 35%;
+  }
+  #p{
+    left: 40px;
+    top: 180px;
+    text-decoration: underline;
+    color: black;
+  }
+  #p2{
+    padding-left: 80px;
+    top: 200px;
+    color: black;
+  
+  }
+  
+  nav > ul > li {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+  }
+  
+  #li1{
+    position: absolute;
+    left: 40px;
+    top: 330px;
+    color: black;
+  
+  }
+  
+  #li2{
+    position: absolute;
+    left: 40px;
+    top: 345px;
+    color: black;
+  
+  }
+  
+  #li3{
+    position: absolute;
+    left: 40px;
+    top: 360px;
+    color: black;
+  
+  }
+  
+  #li4{
+    position: absolute;
+    left: 40px;
+    padding-top: 375px;
+    color: black;
+  
+  }
+  #p3{
+    padding-left: 40px;
+    padding-top: 180px;
+    text-decoration: underline;
+    color: black;
+  
+  }
+  
+  #p4{
+    padding-left: 40px;
+    color: black;
+  
+  }
+  
+  
+  nav > ul,
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+  }
+  
+  footer{
+    padding-top: 10%;
+    font-size: 1.5rem;
+  }
+
+  h1{
+    position: absolute;
+    text-align: center;
+    color: black;
+  
+  
+  }
+  
+  
+  nav > ul > li > a {
+    font-size: 2rem;
+    text-decoration: none;
+    color: antiquewhite;
+  
+  }
+  
+  nav > ul > li > a:hover {
+    text-decoration: underline;
+  }
+  
+  main {
+    padding: 20px 50px;;
+  }

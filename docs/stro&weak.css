@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: lightblue;
+    color: cornflowerblue;
+    text-align: center;
+  }
+  
+  h1{
+    color: cornflowerblue;
+  }
+  
+  #p1{
+    font-style: underline;
+  }
+  .container{
+    background-color: aliceblue;
+    width: 510px;
+    height: 700px;
+    left: 50%;
+    position: absolute; left: 35%;
+  }
+
+  footer{
+    padding-top: 10%;
+    font-size: 1.5rem;
+  }

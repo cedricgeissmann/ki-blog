@@ -8,6 +8,9 @@ let coords = {
   y: 0
 }
 
+
+
+
 document.addEventListener('mousedown', start);
 document.addEventListener('mouseup', stop);
 

@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: lightblue;
+    text-align: center;
+    color: cornflowerblue;
+  }
+
+  .highlight{
+    color: red;
+  }
+.container{
+    background-color: aliceblue;
+    width: 510px;
+    height: 700px;
+    left: 50%;
+    position: absolute; left: 35%;
+  }
+
+  footer {
+    display: flex;
+    align-items: center;
+    padding-top: 40%;
+    padding-left: 50%;
+    font-size: 1.5rem;
+  }
