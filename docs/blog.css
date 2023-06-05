@@ -107,7 +107,7 @@ main {
 }
 
 img {
-  margin-left: 13px;
+  margin-left: 0px;
 }
 
 .box.padding1::after {
