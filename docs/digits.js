@@ -61,14 +61,13 @@ document.querySelector('#btn-guess').addEventListener('click', async () => {
 })
 
 document.querySelector('#btn-save').addEventListener('click', async (e) => {
-  nn.save()
+  nn.save("model")
 })
 
 document.querySelector('#btn-load').addEventListener('click', async (e) => {
-  alert("Not working yet")
-  return
   const modelInfo = {
     model: "model/model.json",
+    metadata: "model/model_meta.json",
     weights: "model/model.weights.bin"
   }
   nn.load(modelInfo, () => {
