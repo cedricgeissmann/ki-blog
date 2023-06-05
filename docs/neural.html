@@ -13,9 +13,18 @@
         <div class="navbar">
             <ul>
                 <li>
-                    <a href="#network">How does neural network work?</a>
+                    <a href="#network">What is <br> neural network?</a>
                 </li>
-               
+                <li>
+                    <a href="#work">How does <br> neural network work?</a>
+                </li>
+                <li>
+                    <a href="#try">Try it <br> yourself !</a>
+                </li>
+                <li>
+                    <a href="#appli">Applications <br> of Neural Networks</a>
+                </li>
+
                 
             </ul>
         </div>
@@ -28,9 +37,38 @@
         </div>
         
             </header>
-      <h2 id="network">How does neural network work?</h2>
-      <div class="img-container">
-        <img src="https://cdn-images-1.medium.com/max/1600/1*pbk9xtz7WbBwYPVATdl9Vw.png" alt="" width="100px">
+      <h2 id="network">What is neural network?</h2>
+      A neural network is a series of algorithms that endeavors to recognize underlying relationships in a set of data through a process that mimics the way the human brain operates. In this sense, neural networks refer to systems of neurons, either organic or artificial in nature.
+<br>
+      Neural networks can adapt to changing input; so the network generates the best possible result without needing to redesign the output criteria. The concept of neural networks, which has its roots in artificial intelligence, is swiftly gaining popularity in the development of trading systems.
+      
+      
+
+      <h2 id="work">How does neural network work?</h2>
+      <p>Machine learning algorithms that use neural networks generally do not need to be programmed with specific rules that define what to expect from the input. The neural net learning algorithm instead learns from processing many labeled examples (i.e. data with with "answers") that are supplied during training and using this answer key to learn what characteristics of the input are needed to construct the correct output. Once a sufficient number of examples have been processed, the neural network can begin to process new, unseen inputs and successfully return accurate results. The more examples and variety of inputs the program sees, the more accurate the results typically become because the program learns with experience.  </p>
+    <p>This concept can best be understood with an example. Imagine the "simple" problem of trying to determine whether or not an image contains a cat. While this is rather easy for a human to figure out, it is much more difficult to train a computer to identify a cat in an image using classical methods. Considering the diverse possibilities of how a cat may look in a picture, writing code to account for every scenario is almost impossible. But using machine learning, and more specifically neural networks, the program can use a generalized approach to understanding the content in an image. Using several layers of functions to decompose the image into data points and information that a computer can use, the neural network can start to identify trends that exist across the many, many examples that it processes and classify images by their similarities. 
+    </p>
+    <div class="img-container">
+        <img src="https://images.deepai.org/django-summernote/2018-02-01/b920b4b3-7347-4712-b1bd-068775ec4562.png" alt="" width="600px" >
       </div>
+      <p>After processing many training examples of cat images, the algorithm has a model of what elements, and their respective relationships, in an image are important to consider when deciding whether a cat is present in the picture or not. When evaluating a new image, the neural net compares the data points about the new image to its model, which is based off of all previous evaluations. It then uses some simple statistics to decides whether the image contains a cat or not based on how closely it matches the model.</p>
+      <p>In this example, the layers of functions between the input and the output are what make up the neural network. In practice, the neural network is slightly more complicated than the image above shows. The following image captures the interaction between layers slightly better, but keep in mind that there are many variations of the relationships between nodes, or artificial neurons:
+      </p>
+      <div class="img-container">
+        <img src="https://images.deepai.org/django-summernote/2018-01-30/6ab1bb72-ad28-480e-bb1c-4dd419843762.jpg" alt="" width="300px">
+      </div>
+      <h2 id="try">Try it yourself !</h2>
+      <a href="digits.html">Digits</a>
+      <p>For the first sample, you first need to train it. After attempting several attemps, you might realise that the results are not always accurate.
+        The Number we write, might be differnet from the data it provides. This based is of the american Number system. It potentially recognizes our 7 as a 1. We conclude that, not everything that (AI)Neural Network provides us is actually accurate.
+      </p>
+
+      <h2 id="appi">Applications of Neural Networks</h2>
+      <p>Neural networks can be applied to a broad range of problems and can assess many different types of input, including images, videos, files, databases, and more. They also do not require explicit programming to interpret the content of those inputs.</p>
+      <p>Because of the generalized approach to problem solving that neural networks offer, there is virtually no limit to the areas that this technique can be applied. Some common applications of neural networks today, include image/pattern recognition, self driving vehicle trajectory prediction, facial recognition, data mining, email spam filtering, medical diagnosis, and cancer research. There are many more ways that neural nets are used today, and adoption is increasing rapidly. </p>
+
+
+      
+
 </body>
 </html>
