@@ -1,33 +1,143 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: darkslategray;
-  color: antiquewhite
-}
+  background-color: rgb(20, 113, 212);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
-nav > ul > li {
-  list-style: none;
-  padding: 10px;
-  margin: 0;
-}
-
-nav > ul {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0;
-}
-
-nav > ul > li > a {
-  font-size: 2rem;
-  text-decoration: none;
-  color: antiquewhite;
-}
-
-nav > ul > li > a:hover {
-  text-decoration: underline;
 }
 
 main {
-  padding: 20px 50px;;
+  padding: 20px 50px;
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(https://static.nationalgeographic.de/files/styles/image_3200/public/ki-roboter.png.webp?w=1600&h=900);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  min-height: 100px;
 }
+
+
+
+ul {
+  float: right;
+  list-style-type: none;
+  margin-top: 50px;
+  min-height: 400px;
+  margin-right: 10px;
+  font-size: 35px; 
+}
+
+ul li {
+  display: inline-block;
+}
+
+ul li a{
+  text-decoration: none;
+  color: white;
+  padding: 5px 40px;
+  position: relative;
+  text-decoration: none;
+  color: white;
+}
+
+
+ul li a::after{
+  content: '';
+  position: absolute;
+  width: 70%;
+  height: 4px;
+  bottom: -5px;
+  left: 15%;
+  background-color: white;
+  border-radius: 2px;
+  transform: scaleX(0);
+  transition: transform 0.4s;
+}
+
+ul li a:hover::after{
+  transform: scaleX(1);
+}
+
+
+
+
+
+.title{
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.title h1 {
+  color: rgb(255, 255, 255);
+  font-size: 70px;
+}
+
+.fa {
+  padding-right: 10px;
+  
+} 
+
+.ki {
+  background-color: rgb(54, 182, 204);
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 17%;
+  }
+
+  .text {
+    color: rgb(255, 255, 255);
+    margin-top: 200px;
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-bottom: 50px;
+    font-size: 20px;
+    
+  }
+
+  .text h1{
+    margin: 0;
+    padding-top: 40px;
+   margin-bottom: 10px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .text h2{  
+  padding-top: 30px;
+  }
+
+  h2{
+    font-size: 20px; 
+  }
+
+
+  h3{
+    font-size: 60px; 
+  }
+ 
+  h4{
+    font-size: 25px; 
+    
+  }
+
+h3, h4 {
+  color: rgb(255, 255, 255);
+  text-align: center;
+
+}
+
+h4 a {
+  text-decoration: none;
+  color:  rgb(54, 182, 204); 
+}
+
+
+
+
+  
+
