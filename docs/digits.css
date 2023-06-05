@@ -1,0 +1,39 @@
+canvas {
+  border: 1px solid #d3d3d3;
+  height: 80vw;
+  background-color: white;
+  image-rendering: pixelated;
+}
+
+body {
+  background-color: #293242;
+  background-image: url(https://images.nightcafe.studio/jobs/LNMBMpCZ06oCUtnoiw9o/LNMBMpCZ06oCUtnoiw9o--1--4h4ad_6.25x.jpg?tr=w-1600,c-at_max);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+}
+
+.display-container {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 20px;
+}
+
+#prediction-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#prediction-container div {
+  margin: 0 20px;
+}
+
+a {
+  color: rgb(39, 59, 44);
+}
