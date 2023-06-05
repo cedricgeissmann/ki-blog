@@ -25,6 +25,11 @@ body {
   font-style: initial;
   text-align: center;
 }
+.Digits{
+  font-size: 2rem;
+  font-style: initial;
+  text-align: center;
+}
 
 nav > ul > li {
   list-style: none;
