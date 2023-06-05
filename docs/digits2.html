@@ -19,11 +19,22 @@
         </p>
         <p> Below you can see 2 screenshots of 2 completely different outomes. In the image with the number 8,
             the number which it guessed is correct with a good amount of probability that it's right. 
-            Howevr in the image with the number 3, which it guessed as a 2, the number which it guessed was incorrect
+            However in the image with the number 4, which it guessed as a 1, the number which it guessed was incorrect
             but it was very sure that it had the right answer.</p>
             <p>So what does this tell us?</p>
-            <p> knsdovbfbpea</p>
+            <p> In the example with the 8, the weight each hidden node performed correctly. Therefore the final result plus the 
+                probability are correct. The number 8 is pretty unique, in comparison to the other digits, which makes it way less
+                likely for an error to occur.
+            </p>
+            <p> However in the example with the 4, we can see that hidden nodes which were responsible for the straight line, had more weight 
+                than other hidden nodes (the ones from the other line). This is a typlical example of when a neural network relies to much 
+                on a group of hidden nodes that performed well during training. It is more likely that an error occurs with the numbers 1,4 and 7
+                since they are all written pretty similarly. 
+            
+            </p>
     </div>
 
+    <div class="container5"><img src="img1-4.png" alt="1-14.img">
+    <img src="img8.png" alt="8.img"> </div>
 </body>
 </html>
