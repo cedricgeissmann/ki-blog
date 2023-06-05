@@ -6,6 +6,12 @@ body {
     padding-right: 10px;
     padding: 80px;
   }
+  :target::before {
+    content: "";
+    display: block;
+    height: 100px;
+    margin: -100px 0 0;
+  }
 
   .navbar {
     top:0;
@@ -70,3 +76,13 @@ body {
     color: rgb(52, 127, 214);
     font-weight: bold;
   }
+
+  
+.img-container {
+  text-align: center;
+  padding-top: 10px;
+}
+
+#h3 {
+  text-decoration: underline;
+}
