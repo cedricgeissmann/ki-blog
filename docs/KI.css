@@ -5,8 +5,15 @@ body {
   color: rgb(0, 0, 0);
   padding-right: 50px;
   padding: 80px;
+  scroll-margin: 500px;
 }
 
+:target::before {
+  content: "";
+  display: block;
+  height: 100px;
+  margin: -100px 0 0;
+}
 .navbar {
   top:0;
   left: 0;
