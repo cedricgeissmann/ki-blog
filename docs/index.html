@@ -124,7 +124,7 @@
   Eingefügt in diese Funktion werden jeweils immer die erhaltenen Informationen der Knoten der vorherigen Schicht. Jedoch wird auf jede Verbindung zwischen zwei Knoten immer ein gewisses «Gewicht» gesetzt, welche die Wichtigkeit einer Information bestimmt. <br>
   Die Gewichte, die auf bestimmten Verbindungen liegen, werden zusammen mit der Information zu einem gewissen Wert verarbeitet, welcher in die Aktivierungsfunktion eines Knoten eingesetzt wird. Vorhanden ist noch ein weiterer Parameter, der sogenannte «Bias» der den Wert einer einkommenden Information noch weiter verändert. Dieser ist jedoch komplexer zu erklären als das «Gewicht» und bei dieser simplen Erklärung auch nicht nötig.</p><p>
   Hat man das Resultat der Funktion, kann der Knoten nun auswerten, ob denn nun seine Anforderungen erfüllt sind. Sind sie das, leitet er ein Signal an die nächste Schicht weiter. Auch wenn ein Knoten einer Schicht kein Signal von einem gewissen Knoten weitergeleitet bekommt, hilft ihm das weiter, da er somit weiss, dass dessen Anforderung nicht erfüllt werden konnte.</p>
-  <p>An einem simplen Beispiel kann man dies noch weiter erläutern; nämlich am Beispiel der Ziffernerkennung. <br>
+  <p>An einem simplen Beispiel kann man dies noch weiter erläutern; nämlich am Beispiel der Ziffernerkennung, einem System, welches handgeschriebene Ziffern erkennen kann. <br>
   Man nehme ein sehr vereinfachtes System mit zwei verborgenen Schichten und gibt der Eingabeschicht die nötigen Daten zur handgeschriebenen Ziffer. Dabei könnte jeder Knoten in der Eingabeschicht für ein bestimmtes Areal der Ziffer verantwortlich sein und die Informationen darüber weiterleiten. Dazu könnte man mitteilen, dass das einem zugeteilte Areal komplett leer ist, dass es einen geraden Strich auf gewissen Koordinaten beinhaltet oder dass darauf ein Bogen gewisser Grösse zu sehen ist. <br>
   Auf der ersten verborgenen Schicht können nun schon gewisse Details berechnet werden. Beispielsweise könnte ein Knoten die Anforderung haben, dass sich in der oberen Hälfte ein Kreis befindet. Hat er die einkommenden Daten und die Gewichte auf deren Verbindungen in die Aktivierungsfunktion eingerechnet und deren Ausgabe ausgewertet, kann er nun, je nach Ergebnis, ein Signal an die zweite verborgene Schicht senden. Diese könnte nun theoretisch einen Knoten für jede mögliche handgeschriebene Ziffer haben, deren Anforderung es ist, dass die abgebildete Ziffer ihre zugeordnete Ziffer sein muss. <br>
   </p><p>Nehmen wir als Beispiel die Ziffer neun. Der Knoten dieser Ziffer, müsste vom Knoten in der vorherigen Schicht, welcher prüft, ob sich in der oberen Hälfte ein Kreis befindet, ein Signal bekommen. Ebenfalls sollte er ein Signal eines Knoten bekommen, welcher überprüft, ob sich in der unteren Hälfte ein Bogen nach links befindet. Bekommt er beide Signale und keine sonstigen, störenden Signale, informiert er die Ausgabeschicht darüber, die zum Schluss kommen würde, dass die geschriebene Ziffer eine neun ist.<br>
@@ -141,7 +141,7 @@
   Maschinelles Lernen ist ein Teilbereich der künstlichen Intelligenz und beschreibt, wie sich letzteres weiterentwickelt und wie es 
   lernt. Dadurch können Systeme selbstständig Muster und Zusammenhänge aus grossen Datenmengen erkennen, ohne explizit darauf 
   programmiert zu sein. </p><p>
-Damit ein solches System jedoch intelligente Entscheidungen beruhend auf noch nicht bekannte Informationen treffen kann, muss 
+Damit ein solches System jedoch intelligente Entscheidungen beruhend auf noch nicht bekannten Informationen treffen kann, muss 
 ein Mensch den Algorithmus trainieren. Dazu verwendet man einen Trainingsdatensatz, welcher der Eingabeschicht des Programmes 
 gegeben wird. Den Verbindungen zwischen den einzelnen Knoten werden zufällige Gewichte und Bias verordnet. Nun wird das endgültige 
 Resultat mit dem richtigen Resultat verglichen und ein sogenannter «Error» wird berechnet. Diesen möchte man natürlich so klein wie
@@ -166,8 +166,8 @@ als auch unbekannte Daten verwendet werden. Hier werden aber trotzdem noch vor a
 Datensets mit Zielvariabeln genutzt, da die Beschaffung von Beispieldaten oft sehr aufwendig und kostenintensiv ist. 
 Teilüberwachtes Lernen findet hauptsächlich in der Bild – oder Objekterkennung statt. </p></li> <p>
 <li><u> 4. Verstärkendes Lernen </u><br>
-Beim verstärkenden Lernen wird interagiert der Algorithmus mit der Umgebung und wird durch ein Kosten/Belohnungssystem bewertet, 
-damit er selbstständig eine Lösung zum Problem findet und somit die Belohnung zu erhöht. Somit wird dem System nicht klar gezeugt, 
+Beim verstärkenden Lernen interagiert der Algorithmus mit der Umgebung und wird durch ein Kosten/Belohnungssystem bewertet, 
+damit er selbstständig eine Lösung zum Problem findet und somit die Belohnung erhöht. Also wird dem System nicht klar gezeigt, 
 was wann richtig ist, sondern er kriegt lediglich ein positives oder negatives Feedback. Dieses System benötigt keinerlei 
 Beispieldaten und kann eine eigene Strategie entwickeln, es benötigt somit also auch kein menschliches Vorwissen mehr, um 
 komplexe Probleme zu erlernen. </p></li> </ul>
@@ -192,7 +192,7 @@ auf neue Daten umgeschult, um auf dem neuesten Stand zu bleiben.</p>
   <p>Hochwertige Daten sind solche, die eine breite Palette von Szenarien und Anwendungen abdecken, denn sie sollten dem Modell 
     beibringen, allgemeine Konzepte zu verstehen und auf neue Situationen anzuwenden. Gibt es ungenügende Variation, kann es sein, 
     dass sich die KI überanpasst (zu sehr von gelernten Daten abweicht) oder es begrenzt einfach ihre Fähigkeiten. <br>
-  Nur Variation reicht jedoch nicht, denn bei der KI heisst es; je mehr Daten, desto besser. Der einzige Nachteil daran wären die 
+  Nur Variation reicht aber nicht, denn bei der KI heisst es; je mehr Daten, desto besser. Der einzige Nachteil daran wären die 
   Speicher – und Verarbeitungsressourcen. </p><p>
   Auch die Aktualität der Daten spielt eine grosse Rolle, denn mit veralteten Daten kann das System keineswegs angemessen auf 
   aktuelle Ereignisse reagieren. Somit sollten die Datensets regelmässig aktualisiert werden, um die Aktualität sicherzustellen. <br>
@@ -208,7 +208,7 @@ auf neue Daten umgeschult, um auf dem neuesten Stand zu bleiben.</p>
 
 <section>
 <h2>• Wie funktioniert ChatGPT?</h2>
-<p>Chat GPT basiert auf einem fortgeschrittenen Sprachmodell namens GPT-3.5-Modell von OpenAi. Es beruht auf maschinellem Lernen und verwendet eine Architektur namens «Transformer» um die natürlich gesprochene Sprache der Menschen zu verstehen und wiederzugeben.
+<p>Chat GPT ist eine bekannte KI, die man frei im Internet begehen kann. Man kann sich mit ihr wie mit einer Person unterhalten, sie unterstützt einen aber auch mit allerlei Fragen. <br> Sie basiert auf einem fortgeschrittenen Sprachmodell namens GPT-3.5-Modell von OpenAi. Es beruht auf maschinellem Lernen und verwendet eine Architektur namens «Transformer» um die natürlich gesprochene Sprache der Menschen zu verstehen und wiederzugeben.
   Die Funktionsweise von ChatGPT kann in drei Hauptschritten beschrieben werden:
   <ul class="liste"> <li>
   <p><u>1.	Training:</u> <br>
@@ -235,8 +235,7 @@ auf neue Daten umgeschult, um auf dem neuesten Stand zu bleiben.</p>
   könnte ein problematisches Verhalten antrainiert werden.</p></li><li>
   
   <p><u>	2.	Chat GPT ist nicht allwissend: </u>	<br>
-  Die Antworten von Chat GPT sind des Öfteren falsch, denn er ist nicht allwissend und hat ebenfalls keine persönlichen Erfahrungen 
-  haben oder auf spezifische Ereignisse reagieren, welche nach dem Trainingszeitpunkt stattgefunden haben. Anders ausgedrückt; er ist 
+  Die Antworten von Chat GPT sind des Öfteren falsch, denn er ist nicht allwissend und hat ebenfalls keine persönlichen Erfahrungen oder kann nicht auf spezifische Ereignisse reagieren, welche nach dem Trainingszeitpunkt stattgefunden haben. Anders ausgedrückt; er ist 
   nicht up to date. Ebenfalls können die Quellen, die Chat GPT benutzt, von ihm nicht auf ihre Richtigkeit oder Zuverlässigkeit 
   überprüft werden. Ein Beispiel wäre die Antwort auf die Frage «Welches Säugetier legt die grössten Eier?», nach Chat GPT wäre es 
   der Elefant. (von einer Userin auf Twitter).<br>
