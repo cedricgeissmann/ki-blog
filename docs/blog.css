@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: rgb(133, 117, 211);
+    background-color: rgb(103, 179, 250);
     color: rgb(255, 255, 255);
     font-size: 1.2rem;
   }
@@ -40,6 +40,7 @@ body {
   nav > ul > li > a:hover {
     text-decoration: underline;
   }
+
   
   h2 {
     font-size: 1.3rem;
