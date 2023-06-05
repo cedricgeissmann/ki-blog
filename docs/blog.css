@@ -45,3 +45,43 @@ main {
 #hiddenbox{
   padding: 5%;
 }
+
+#side {
+  background-color: aquamarine;
+  width: 400px;
+  position: fixed;
+  top:0;
+  left: 0;
+  height: 100%;
+  transform: translateX(-90%);
+  transition: transform 0.6s ease-in-out;
+}
+
+#side:hoover {
+  transform: translateX(0);
+}
+
+#side > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#side > ul > li {
+  list-style: none;
+  width: 100%;
+}
+
+#side > ul > li > a {
+  font-size: 1.5rem;
+}
+
+.fixed-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+}
