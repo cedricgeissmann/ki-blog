@@ -9,7 +9,10 @@
   <link rel="stylesheet" href="blog.css">
   <style>
     body {
-        background-color: rgb(110, 40, 202);
+        background-color: rgb(94, 45, 158);
+    }
+    footer {
+      background-color: rgb(94, 45, 158);
     }
 </style>
 </head>
@@ -21,20 +24,55 @@
     </ul>
   </nav>
   <main>
-    <h1>Was für einen Einfluss haben Daten auf eine KI?</h1>
+    <h1>Wie funktioniert ein neuronales Netz?</h1>
     <section>
-      Hier ist ein Abschnitt.
+      Neuronale Netze, oder auch KNN (künstliches neuronales Netz), werden beim maschinellen Lernen und bei der KI verwendet. KNN sind 
+      Algorithmen, die die Funktionsweise des menschlichen Hirns nachahmen. Sie bilden die Grundlage für künstliche Intelligenzen. 
+      Neuronale Netze sind in drei Schichten aufgeteilt. Es gibt die Eingabeschicht (Input Layer), die verborgene Schicht (Hidden Layer) 
+      und die Ausgabeschicht (Output Layer). Mithilfe von neuronalen Netzen kann eine KI Bilder, Daten, Texte, Geräusche usw. interpretieren.
+      (Unter <b>Ziffern</b> findet man ein Beispiel für eine KI, die Ziffern erkennen kann.) Da das KNN eine Belohnug erhält, wenn es etwas 
+      richtig getan hat, also z.B. eine Ziffer richtig bestummen hat, kann sie eine Verbindung in der Hidden Layer stärken, was dann schlussendlich
+      die KI besser macht.
+      <p></p>
+      Neuronale Netze sind aus Neuronen aufgebaut. Diese Neuronen sind sozusagen Knoten, die Informationen aufnehmen, modifizieren und wieder
+      ausgeben. Zwischen den einzelen Neuronen sind Verbindungen, und je stärker eine solche Verbindung ist, desto grösser ist die Gewichtung 
+      auf den Output. Es gibt immer je nur eine Input und Output Layer, aber dafür gibt es mehrere Hidden Layers.
+      <br>
+      <br>
+      <b>Input Layer</b> <br> Die Input Layer gibt wichtige Informationen an das neuronale Netz. Die Neuronan gewichten dann die Daten, bevor sie sie
+      an die Hidden Layer weitergeben. Die Input Layer besteht nur aus einer einzigen Ebene.
+      <br>
+      <br>
+      <b>Hidden Layer</b> <br> Die Hidden Layer kann aus mehreren Ebenen bestehen. In dieser Layer werden die Daten, die von der Input Layer kamen wieder
+      neu gewichtet und von einem Neuron zum nächsten Neuron weitergegeben. In jeder Ebene der Hidden layer werden die Daten neu gewichtet. 
+      Dies geht so, bis die Output Layer erreicht wird. Während in der Input und der Output Layer die Daten sichtbar sind, kann man sie, wie der Name 
+      schon verräht, nicht sehen.
+      <br>
+      <br>
+      <b>Output Layer</b> <br> Die Output Layer hat, wie die Input Layer, nur eine Ebene. Diese Ebene schliesst direkt an die letzte Ebene der 
+      Hidden Layer an. Die Output-Neuronen geben dann die endgültigen Daten, also Informationen hervor.
+      <p></p>
+      Beim Beispiel <b>Ziffern</b>, verwendet die KI ein ähnliches System, wie man in Barcodes benutzt. Schwarze und Weisse stellen. Die KI 
+      lernt durch viele, verschiedene, gegebene Beispiele (Daten). Sie analysiert alle Bilder und kann dadurch ihr neuronales Netz stärken.
+      Wenn man eine Ziffer gezeichnet hat und auf "Guess" drückt, werden die schwarzen und weissen Pixel analysiert, und es kommt
+      eine Vermutung heraus, welche aber nicht immer richtig ist. Für die KI ist es sehr schwierig, Handschriften zu erkennen, denn jeder Mensch
+      schribt anderst und somit gibt es auch sehr viele Möglichkeiten, wie eine "3" aussehen könnte. <br>
+      Wenn man bei <b>Ziffern</b> etwas zeichnen will, was von der KI erkennt werden soll, muss man zuerst einmal auf "Train"  drücken, sodass
+      die KI lernt. Danach kann man etwas zeichnen und auf "Guess" drücken. Wenn die KI geraten hat, kann man auf Clear drücken und eine neue Ziffer
+      zeichnen.
+      <p></p>
     </section>
+    <img src="https://www.tibco.com/sites/tibco/files/media_entity/2021-05/neutral-network-diagram.svg" alt="neuronales-netz">
+    <footer>
+        <ul class="meine-links">
+          <li><a href="waski.html">Was ist eine KI und wie funktioniert sie?</a></li>
+          <li><a href="wasml.html">Was ist maschinelles Lernen?</a></li>
+          <li><a href="wehbaki.html">Welchen Einfluss haben Daten auf eine KI?</a></li>
+          <li><a href="wiefcgpt.html">ChatGPT, wie funktioniert es und wo sind die Grenzen?</a></li>
+    
+          
+        </ul>
+      </footer>
   </main>
-<footer>
-    <ul class="meine-links">
-      <li><a href="waski.html">Was ist KI und wie funktioniert sie?</a></li>
-      <li><a href="wasml.html">Was ist maschinelles Lernen?</a></li>
-      <li><a href="wehbaki.html">Welchen Einfluss ahben Daten auf eine KI?</a></li>
-      <li><a href="wiefcgpt.html">ChatGPT, wie funktioniert es und was sind die Grenzen?</a></li>
-
-      
-    </ul>
-  </footer>
 </body>
 </html>
