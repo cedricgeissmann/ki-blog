@@ -1,14 +1,16 @@
 body {
   margin: 0;
-  padding: 0;
-  background-color: darkslategray;
-  color: antiquewhite
+  background-color:#efccff;
+  color: black;
+  position: relative;
+  
 }
 
 nav > ul > li {
   list-style: none;
   padding: 10px;
   margin: 0;
+  
 }
 
 nav > ul {
@@ -16,12 +18,17 @@ nav > ul {
   justify-content: space-between;
   align-items: center;
   padding: 0;
+ position: absolute;
+ top: 50vh;
+ left: 0;
+ width: 100%;
+ transform: translateY(-50%)
 }
 
 nav > ul > li > a {
-  font-size: 2rem;
+  font-size: 10rem;
   text-decoration: none;
-  color: antiquewhite;
+  color: black;
 }
 
 nav > ul > li > a:hover {
@@ -31,3 +38,58 @@ nav > ul > li > a:hover {
 main {
   padding: 20px 50px;;
 }
+
+
+#hauptbox {
+  background-color:#f7e6ff;
+  margin-left: 15%;
+  margin-right: 15%;
+  padding-top: 5%;
+
+}
+
+#hiddenbox {
+padding: 5%;
+
+}
+
+#side {
+  background-color:#df99ff;
+  width: 400px;
+  position: absolute;
+  top: 0;
+  left:0;
+  height: 100%;
+  transform: translateX(-90%);
+  transition: transform 0.6s ease-in-out;
+}
+
+#side:hover {
+  transform: translateX(0);
+}
+
+#side > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#side > ul > li {
+  list-style: none;
+  width: 100%;
+}
+
+#side > ul > li > a {
+  font-size: 1.5rem;
+}
+
+.fixed-container {
+  position: fixed;
+    top: 50px;
+    left: 50px;
+    width: 200px; /* Adjust width as needed */
+    height: 200px; /* Adjust height as needed */
+    overflow: auto;
+}
+

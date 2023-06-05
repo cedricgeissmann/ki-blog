@@ -5,21 +5,115 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>KI Blog</title>
+<style>
+  h1 {
+    font-family: Geneva, Verdana, sans-serif;
+    font-size: 40px;
+  }
+  h2 {
+    font-family: Geneva, Verdana, sans-serif;
+    font-size: 30px;
+  
+  }
+  p {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 20px;
+  }
 
+</style>
   <link rel="stylesheet" href="blog.css">
 </head>
 <body>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li></li>
-      <li><a href="ziffern.html">Ziffern</a></li></li>
-    </ul>
-  </nav>
+  <div id="side" class="fixed-container">
+      <div class="fixed-content">
+        <ul>
+        <li>
+          <a href="#section1">Abschnitt 1</a>
+        </li>
+        <li>
+          <a href="#section1">Abschnitt 1</a>
+        </li>
+        <li>
+          <a href="#section1">Abschnitt 1</a>
+        </li>
+        <li>
+          <a href="digits.html">Digits</a>
+        </li>
+      </ul>
+      </div>
+    </div>
+    
+    
+   
+      
+        
+  
+  
   <main>
-    <h1>KI Blog</h1>
-    <section>
-      Hier ist ein Abschnitt.
-    </section>
+    <div id="hauptbox">
+      <div>
+      <h1>Künstliche Intelligenz</h1>
+<section>
+<h2>• Was ist KI? </h2>
+<p>"KI" ist die Abkürzung für „künstliche Intelligenz". Es ist ein multidisziplinäres Gebiet der Informatik, das sich mit der 
+  Entwicklung von Computertechnologien und -systemen befasst, die in der Lage sind, Aufgaben auszuführen, die normalerweise 
+  menschliche Intelligenz erfordern.
+
+  KI zielt darauf ab, Maschinen mit menschlichen kognitiven Fähigkeiten wie Wahrnehmung, Sprachverarbeitung, Lernen, Problemlösung 
+  und Entscheidungsfindung zu versehen. Die Schaffung intelligenter Systeme, die in der Lage sind, Daten zu analysieren, Muster 
+  zu erkennen, Zusammenhänge zu verstehen und intelligentes Verhalten zu zeigen, ist das Hauptziel der KI. 
+  KI hat breite Anwendungen in verschiedenen Bereichen wie Medizin, Robotik, Finanzen, Verkehr, Sprachverarbeitung, Bilderkennung, 
+  Spiele und vielem mehr. Die Entwicklung und Fortschritte in der KI haben das Potenzial, transformative Auswirkungen auf viele Aspekte 
+  des menschlichen Lebens und der Gesellschaft zu haben.</p>
+
+</section>
+
+<section>
+  <h2>• Wie funktioniert KI? </h2>
+  <p>Künstliche Intelligenz (KI) umfasst eine Vielzahl von Techniken und Algorithmen, die darauf abzielen, intelligente Verhaltensweisen
+    in Computersystemen zu erzeugen. Es gibt verschiedene Ansätze und Methoden, wie KI funktioniert.</p>
+</section>
+
+<section>
+<h2> • Wie funktioniert ein neuronales Netz?</h2>
+<p>Ein Neuronales Netzwerk besitzt die Grundstruktur des menschlichen Gehirns; immerhin möchte man auch einen menschlichen Verarbeitungsprozess von Informationen nachahmen. <br>
+  Grundsätzlich kann man sich ein neuronales Netzwerk als eine Ansammlung von Knoten (künstliche Neuronen; Gehirnzellen), verteilt auf verschiedene Schichten vorstellen. Ein Knoten stellt eine mathematische Funktion dar, die Eingaben verarbeitet und eine Ausgabe erzeugt. Auch wenn neuronale Netzwerke in Wirklichkeit einfach verschiedene miteinander verbundene mathematische Funktionen eines Netzwerkes sind, kann man sich diese bildlich in etwas so vorstellen:</p>
+  
+  <p><img src="https://d1g9li960vagp7.cloudfront.net/wp-content/uploads/2022/01/WP_neuronales-netz_aufbau2-1024x576.jpg" alt="Neuronales Netzwerk" style="height: 400px;"></p>
+  
+  
+  <p>Dabei erkennt man die verschiedenen Schichten sehr gut. Es gibt eine Eingabeschicht, eine oder mehr verborgene Schichten und eine Ausgabeschicht. Auf diesen Schichten befinden sich jeweils immer mindestens ein Knoten, welcher mit allen Knoten auf der vorherigen und der nachfolgenden Schicht verbunden ist.<br>
+  Wenn die KI einem Problem ausgesetzt wird, zu welchem er eine Entscheidung treffen sollte, und es lösen sollte, werden grosse Mengen an Daten auf die Knoten in der Eingabeschicht verteilt. Jeder Knoten in der Eingabeschicht ist dabei zuständig für eine Art von Information und leitet diese folgend an alle Knoten in der ersten verborgenen Schicht weiter.<br>
+  Auch wenn somit allen Knoten einer Schicht dieselben Informationen weitergeleitet werden, werden sie dort anders verarbeitet. Jeder Knoten in den verborgenen Schichten besitzt eine gewisse Anforderung und ohne, dass diese erfüllt sind, wird kein Signal an die Knoten in der nächsten Schicht geschickt. Bevor der Knoten aber überprüfen kann, ob die Anforderung denn erfüllt ist, muss er gewisse Berechnungen mit einer so genannten Aktivierungsfunktion durchführen. <br>
+  Eingefügt in diese Funktion werden jeweils immer die erhaltenen Informationen der Knoten der vorherigen Schicht. Jedoch wird auf jede Verbindung zwischen zwei Knoten immer ein gewisses «Gewicht» gesetzt, welche die Wichtigkeit einer Information bestimmt. <br>
+  Die Gewichte, die auf bestimmten Verbindungen liegen, werden mit der Information zusammengerechnet, was uns folgend den Wert gibt, welcher in die Aktivierungsfunktion eines Knoten eingesetzt wird. Vorhanden ist noch ein weiterer Parameter, der sogenannte «Bias» der den Wert einer einkommenden Information noch weiter verändert. Dieser ist jedoch komplexer zu erklären als das «Gewicht» und bei dieser simplen Erklärung auch nicht nötig.<br>
+  Hat man das Resultat der Funktion, kann der Knoten nun auswerten, ob denn nun seine Anforderungen erfüllt sind. Sind sie das, leitet er ein Signal an die nächste Schicht weiter. Auch wenn ein Knoten einer Schicht kein Signal von einem gewissen Knoten weitergeleitet bekommt, hilft ihm das weiter, da er somit weiss, dass dessen Anforderung nicht erfüllt werden konnte.</p>
+  <p>An einem simplen Beispiel kann man dies noch weiter erläutern; nämlich am Beispiel der Ziffernerkennung. <br>
+  Man nehme ein sehr vereinfachtes System mit zwei verborgenen Schichten und gibt der Eingabeschicht die nötigen Daten zur handgeschriebenen Ziffer. Dabei könnte jeder Knoten in der Eingabeschicht für ein bestimmtes Areal der Ziffer verantwortlich sein und die Informationen darüber weiterleiten. Dazu könnte man mitteilen, dass das einem zugeteilte Areal komplett leer ist, dass es einen geraden Strich auf gewissen Koordinaten beinhaltet oder dass darauf ein Bogen gewisser Grösse zu sehen ist. <br>
+  Auf der ersten verborgenen Schicht können nun schon gewisse Details berechnet werden. Beispielsweise könnte ein Knoten die Anforderung haben, dass sich in der oberen Hälfte ein Kreis befindet. Hat er die einkommenden Daten und die Gewichte auf deren Verbindungen in die Aktivierungsfunktion eingerechnet und deren Ausgabe ausgewertet, kann er nun, je nach Ergebnis, ein Signal an die zweite verborgene Schicht senden. Diese könnte nun theoretisch einen Knoten für jede mögliche handgeschriebene Ziffer haben, deren Anforderung es ist, dass die abgebildete Ziffer ihre zugeordnete Ziffer sein muss. <br>
+  Nehmen wir als Beispiel die Ziffer neun. Der Knoten dieser Ziffer, müsste vom Knoten in der vorherigen Schicht, welcher prüft, ob sich in der oberen Hälfte ein Kreis befindet, ein Signal bekommen. Ebenfalls sollte er ein Signal eines Knoten bekommen, welcher überprüft, ob sich in der unteren Hälfte ein Bogen nach links befindet. Bekommt er beide Signale und keine sonstigen, störenden Signale, informiert er die Ausgabeschicht darüber, die zum Schluss kommen würde, dass die geschriebene Ziffer eine neun ist.<br>
+  Jedoch besitzt ein solcher Algorithmus öfters Fehlermeldungen, vor allem wenn er nicht gut genug trainiert worden ist oder wenn zu wenige Knoten vorhanden sind. <br>
+  Hier wäre eine ein wenig fehlerhafte Ziffernerkennung, um sie selbst auszuprobieren: <a href="digits.html">Ziffernerkennung</a></p>
+  <p>Ein vorwiegend grosser Fehler dieses Programmes ist es, dass sich immer nur dieselben Ziffern in dem Datenset, welches man zum Trainieren verwendet, befinden. Somit hat die künstliche Intelligenz zu wenig Varietät und kann verschiedengeschriebene Ziffern schwer erkennen.</p>
+  
+</section>
+
+<section>
+<h2>• Was ist maschinelles Lernen?</h2>
+</section>
+
+<section>
+<h2>• Was für einen Einfluss haben Daten auf eine KI?</h2>
+</section>
+
+<section>
+<h2>• Wie funktioniert ChatGPT?</h2>
+</section>
+
+<section>
+<h2> • Was sind die Grenzen von ChatGPT und worauf sollte man bei der Verwendung achten?</h2>
+</section>
+</div></div>
   </main>
 </body>
 </html>
