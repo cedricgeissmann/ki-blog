@@ -67,11 +67,22 @@ body {
   border-radius: 4px;
   cursor: pointer;
   margin-right: 10px;
+  animation: button-fade-in 1s ease-out forwards;
 }
 
-.controlls button:disabled {
-  background-color: #ccc;
-  cursor: not-allowed;
+@keyframes button-fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.controlls button:hover {
+  background-color: #9ac15a;
 }
 
 .button1 {
