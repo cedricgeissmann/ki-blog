@@ -3,6 +3,7 @@ body {
   padding: 0;
   background-color: rgb(167, 152, 244);
   color: rgb(13, 1, 18)
+  
 }
 
 nav > ul > li {
@@ -33,9 +34,11 @@ main {
 }
 
 #hauptbox {
-  background-color: antiquewhite;
+  background-color: rgb(254, 254, 253);
   margin-left: 15%;
   margin-right: 15%;
+  font-size: 25px;
+  font-family: Comic Sans MS;
 
 }
 
