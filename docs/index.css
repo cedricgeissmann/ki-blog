@@ -1,6 +1,4 @@
 body {
-  width: 90vw;
-  margin: 2vw;
   background-color: #b3ccff;
   color: rgb(0, 0, 0);
   padding-right: 10px;
@@ -43,7 +41,7 @@ header ul {
 header ul li {
   list-style: none;
   margin-left: 20px;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 header ul li a {
@@ -58,11 +56,17 @@ header ul li a:hover {
   color: black;
 }
 
-#img {
-  width: 80vw;
-  height: 80vh;
-  padding-top: 60px;
-  justify-content: center;
-  text-align: center;
-  
-}
+  main {
+    width: 70%;
+    margin: 0 15%;
+  }
+
+  .img-container {
+    text-align: center;
+    padding-top: 95px;
+  }
+
+  .img-container img {
+    width: 90%;
+    
+  }
