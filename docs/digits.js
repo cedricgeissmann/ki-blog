@@ -61,6 +61,11 @@ document.querySelector('#btn-save').addEventListener('click', async (e) => {
   nn.save("model")
 })
 
+document.querySelector('#btn-home').addEventListener('click', (e) => {
+  e.preventDefault();
+  window.location.href = 'index.html';
+})
+
 document.querySelector('#btn-load').addEventListener('click', async (e) => {
   const modelInfo = {
     model: "model/model.json",
