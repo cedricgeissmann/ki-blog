@@ -11,8 +11,8 @@ html, body {
   width: 100%;
   min-height: 100vh;
   padding: 0 50px;
-  background: #673AB7;
-  background: linear-gradient(to top, #673AB7, #512DA8);
+  background:lightblue;
+  background: linear-gradient(top, beige, beige);
   color: #fff;
   box-sizing: border-box;
 }
@@ -82,3 +82,6 @@ html, body {
 	background: linear-gradient(60deg, #ffa726, #fb8c00);
   box-shadow: 0 12px 20px -10px rgba(255, 152, 0, 0.28), 0 4px 20px 0px rgba(0, 0, 0, 0.12), 0 7px 8px -5px rgba(255, 152, 0, 0.2);
 }
+
+.li {
+  width: 15px;}

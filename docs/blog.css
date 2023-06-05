@@ -1,8 +1,29 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: darkslategray;
-  color: antiquewhite
+  background-color: lightblue;
+  color: black
+
+}
+.container {
+ background-color: aliceblue;
+ width: 50%;
+ position: absolute; left: 250px;
+ padding:20px 30px;
+ 
+}
+.img {
+  width: 20px;
+  height:20px;
+}
+.p{
+  width: 80%;
+  padding-left: 2%;
+}
+.Home{
+  font-size: 2rem;
+  font-style: initial;
+  text-align: center;
 }
 
 nav > ul > li {
@@ -19,9 +40,9 @@ nav > ul {
 }
 
 nav > ul > li > a {
-  font-size: 2rem;
+  font-size: 1rem;
   text-decoration: none;
-  color: antiquewhite;
+  color: gray;
 }
 
 nav > ul > li > a:hover {
