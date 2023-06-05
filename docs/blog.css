@@ -1,8 +1,8 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: darkslategray;
-  color: antiquewhite
+  background-color: rgb(167, 152, 244);
+  color: rgb(13, 1, 18)
 }
 
 nav > ul > li {
@@ -21,7 +21,7 @@ nav > ul {
 nav > ul > li > a {
   font-size: 2rem;
   text-decoration: none;
-  color: antiquewhite;
+  color: rgb(251, 250, 252);
 }
 
 nav > ul > li > a:hover {
@@ -30,4 +30,15 @@ nav > ul > li > a:hover {
 
 main {
   padding: 20px 50px;;
+}
+
+#hauptbox {
+  background-color: antiquewhite;
+  margin-left: 15%;
+  margin-right: 15%;
+
+}
+
+#hiddenbox{
+  padding: 5%;
 }
