@@ -111,49 +111,20 @@ wird zum Zweifeln aller Informationen führen. Grunsätzlich kann die künstlich
       <p>
         Das maschinelle Lernen ist ein Bereich der künstlichen Intelligenz, 
         der sich mit der Entwicklung von Algorithmen und Modellen befasst, die es 
-        Computern ermöglichen, aus Erfahrungen zu lernen und Aufgaben zu automatisieren, 
-        ohne dass sie explizit programmiert werden müssen. Es basiert auf der Idee, 
-        dass Maschinen durch das Analysieren und Interpretieren großer Datenmengen Muster 
-        und Zusammenhänge erkennen können.
+        Computern ermöglichen, aus Erfahrungen zu lernen und Aufgaben zu lösen und zu verstehen, 
+        ohne dass sie genau dafür programmiert werden müssen. Es basiert auf der Idee, 
+        dass Maschinen durch das Interpretieren grosser Datenmengen Zusammenhänge erkennen können. Also die KI bekommt eine 
+        Anzahl an Eingabedaten. Diese werden auf Zusammenhänge, Muster und Strukturen geprüft. Die KI lernt dann diese Zusammenhänge und setzt sie für verschiedene Aufgaben ein.
     </p>
         <h4>Funktionsweise</h4>
       <p>
-        Das machinelle lernen ist ein Teilbereich der KI. Das Ziel des maschinelle Lernen ist die Aneignung an Information mithilfe einer hohen Datenmenge. 
+       Das Ziel des maschinellen Lernens ist die Aneignung von Information mithilfe einer hohen Datenmenge. 
         Diese grosse Datenmenge soll der KI ermöglichen an Wissen zu gelangen, selbstständig zu lernen, Unterschiede zwischen Daten zu erkennen und zu interpretieren.
         Dafür existieren verschiedene Modelle um an diese Ziele zu gelangen. Eines ist das neuronale Netzwerk, welches ab einer gewissen Grösse auch Deeplearning Modelle erfasst. 
         Deep Learning ist ein Teilbereich des maschinellen Lernens, der sich auf die Entwicklung von neuronalen Netzwerken konzentriert. Es zielt darauf ab, Computern beizubringen, 
-        Muster und <i>komplexe</i> Zusammenhänge in großen Datensätzen zu erkennen und zu verstehen. Deep Learning basiert auf künstlichen neuronalen Netzwerken, die aus mehreren Schichten von Neuronen bestehen.
-        Das neuronale Netzwerk wird im späteren Verlauf genauer erklärt. Diese Neuronen sind untereinander verbunden und verarbeiten zusammen verschedene Eingabedaten.
-        Der "tief" in Deep Learning bezieht sich auf die Tatsache, dass diese Netzwerke eine große Anzahl von Schichten haben können, was ihnen ermöglicht, hierarchische und abstrakte Merkmale zu lernen.
-      </p>
-
-    </section>
-
-
-
-
-
-
-    <section id="procedure">
-      <h2 id="dasneuronalenetz">Das Neuoronale Netz</h2>
-      <p>
-First, good sprites and sources for the map and the player had to be found. 
-These sprites were then imported to the map editor named <a href="https://www.mapeditor.org">Tiled</a>. With this tool
-our map could be created by layering our sprites up to a specific layer, which all togeter 
-form a map. Step by step the map was enlarged and details were added to it. Very important were 
-also the collisions and the map boundaries, which already had to be placed in the map editor. 
-Furthermore the foreground layers had to be fixed, so that the player could walk behind trees ect. 
-what made the game more realistic. 
-     </p>
-      <h4>Funktionsweise</h4>
-      <p>
-First, good sprites and sources for the map and the player had to be found. 
-These sprites were then imported to the map editor named <a href="https://www.mapeditor.org">Tiled</a>. With this tool
-our map could be created by layering our sprites up to a specific layer, which all togeter 
-form a map. Step by step the map was enlarged and details were added to it. Very important were 
-also the collisions and the map boundaries, which already had to be placed in the map editor. 
-Furthermore the foreground layers had to be fixed, so that the player could walk behind trees ect. 
-what made the game more realistic. 
+        Muster und <i>komplexe</i> Zusammenhänge in großen Datenmengen zu erkennen und zu verstehen. Deep Learning basiert auf künstlichen neuronalen Netzwerken, die aus mehreren Schichten von sogenannten Neuronen bestehen.
+        Dieses neuronale Netzwerk wird im späteren Verlauf noch genauer erklärt. Diese Neuronen sind untereinander verbunden und verarbeiten zusammen verschedene Eingabedaten.
+        Der "tief" in Deep Learning bezieht sich auf die Tatsache, dass diese Netzwerke eine grosse Anzahl von Neutronen-Schichten haben können, was ihnen ermöglicht, schwierigere Merkmale zu lernen und zu erkennen.
       </p>
 
     </section>
@@ -164,12 +135,77 @@ what made the game more realistic.
 
 
     <section id="commands">
-    <h2 id="dereinfluss">Der Einfluss von Daten auf eine KI</h2>
-    <p>
-Our game is an rpg game map. To move on the map and win, use the  keys; W to move upwards, S to move downwards, A to move left, and D to move right.
-Within the fight scene, everything is automatic and strictly regulated. By pressing an attack button, Alex executes one of his currently learned attacks and damages the opponent. The opponent then attacks with a variable attack of his choice. This game principle is repeated until one of the two fighting Slimes has no more life points and the fight is over.
-    </p>
+      <h2 id="dereinfluss">Der Einfluss von Daten auf eine KI</h2>
+      <p>
+        Wie man beim vorherigen Abschnit erkennen kann haben Daten einen extrem wichtigen Einfluss auf die Künstliche Intelligenz, denn 
+        sie dienen als Grundlage für das Training der künstlichen Intelligenz und beeinflussen 
+        die Genauigkeit der Antworten. Je mehr Daten der KI zur verfügung stehen, desto mehr Wissen kann sie erlangen. 
+        Die Qualität der Daten sind entscheidend für die Antworten einer KI. Je besser die Qualität der Daten, desto genauer 
+       sind die Atworten oder desto besser wird die jeweilige Aufgabe durchgeführt.
+      </p>
+      </section>
+  
+
+
+
+
+
+    <section id="procedure">
+      <h2 id="dasneuronalenetz">Das neuoronale Netz</h2>
+      <p>
+Ein neuronales Netzwerk besteht aus einer Reihe von künstlichen Neuronen, die miteinander verbunden sind. Dabei ahnt es 
+die Struktur des menschlichen Gehirns nach. Dadurch kann die KI dauernd wie ein menschliches Gehirn dazulernen. 
+     </p>
+      <h4>Funktionsweise</h4>
+      <p>
+        Das neuronale Netz besteht aus mehreren Schichten von sogenannten Neuronen, nähmlich
+        einer Input-Schicht, einer oder mehreren Zwischenschichten, welche Hidden Layers genannt werden, 
+        und einer Output-Schicht. Die Neuronen werden durch 
+        Netze miteinander verbunden, welche zum Austauschen von Infromation gebraucht werden. Diese Netze werden von den Neuronen unterschiedlich gewichtet.
+        Wichtig ist, dass das Netzwerk Daten benötigt, deren Ergebnis es kennt, um aus diesen während des Trainings zu lernen. Während des 
+        Trainings werden die Gewichtungen der Verbindungen zwischen den Neuronen angepasst um die Ergebnisse der KI zu verbessern, dabei
+        wiederholt sich dieser Prozess des Trainings mehrfach bis die Gewichtungen der Verbindungen der 
+        künstlichen Neuronen so angepasst werden, dass eine genaue und richtige Antwort erzielt wird. 
+        In der ersten Schicht, der <strong>Eingabeschicht</strong>, wird die Eingabe aufgenommen. Die Neuronen geben den von der Eingabe gegebenen Information an die nächste Schicht weiter, die <strong>Verborgene Schicht</strong>. Diese Schicht kann, im Gegensatz zu der 
+        Eingabeschicht und der Output-Schicht, welche aus nur eine Neuronen-Ebene bestehen, aus mehreren Ebenen bestehen. Jetzt werden die Informationen von Neuron zu Neuron und Ebene zu Ebene neu gewichtet und gerichtet. 
+        Wenn es hier viele Ebenen gibt spricht man von Deep Learning. Die neu gewichteten Informationen werden in der <strong> Output-Schicht</strong> ausgegeben. So entsteht zum Beispiel eine Wahrscheinlichkeitsverteilung woduch das
+        höchstwarscheinliche Ergebniss angezeigt wird oder es ensteht einen Wertunterschied. Hier wird das Element mit dem höstem Wert als richtig wiedergegeben.
+
+        <p></p>
+
+
+        <img
+        src="https://d1g9li960vagp7.cloudfront.net/wp-content/uploads/2022/01/WP_neuronales-netz_aufbau-1024x576.jpg"
+        style="width: 602px;;height: 400px;"
+      />
+
+      </p>
+      <h4>Beispiel: <a  href="digits.html">Ziffernerkennung</a> </h4>
+      Ein Bespiel für das Modell des neuronalen Netzes ist die Ziffernerkennung. Bei dieser Art von KI werden Zahlen 
+      von Hand geschrieben, welche dann von der KI erkannt werden müssen. Dabei ist die Schwierigkeit, dass es unendlich viele verschiedene 
+      Handschriften hat und sich die geschriebenen Zahlen unterscheiden und nie genau gleich sind. Die künstliche Intelligenz
+      muss trotz dieser Unterschiede die korrekte Zahl anzeigen können. Dafür muss die KI der Ziffernerkennung mit vielen Daten, also Bildern von möglichen 
+      Handgeschriebenen Ziffen, gefüttert werden. Die KI wird daraufhin auf diese Ziffen trainiert und erkennt Zusammenhänge und Ähnlichkeiten, welche 
+      sie dann benutzt um die Ziffern zu erkennen und zu unterscheiden. Je nach Grösse der Datei, welche die KI zur verfügung steht ist die Genauigkeit der Antworten anders. Bei unserer
+      Ziffernerkennung werden eher wenige Dateien geladen und so lässt sich die Ungenauigkeit der Antworten erklären. 
+
+      <p>Als erstes wird eine Ziffer von Hand geschrieben. Die Eingabeschicht kann verschiedene Informationen aus dieser Ziffer erkennen, wie z.B die Verteilung der Pixeln, welche vom Stift gefärbt wurden. 
+        Dies funktioniert durch das Scannen aller Pixeln der Schreibfläche. Die Informationen, welche daraus gezogen werden, werden zur nächsten Schicht, den Zwischenschichten gesendet. Diese analysieren die Informationen,
+        ordnen sie ein, richten sie und geben eine Gewichtung ab. Jede Ebene der Zwischenschichten macht das gleiche und so kann man erkennen, 
+        dass je mehr Ebenen es hat, desto mehr Informationen werden gerichtet und gewichtet, was zu genaueren Ergebnissen führt. Je nach Gewichtung gibt das nächste
+        Neuron einen Wert weiter oder nicht. So entstehen unter anderem Wertunterschiede. Im Fall der Ziffererkennung geben die Neuronen der Zwischenschichten ihre Werte weiter zu den
+        Output-Schichten. Diese werden dann ausgegeben und die Ziffer mit dem grössten Wert wird als Übereinstimmende Ziffer empfunden.
+      </p>
+
+
     </section>
+
+
+
+
+
+
+
 
 
 
