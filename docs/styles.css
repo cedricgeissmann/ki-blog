@@ -87,4 +87,9 @@ span {
 
 a{
   color: beige;
+  font-size: small;
+}
+
+.link {
+  margin: 10px;
 }
