@@ -9,7 +9,7 @@ canvas {
 }
 
 body {
-  background-image: url("../docs/resources/mountains_front_background.png");
+  background-image: url("resources/mountains_front_background.png");
   background-size: cover;
   display: flex;
   justify-content: center;
