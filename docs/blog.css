@@ -1,8 +1,8 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: darkslategray;
-  color: antiquewhite
+  background-color: lightblue;
+  color: rgb(69, 69, 69)
 }
 
 nav > ul > li {
@@ -21,11 +21,12 @@ nav > ul {
 nav > ul > li > a {
   font-size: 2rem;
   text-decoration: none;
-  color: antiquewhite;
+  color: rgb(69, 69, 69);
 }
 
 nav > ul > li > a:hover {
   text-decoration: underline;
+  color: palevioletred;
 }
 
 main {
