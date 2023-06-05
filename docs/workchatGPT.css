@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: lightblue;
+    text-align: center;
+  }
+  h1{
+    color: cornflowerblue;
+  }
+  .container{
+      background-color: aliceblue;
+      width: 510px;
+      height: 995px;
+      left: 50%;
+      position: absolute; left: 35%;
+    }
+  
+    
+    footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;top: 50px;
+      font-size: 1.5rem;
+    }
+
+    .highlight1{
+color: red;
+    }
+    
+    .highlight2{
+      color: orange;
+    }
+    
+    .highlight3{
+      color: green;
+    }
+    .highlight4{
+      text-decoration: underline;
+    }

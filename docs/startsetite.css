@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: lightblue;
+    color: antiquewhite
+
+  }
+
+  .container{
+    background-color: aliceblue;
+    width: 510px;
+    height: 700px;
+    left: 50%;
+    position: absolute; left: 35%;
+  }
+
+  h1{
+    position: relative top 160px;
+    text-align: center;
+    color: cornflowerblue;
+  
+  }
+
+  h2{
+    position: relative top 180px;
+    text-align: center;
+    color: cornflowerblue;
+  }
+
+  
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 200px;
+    padding-left: 85%;
+    font-size: 1.5rem;
+  }
+
+#image1{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}

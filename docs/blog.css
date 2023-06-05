@@ -1,8 +1,40 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: darkslategray;
+  background-color: lightblue;
   color: antiquewhite
+}
+
+h1{
+  position: relative top 160px;
+  text-align: center;
+  color: cornflowerblue;
+
+}
+
+.container{
+  background-color: aliceblue;
+  width: 510px;
+  height: 700px;
+  left: 50%;
+  position: absolute; left: 35%;
+}
+
+#p1{
+  left: 40px;
+  
+  text-decoration: underline;
+  color: black;
+}
+#p2{
+  padding-left: 40px;
+  color: black;
+
+}
+
+h4{
+  color: black;
+  padding-left: 40px;
 }
 
 nav > ul > li {
@@ -11,17 +43,88 @@ nav > ul > li {
   margin: 0;
 }
 
-nav > ul {
+#li1{
+  position: absolute;
+  left: 40px;
+  top: 410px;
+  color: black;
+
+}
+
+#li2{
+  position: absolute;
+  left: 40px;
+  top: 440px;
+  color: black;
+
+}
+
+#li3{
+  position: absolute;
+  left: 40px;
+  top: 470px;
+  color: black;
+
+}
+
+#li4{
+  position: absolute;
+  left: 40px;
+  top: 500px;
+  color: black;
+
+}
+
+#p3{
+  padding-left: 40px;
+  padding-top: 180px;
+  text-decoration: underline;
+  color: black;
+
+}
+
+#a1{
+  color: royalblue ;
+
+}
+#a2{
+  color: royalblue;
+}
+#p4{
+  padding-left: 40px;
+  color: black;
+
+}
+
+
+nav > ul,
+footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0;
 }
 
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 210px;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.highlight{
+  color: rgb(100, 141, 212);
+  font-style: italic;
+
+}
+
 nav > ul > li > a {
   font-size: 2rem;
   text-decoration: none;
-  color: antiquewhite;
+  color: cornflowerblue;
+
 }
 
 nav > ul > li > a:hover {
@@ -29,5 +132,5 @@ nav > ul > li > a:hover {
 }
 
 main {
-  padding: 20px 50px;;
+  padding: 20px 50px;
 }
