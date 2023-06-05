@@ -54,7 +54,7 @@ padding: 5%;
 #side {
   background-color:cadetblue;
   width: 400px;
-  position: absolute;
+  position: fixed;
   top: 0;
   left:0;
   height: 100%;
@@ -82,11 +82,11 @@ padding: 5%;
   font-size: 1.5rem;
 }
 
-.fixed-container {
-  position: fixed;
-    top: 50px;
-    left: 50px;
-    width: 200px; /* Adjust width as needed */
-    height: 200px; /* Adjust height as needed */
-    overflow: auto;
+.fixed-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+    width: 200px; /*: Adjust width as needed */
+    height: 100%; /* Adjust height as needed */
 }
