@@ -19,29 +19,60 @@
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     font-size: 20px;
   }
+  a {
+    color: black;
+  }
+
+  .title-with-image {
+      display: flex; /* Stellt die Elemente in einer Zeile anordnen */
+      align-items: center; /* Zentriert die Elemente vertikal */
+    }
+    
+    .title-with-image img {
+      margin-left: 50px;
+      order: 2; 
+      width: 100px; /* Ändere die Breite des Bildes auf die gewünschte Größe */
+      height: auto;/* Fügt rechts etwas Abstand zwischen dem Bild und dem Titel hinzu */
+    }
+    .title-with-image h1 {
+      order: 1; /* Ändert die Reihenfolge des Titels */
+    }
 
 </style>
   <link rel="stylesheet" href="blog.css">
 </head>
 <body>
-  <div id="side" class="fixed-container">
-      <div class="fixed-content">
-        <ul>
-        <li>
-          <a href="#section1">Abschnitt 1</a>
-        </li>
-        <li>
-          <a href="#section1">Abschnitt 1</a>
-        </li>
-        <li>
-          <a href="#section1">Abschnitt 1</a>
-        </li>
-        <li>
-          <a href="digits.html">Digits</a>
-        </li>
-      </ul>
-      </div>
-    </div>
+  <div id="side">
+    <ul>
+      <li>
+        <a href="index.html">-Home</a>
+      </li>
+      <li>
+        <a href="index.html#section1">-Was ist KI??</a>
+      </li>
+      <li>
+        <a href="index.html#section2">-Wie funktioniert KI?</a>
+      </li>
+      <li>
+        <a href="index.html#section3">-Wie funktioniert ein neuronales Netz?</a>
+      </li>
+      <li>
+        <a href="index.html#section4">-Was ist maschinelles Lernen?</a>
+      </li>
+      <li>
+        <a href="index.html#section5">-Was für einen Einfluss haben Daten auf eine KI?</a>
+      </li>
+      <li>
+        <a href="index.html#section6">-Wie funktioniert ChatGPT?</a>
+      </li>
+      <li>
+        <a href="index.html#section7">-Was sind die Grenzen von ChatGPT </a>
+      </li>
+      <li>
+        <a href="digits.html">-Digits</a>
+      </li>
+    </ul>
+  </div>
     
     
    
@@ -52,16 +83,19 @@
   <main>
     <div id="hauptbox">
       <div>
+        <div class="title-with-image">
+          <img src=AI.png alt="KI">
       <h1>Künstliche Intelligenz</h1>
+        </div>
 <section>
 <h2>• Was ist KI? </h2>
 <p>"KI" ist die Abkürzung für „künstliche Intelligenz". Es ist ein multidisziplinäres Gebiet der Informatik, das sich mit der 
   Entwicklung von Computertechnologien und -systemen befasst, die in der Lage sind, Aufgaben auszuführen, die normalerweise 
-  menschliche Intelligenz erfordern.
+  menschliche Intelligenz erfordern. </p><p>
 
   KI zielt darauf ab, Maschinen mit menschlichen kognitiven Fähigkeiten wie Wahrnehmung, Sprachverarbeitung, Lernen, Problemlösung 
   und Entscheidungsfindung zu versehen. Die Schaffung intelligenter Systeme, die in der Lage sind, Daten zu analysieren, Muster 
-  zu erkennen, Zusammenhänge zu verstehen und intelligentes Verhalten zu zeigen, ist das Hauptziel der KI. 
+  zu erkennen, Zusammenhänge zu verstehen und intelligentes Verhalten zu zeigen, ist das Hauptziel der KI. </p><p>
   KI hat breite Anwendungen in verschiedenen Bereichen wie Medizin, Robotik, Finanzen, Verkehr, Sprachverarbeitung, Bilderkennung, 
   Spiele und vielem mehr. Die Entwicklung und Fortschritte in der KI haben das Potenzial, transformative Auswirkungen auf viele Aspekte 
   des menschlichen Lebens und der Gesellschaft zu haben.</p>
@@ -71,27 +105,29 @@
 <section>
   <h2>• Wie funktioniert KI? </h2>
   <p>Künstliche Intelligenz (KI) umfasst eine Vielzahl von Techniken und Algorithmen, die darauf abzielen, intelligente Verhaltensweisen
-    in Computersystemen zu erzeugen. Es gibt verschiedene Ansätze und Methoden, wie KI funktioniert.</p>
+    in Computersystemen zu erzeugen. </p><p> Es gibt verschiedene Ansätze und Methoden, die in KI eingesetzt werden. Darunter befindet sich Maschinelles Lernen (wie Lernt KI?), Neuronale Netzwerke (Wie ist das System einer KI aufgebaut?), NLP (Natürliche Sprachverarbeitung, die Fähigkeit menschliche Sprache zu verstehen, zu analysieren und zu generieren), Computer Vision (Verarbeitung und Interpretation visueller Informationen) oder auch logisches Schliessen. Einige dieser Methoden werden folgend noch weiter erläutert. </p><p>
+    Das sind aber auch nur einige Grundlagen und Techniken die man in der KI nutzt, denn KI umfasst ein breites Spektrum von Anwendungen und Ansätzen, dazu gehören einfache Systeme sowie auch komplexe KI Modelle. Es ist jedoch wichtig zu beachten, dass KI-Systeme nur so gut sind wie die Daten, auf denen sie trainiert werden, und dass ethische und soziale Aspekte bei der Entwicklung und Anwendung von KI-Systemen berücksichtigt werden sollten.
+    </p>
 </section>
 
 <section>
 <h2> • Wie funktioniert ein neuronales Netz?</h2>
-<p>Ein Neuronales Netzwerk besitzt die Grundstruktur des menschlichen Gehirns; immerhin möchte man auch einen menschlichen Verarbeitungsprozess von Informationen nachahmen. <br>
-  Grundsätzlich kann man sich ein neuronales Netzwerk als eine Ansammlung von Knoten (künstliche Neuronen; Gehirnzellen), verteilt auf verschiedene Schichten vorstellen. Ein Knoten stellt eine mathematische Funktion dar, die Eingaben verarbeitet und eine Ausgabe erzeugt. Auch wenn neuronale Netzwerke in Wirklichkeit einfach verschiedene miteinander verbundene mathematische Funktionen eines Netzwerkes sind, kann man sich diese bildlich in etwas so vorstellen:</p>
+<p>Ein Neuronales Netzwerk besitzt die Grundstruktur des menschlichen Gehirns; immerhin möchte man auch einen menschlichen Verarbeitungsprozess von Informationen nachahmen. </p>
+  <p>Grundsätzlich kann man sich ein neuronales Netzwerk als eine Ansammlung von Knoten (künstliche Neuronen; Gehirnzellen), verteilt auf verschiedene Schichten vorstellen. <br> Ein Knoten stellt eine mathematische Funktion dar, die Eingaben verarbeitet und eine Ausgabe erzeugt. Auch wenn neuronale Netzwerke in Wirklichkeit einfach verschiedene miteinander verbundene mathematische Funktionen eines Netzwerkes sind, kann man sich diese bildlich in etwas so vorstellen:</p>
   
   <p><img src="https://d1g9li960vagp7.cloudfront.net/wp-content/uploads/2022/01/WP_neuronales-netz_aufbau2-1024x576.jpg" alt="Neuronales Netzwerk" style="height: 400px;"></p>
   
   
-  <p>Dabei erkennt man die verschiedenen Schichten sehr gut. Es gibt eine Eingabeschicht, eine oder mehr verborgene Schichten und eine Ausgabeschicht. Auf diesen Schichten befinden sich jeweils immer mindestens ein Knoten, welcher mit allen Knoten auf der vorherigen und der nachfolgenden Schicht verbunden ist.<br>
-  Wenn die KI einem Problem ausgesetzt wird, zu welchem er eine Entscheidung treffen sollte, und es lösen sollte, werden grosse Mengen an Daten auf die Knoten in der Eingabeschicht verteilt. Jeder Knoten in der Eingabeschicht ist dabei zuständig für eine Art von Information und leitet diese folgend an alle Knoten in der ersten verborgenen Schicht weiter.<br>
-  Auch wenn somit allen Knoten einer Schicht dieselben Informationen weitergeleitet werden, werden sie dort anders verarbeitet. Jeder Knoten in den verborgenen Schichten besitzt eine gewisse Anforderung und ohne, dass diese erfüllt sind, wird kein Signal an die Knoten in der nächsten Schicht geschickt. Bevor der Knoten aber überprüfen kann, ob die Anforderung denn erfüllt ist, muss er gewisse Berechnungen mit einer so genannten Aktivierungsfunktion durchführen. <br>
+  <p>Dabei erkennt man die verschiedenen Schichten sehr gut. Es gibt eine Eingabeschicht, eine oder mehr verborgene Schichten und eine Ausgabeschicht. Auf diesen Schichten befinden sich jeweils immer mindestens ein Knoten, welcher mit allen Knoten auf der vorherigen und der nachfolgenden Schicht verbunden ist.</p>
+  <p>Wenn die KI einem Problem ausgesetzt wird, zu welchem er eine Entscheidung treffen sollte, und es lösen sollte, werden grosse Mengen an Daten auf die Knoten in der Eingabeschicht verteilt. Jeder Knoten in der Eingabeschicht ist dabei zuständig für eine Art von Information und leitet diese folgend an alle Knoten in der ersten verborgenen Schicht weiter.<br>
+  Auch wenn somit allen Knoten einer Schicht dieselben Informationen weitergeleitet werden, werden sie dort anders verarbeitet. </p> <p> Jeder Knoten in den verborgenen Schichten besitzt eine gewisse Anforderung und ohne, dass diese erfüllt sind, wird kein Signal an die Knoten in der nächsten Schicht geschickt. Bevor der Knoten aber überprüfen kann, ob die Anforderung denn erfüllt ist, muss er gewisse Berechnungen mit einer so genannten Aktivierungsfunktion durchführen. <br>
   Eingefügt in diese Funktion werden jeweils immer die erhaltenen Informationen der Knoten der vorherigen Schicht. Jedoch wird auf jede Verbindung zwischen zwei Knoten immer ein gewisses «Gewicht» gesetzt, welche die Wichtigkeit einer Information bestimmt. <br>
-  Die Gewichte, die auf bestimmten Verbindungen liegen, werden mit der Information zusammengerechnet, was uns folgend den Wert gibt, welcher in die Aktivierungsfunktion eines Knoten eingesetzt wird. Vorhanden ist noch ein weiterer Parameter, der sogenannte «Bias» der den Wert einer einkommenden Information noch weiter verändert. Dieser ist jedoch komplexer zu erklären als das «Gewicht» und bei dieser simplen Erklärung auch nicht nötig.<br>
+  Die Gewichte, die auf bestimmten Verbindungen liegen, werden mit der Information zusammengerechnet, was uns folgend den Wert gibt, welcher in die Aktivierungsfunktion eines Knoten eingesetzt wird. Vorhanden ist noch ein weiterer Parameter, der sogenannte «Bias» der den Wert einer einkommenden Information noch weiter verändert. Dieser ist jedoch komplexer zu erklären als das «Gewicht» und bei dieser simplen Erklärung auch nicht nötig.</p><p>
   Hat man das Resultat der Funktion, kann der Knoten nun auswerten, ob denn nun seine Anforderungen erfüllt sind. Sind sie das, leitet er ein Signal an die nächste Schicht weiter. Auch wenn ein Knoten einer Schicht kein Signal von einem gewissen Knoten weitergeleitet bekommt, hilft ihm das weiter, da er somit weiss, dass dessen Anforderung nicht erfüllt werden konnte.</p>
   <p>An einem simplen Beispiel kann man dies noch weiter erläutern; nämlich am Beispiel der Ziffernerkennung. <br>
   Man nehme ein sehr vereinfachtes System mit zwei verborgenen Schichten und gibt der Eingabeschicht die nötigen Daten zur handgeschriebenen Ziffer. Dabei könnte jeder Knoten in der Eingabeschicht für ein bestimmtes Areal der Ziffer verantwortlich sein und die Informationen darüber weiterleiten. Dazu könnte man mitteilen, dass das einem zugeteilte Areal komplett leer ist, dass es einen geraden Strich auf gewissen Koordinaten beinhaltet oder dass darauf ein Bogen gewisser Grösse zu sehen ist. <br>
   Auf der ersten verborgenen Schicht können nun schon gewisse Details berechnet werden. Beispielsweise könnte ein Knoten die Anforderung haben, dass sich in der oberen Hälfte ein Kreis befindet. Hat er die einkommenden Daten und die Gewichte auf deren Verbindungen in die Aktivierungsfunktion eingerechnet und deren Ausgabe ausgewertet, kann er nun, je nach Ergebnis, ein Signal an die zweite verborgene Schicht senden. Diese könnte nun theoretisch einen Knoten für jede mögliche handgeschriebene Ziffer haben, deren Anforderung es ist, dass die abgebildete Ziffer ihre zugeordnete Ziffer sein muss. <br>
-  Nehmen wir als Beispiel die Ziffer neun. Der Knoten dieser Ziffer, müsste vom Knoten in der vorherigen Schicht, welcher prüft, ob sich in der oberen Hälfte ein Kreis befindet, ein Signal bekommen. Ebenfalls sollte er ein Signal eines Knoten bekommen, welcher überprüft, ob sich in der unteren Hälfte ein Bogen nach links befindet. Bekommt er beide Signale und keine sonstigen, störenden Signale, informiert er die Ausgabeschicht darüber, die zum Schluss kommen würde, dass die geschriebene Ziffer eine neun ist.<br>
+  </p><p>Nehmen wir als Beispiel die Ziffer neun. Der Knoten dieser Ziffer, müsste vom Knoten in der vorherigen Schicht, welcher prüft, ob sich in der oberen Hälfte ein Kreis befindet, ein Signal bekommen. Ebenfalls sollte er ein Signal eines Knoten bekommen, welcher überprüft, ob sich in der unteren Hälfte ein Bogen nach links befindet. Bekommt er beide Signale und keine sonstigen, störenden Signale, informiert er die Ausgabeschicht darüber, die zum Schluss kommen würde, dass die geschriebene Ziffer eine neun ist.<br>
   Jedoch besitzt ein solcher Algorithmus öfters Fehlermeldungen, vor allem wenn er nicht gut genug trainiert worden ist oder wenn zu wenige Knoten vorhanden sind. <br>
   Hier wäre eine ein wenig fehlerhafte Ziffernerkennung, um sie selbst auszuprobieren: <a href="digits.html">Ziffernerkennung</a></p>
   <p>Ein vorwiegend grosser Fehler dieses Programmes ist es, dass sich immer nur dieselben Ziffern in dem Datenset, welches man zum Trainieren verwendet, befinden. Somit hat die künstliche Intelligenz zu wenig Varietät und kann verschiedengeschriebene Ziffern schwer erkennen.</p>
@@ -100,18 +136,128 @@
 
 <section>
 <h2>• Was ist maschinelles Lernen?</h2>
+<p>
+
+  Maschinelles Lernen ist ein Teilbereich der künstlichen Intelligenz und beschreibt, wie sich letzteres weiterentwickelt und wie es 
+  lernt. Dadurch können Systeme selbstständig Muster und Zusammenhänge aus grossen Datenmengen erkennen, ohne explizit darauf 
+  programmiert zu sein. </p><p>
+Damit ein solches System jedoch intelligente Entscheidungen beruhend auf noch nicht bekannte Informationen treffen kann, muss 
+ein Mensch den Algorithmus trainieren. Dazu verwendet man einen Trainingsdatensatz, welcher der Eingabeschicht des Programmes 
+gegeben wird. Den Verbindungen zwischen den einzelnen Knoten werden zufällige Gewichte und Bias verordnet. Nun wird das endgültige 
+Resultat mit dem richtigen Resultat verglichen und ein sogenannter «Error» wird berechnet. Diesen möchte man natürlich so klein wie
+ möglich halten, da er uns verrät, wie schlecht unser System gearbeitet hat. Deswegen werden die Gewichte nun angepasst und der 
+ gesamte Prozess tritt erneut auf. <br> Dies wird so lange gemacht, bis der Error minimal geworden ist. Die Entwicklung eines Modells 
+ ist ein interaktiver Prozess, der also oft mehrfach durchlaufen wird, bis das Ergebnis eine gewisse Qualität erreicht hat. <br>
+</p><p>Tatsächlich gibt es vier verschiedene Algorithmen für das Maschinelle Lernen, nämlich die folgenden:
+<ul class="liste">
+<p><li> <u>1. Überwachtes Lernen</u> <br>
+Im Überwachten Lernen werden bekannte Datensets (Trainingsdatensätze) benutzt, um daraus Muster und Zusammenhänge zu erkennen. 
+Dabei wird immer im Zusammenhang mit einer Zielvariable gelernt, welche der Algorithmus zu vorhersagen versucht. Ist dieser 
+Lernprozess erfolgreich, kann man anhand von unbekannten Daten zukünftige Vorhersagen treffen. Öfters wird das überwachte 
+
+Lernen für die Klassifikation von Kundendaten eingesetzt.</p> </li> <p>
+<li> <u>2. Unüberwachtes maschinelles Lernen</u> <br>
+Im Gegensatz zum überwachten Lernen bekommt der Algorithmus keine Beispieldaten, sondern Daten, aus denen der Algorithmus 
+eigenständig interessante, versteckte Gruppen und Muster erkennen soll. Das heisst, dass die KI keine Vorhersage für eine 
+bekannte Zielvariable berechnen sollte und die Ergebnisse werden somit nur an relativ «weichen» Faktoren bewertet. </p></li> <p>
+<li> <u>3. Teilüberwachtes Lernen</u> <br>
+Das Teilüberwachte Lernen ist sozusagen eine Mischung zwischen Überwachtem und Unüberwachten Lernen, da sowohl Beispieldaten 
+als auch unbekannte Daten verwendet werden. Hier werden aber trotzdem noch vor allem unbekannte Datensets und nur wenige 
+Datensets mit Zielvariabeln genutzt, da die Beschaffung von Beispieldaten oft sehr aufwendig und kostenintensiv ist. 
+Teilüberwachtes Lernen findet hauptsächlich in der Bild – oder Objekterkennung statt. </p></li> <p>
+<li><u> 4. Verstärkendes Lernen </u><br>
+Beim verstärkenden Lernen wird interagiert der Algorithmus mit der Umgebung und wird durch ein Kosten/Belohnungssystem bewertet, 
+damit er selbstständig eine Lösung zum Problem findet und somit die Belohnung zu erhöht. Somit wird dem System nicht klar gezeugt, 
+was wann richtig ist, sondern er kriegt lediglich ein positives oder negatives Feedback. Dieses System benötigt keinerlei 
+Beispieldaten und kann eine eigene Strategie entwickeln, es benötigt somit also auch kein menschliches Vorwissen mehr, um 
+komplexe Probleme zu erlernen. </p></li> </ul>
+
+<p>Nachdem die künstliche Intelligenz ihren Lernprozess abgeschlossen hat, wird sie auch noch überprüft. Ihr wird ein noch 
+unbekanntes Datenset gegeben und sie soll nun dazu eine Lösung finden. <br> In der Praxis finden so immer wieder Entwicklungschleifen 
+statt, in denen ein Mensch die Ergebnisse aus dem Maschinellen Lernalgorithmus bewerten muss. <br></p>
+<p>War die Performance aber noch ungenügend, kann man die Intelligenz noch ein wenig bewusst tunen, indem man gewisse 
+Hyperparameter anpasst, welche das Verhalten vom Maschinellen Lernen noch verbessern kann. <br>
+Auch wenn ein System nun einigermassen fehlerfrei funktioniert, werden oft genutzte künstliche Intelligenzen regelmäßig 
+auf neue Daten umgeschult, um auf dem neuesten Stand zu bleiben.</p>
+
+</p>
 </section>
 
 <section>
 <h2>• Was für einen Einfluss haben Daten auf eine KI?</h2>
+<p>Daten haben einen signifikanten Einfluss auf Künstliche Intelligenz (KI). Die Qualität, Menge und Art der Daten, die für das 
+  Training eines KI-Modells verwendet werden, können das Verhalten, die Leistung und die Zuverlässigkeit des Modells stark 
+  beeinflussen.
+  Beispielsweise sind die Qualität und Vielfalt der Trainingsdaten einer KI sehr wichtig. </p>
+  <p>Hochwertige Daten sind solche, die eine breite Palette von Szenarien und Anwendungen abdecken, denn sie sollten dem Modell 
+    beibringen, allgemeine Konzepte zu verstehen und auf neue Situationen anzuwenden. Gibt es ungenügende Variation, kann es sein, 
+    dass sich die KI überanpasst (zu sehr von gelernten Daten abweicht) oder es begrenzt einfach ihre Fähigkeiten. <br>
+  Nur Variation reicht jedoch nicht, denn bei der KI heisst es; je mehr Daten, desto besser. Der einzige Nachteil daran wären die 
+  Speicher – und Verarbeitungsressourcen. </p><p>
+  Auch die Aktualität der Daten spielt eine grosse Rolle, denn mit veralteten Daten kann das System keineswegs angemessen auf 
+  aktuelle Ereignisse reagieren. Somit sollten die Datensets regelmässig aktualisiert werden, um die Aktualität sicherzustellen. <br>
+  </p><p>Ebenfalls sollten gute Datensets auch keine Verzerrungen oder Vorurteile beinhalten, da dies anschliessend auch im Verhalten 
+  des Systems widergespiegelt wird und das System damit Fehlerhafte oder Diskriminierende Aktionen vollführt. <br>
+  </p><p> Jedoch spielt nicht nur der Inhalt der Daten eine Rolle, die Datenrepräsentation ist auch entscheidend, denn die richtige 
+  Repräsentation kann von der KI besser aufgenommen werden und verbessert so die Leistung des Systems. Das kann beispielsweise 
+  durch Feature-Engineering, Datenformatierung oder Verwendung geeigneter Embeddings erreicht werden. </p><p>Somit ist also eine 
+    sorgfältige Datenbeschaffung, -bereinigung und -validierung entscheidend, um zuverlässige, vollständige und aussagekräftige 
+    Ergebnisse zu erzielen.<p>
+  
 </section>
 
 <section>
 <h2>• Wie funktioniert ChatGPT?</h2>
+<p>Chat GPT basiert auf einem fortgeschrittenen Sprachmodell namens GPT-3.5-Modell von OpenAi. Es beruht auf maschinellem Lernen und verwendet eine Architektur namens «Transformer» um die natürlich gesprochene Sprache der Menschen zu verstehen und wiederzugeben.
+  Die Funktionsweise von ChatGPT kann in drei Hauptschritten beschrieben werden:
+  <ul class="liste"> <li>
+  <p><u>1.	Training:</u> <br>
+  Um Chat GPT zu trainieren, braucht man Unmengen an Daten, welche generell vom Internet stammen. Diese können Nachrichtenartikel, Bücher oder Websites beinhalten. Durch dieses Trainieren lernt das Modell Muster und Zusammenhänge in der Sprache zu erkennen, und diese selbst zu generieren.</li> <li>
+  </p>
+<p><u>2.	Eingabe und Verarbeitung:</u> <br>
+
+  Wenn ein Nutzer von Chat GPT eine Anfrage stellt, wird dies an das ChatGPT-Modell gesendet und der Text wird in kleinere Einheiten namens «Token» (können ein Wort oder sogar nur ein Teil eines Wortes sein) zerlegt. Diese Tokens werden nun nacheinander verarbeitet, bis das Modell versteht, um was es sich handelt.</li><li>
+  </p>
+<p><u> 3.	Generierung der Antwort:</u> <br>
+  
+  Aufgrund des erhaltenen Verständnisses des Eingabetextes wird nun eine Antwort generiert. Dazu braucht ChatGPT  die Informationen, die er durch das Training erlangt hatte und erzeugt seine Antwort in einer Reihe von Tokens, die jedoch noch in eine lesbare Textform umgewandelt werden bevor die Antwort dem Benutzer zurückgegeben wird.</li>
+  
+  </p>
 </section>
 
 <section>
 <h2> • Was sind die Grenzen von ChatGPT und worauf sollte man bei der Verwendung achten?</h2>
+<p>Auch wenn Chat GPT ein nützliches Hilfsmittel im Alltag ist, hat es so seine Grenzen und seine Schwachstellen. 
+  Einige davon wären: </p> <ul class="liste"> <li>
+  <p><u>1. Diskriminierung: </u>	<br>
+  Wenn eine KI unüberwacht lernt, könnte es schnell rassistisches, vulgäres und verletzendes Verhalten zeigen, da das Internet voll 
+  von solcher Sprache ist. Deswegen kommt es stark auf den verantwortungsbewussten Umgang der User an, denn je nach gestellten Fragen 
+  könnte ein problematisches Verhalten antrainiert werden.</p></li><li>
+  
+  <p><u>	2.	Chat GPT ist nicht allwissend: </u>	<br>
+  Die Antworten von Chat GPT sind des Öfteren falsch, denn er ist nicht allwissend und hat ebenfalls keine persönlichen Erfahrungen 
+  haben oder auf spezifische Ereignisse reagieren, welche nach dem Trainingszeitpunkt stattgefunden haben. Anders ausgedrückt; er ist 
+  nicht up to date. Ebenfalls können die Quellen, die Chat GPT benutzt, von ihm nicht auf ihre Richtigkeit oder Zuverlässigkeit 
+  überprüft werden. Ein Beispiel wäre die Antwort auf die Frage «Welches Säugetier legt die grössten Eier?», nach Chat GPT wäre es 
+  der Elefant. (von einer Userin auf Twitter).<br>
+  Aus diesem Grund sollte man die Antworten von Chat GPT kritisch hinterfragen oder auch noch zusätzliche Quellen berücksichtigen. 
+  Als verantwortungsbewusster Nutzer sollte man auch darauf achten, dass man Fehlinformationen an Chat GPT weitergibt.</p></li><li>
+  
+  <p><u>	3.	Emotionen:</u>	<br>
+  Chat GPT ist immer noch eine künstliche und keine richtige Intelligenz, und kann somit die Emotionen und Gedankengänge von Menschen 
+  nicht verstehen.</p> </li><li>
+  
+  <p><u>	4.	Empfindlichkeit gegenüber Eingabeformulierungen:</u>	<br>
+  Man sollte seine Frage an Chat GPT immer klar und präzise formulieren, da es oft vorkommen kann, dass nur eine kleine Änderung an 
+  der Formulierung der Frage die generierte Antwort verändert.</p></li> </ul>
+  
+  <p>Auf der Hauptseite von Chat GPT werden neben Beispielfragen und den Fähigkeiten von Chat GPT ebenfalls noch die Grenzen der 
+    Maschine beschrieben. </p>
+    <p><img src= ChatGPT.png alt="Chat gpt" style="height: 400px;"></p>
+  
+  
+  
+  
 </section>
 </div></div>
   </main>

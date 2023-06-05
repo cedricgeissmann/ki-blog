@@ -45,6 +45,9 @@ main {
   margin-left: 15%;
   margin-right: 15%;
   padding-top: 5%;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 40px;
 
 }
 
@@ -56,7 +59,7 @@ padding: 5%;
 #side {
   background-color:#df99ff;
   width: 400px;
-  position: absolute;
+  position: fixed;
   top: 0;
   left:0;
   height: 100%;
@@ -84,12 +87,18 @@ padding: 5%;
   font-size: 1.5rem;
 }
 
-.fixed-container {
-  position: fixed;
-    top: 50px;
-    left: 50px;
+.fixed-content {
+  display:flex;
+  flex-direction: column;
+  justify-content: absolute;
+  align-items: absolute;
     width: 200px; /* Adjust width as needed */
-    height: 200px; /* Adjust height as needed */
-    overflow: auto;
+    height: 100%; /* Adjust height as needed */
+    
+}
+
+.liste {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 20px;
 }
 
